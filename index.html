@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jobs — Burnt Island Ventures Portfolio</title>
+<meta name="description" content="Open roles across the Burnt Island Ventures portfolio. Build your career in water.">
+<style>
+  :root{
+    --biv-blue:#1b3a5c; --biv-blue-light:#2c5a8c; --accent:#3aa0d8;
+    --bg:#f6f8fa; --card:#ffffff; --text:#1c2733; --muted:#5e6f80; --border:#e2e8ee;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+  header{background:var(--biv-blue);color:#fff;padding:48px 24px 40px;text-align:center}
+  header h1{font-size:2rem;font-weight:700;letter-spacing:-.02em}
+  header p{margin-top:8px;opacity:.85;font-size:1.05rem}
+  .stats{margin-top:14px;font-size:.9rem;opacity:.75}
+  .wrap{max-width:980px;margin:0 auto;padding:24px}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;margin:-46px auto 26px;max-width:980px;padding:0 24px;position:relative}
+  .controls input,.controls select{padding:11px 14px;border:1px solid var(--border);border-radius:8px;font-size:.95rem;background:var(--card);box-shadow:0 2px 10px rgba(15,40,70,.10)}
+  .controls input{flex:2 1 260px}
+  .controls select{flex:1 1 160px;color:var(--text)}
+  .tabs{display:flex;gap:8px;margin-bottom:18px}
+  .tabs button{padding:8px 18px;border:1px solid var(--border);background:var(--card);border-radius:20px;font-size:.9rem;cursor:pointer;color:var(--muted)}
+  .tabs button.active{background:var(--biv-blue);border-color:var(--biv-blue);color:#fff}
+  .count{font-size:.85rem;color:var(--muted);margin-bottom:14px}
+  .company{background:var(--card);border:1px solid var(--border);border-radius:12px;margin-bottom:14px;overflow:hidden}
+  .company-head{display:flex;align-items:center;gap:12px;padding:16px 20px}
+  .company-head .logo{width:38px;height:38px;border-radius:8px;background:var(--biv-blue-light);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;flex-shrink:0}
+  .company-head h2{font-size:1.05rem;font-weight:650}
+  .company-head .badge{margin-left:auto;background:#e8f3fb;color:var(--biv-blue-light);font-size:.78rem;font-weight:600;padding:4px 10px;border-radius:12px;white-space:nowrap}
+  .company-head a.site{font-size:.82rem;color:var(--muted);text-decoration:none}
+  .company-head a.site:hover{color:var(--accent)}
+  .job{display:flex;align-items:center;gap:12px;padding:13px 20px;border-top:1px solid var(--border);text-decoration:none;color:inherit}
+  .job:hover{background:#f3f8fc}
+  .job .t{font-weight:550;font-size:.95rem}
+  .job .m{font-size:.82rem;color:var(--muted);margin-top:2px}
+  .job .apply{margin-left:auto;color:var(--accent);font-size:.85rem;font-weight:600;white-space:nowrap}
+  .careers-link{display:block;padding:13px 20px;border-top:1px solid var(--border);font-size:.88rem;color:var(--biv-blue-light);text-decoration:none}
+  .careers-link:hover{background:#f3f8fc}
+  .empty{padding:40px;text-align:center;color:var(--muted)}
+  footer{text-align:center;padding:30px;font-size:.82rem;color:var(--muted)}
+  footer a{color:var(--biv-blue-light)}
+  @media(max-width:640px){.company-head{flex-wrap:wrap}.company-head .badge{margin-left:0}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Water Jobs</h1>
+  <p>Open roles across the Burnt Island Ventures portfolio</p>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="controls">
+  <input id="q" type="search" placeholder="Search roles or companies…">
+  <select id="loc"><option value="">All locations</option></select>
+  <select id="dept"><option value="">All departments</option></select>
+</div>
+
+<div class="wrap">
+  <div class="tabs">
+    <button id="tab-jobs" class="active">Open roles</button>
+    <button id="tab-companies">All companies</button>
+  </div>
+  <div class="count" id="count"></div>
+  <div id="list"></div>
+</div>
+
+<footer>
+  A <a href="https://www.burntislandventures.com">Burnt Island Ventures</a> portfolio jobs board ·
+  <span id="updated"></span>
+</footer>
+
+<script>
+let DATA = null;
+let view = "jobs";
+
+fetch("jobs.json").then(r => r.json()).then(d => { DATA = d; init(); })
+  .catch(() => { document.getElementById("list").innerHTML =
+    '<div class="empty">Could not load jobs.json — serve this folder over HTTP (e.g. <code>python3 -m http.server</code>).</div>'; });
+
+function init(){
+  const jobs = allJobs();
+  document.getElementById("stats").textContent =
+    `${jobs.length} open roles · ${DATA.companies.filter(c=>c.jobs.length).length} hiring companies · ${DATA.companies.length} portfolio companies`;
+  if (DATA.generated_at) {
+    document.getElementById("updated").textContent =
+      "Updated " + new Date(DATA.generated_at).toLocaleDateString(undefined,{year:"numeric",month:"long",day:"numeric"});
+  }
+  fillFilter("loc", uniq(jobs.flatMap(j => j.location.split(" / ").map(s=>s.trim()).filter(Boolean))));
+  fillFilter("dept", uniq(jobs.map(j => j.department).filter(Boolean)));
+  ["q","loc","dept"].forEach(id => document.getElementById(id).addEventListener("input", render));
+  document.getElementById("tab-jobs").onclick = () => setView("jobs");
+  document.getElementById("tab-companies").onclick = () => setView("companies");
+  render();
+}
+
+const allJobs = () => DATA.companies.flatMap(c => c.jobs.map(j => ({...j, company:c.name})));
+const uniq = a => [...new Set(a)].sort();
+const esc = s => (s||"").replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+
+function fillFilter(id, values){
+  const sel = document.getElementById(id);
+  values.forEach(v => { const o = document.createElement("option"); o.value = o.textContent = v; sel.appendChild(o); });
+}
+
+function setView(v){
+  view = v;
+  document.getElementById("tab-jobs").classList.toggle("active", v==="jobs");
+  document.getElementById("tab-companies").classList.toggle("active", v==="companies");
+  render();
+}
+
+function matches(j, q, loc, dept){
+  return (!q || (j.title + " " + j.company + " " + j.department).toLowerCase().includes(q)) &&
+         (!loc || j.location.includes(loc)) &&
+         (!dept || j.department === dept);
+}
+
+function initials(name){ return name.split(/\s+/).map(w=>w[0]).join("").slice(0,2).toUpperCase(); }
+
+function companyCard(c, jobsHtml, badge){
+  return `<div class="company">
+    <div class="company-head">
+      <div class="logo">${initials(c.name)}</div>
+      <div><h2>${esc(c.name)}</h2><a class="site" href="${esc(c.website)}" target="_blank" rel="noopener">${esc(c.website.replace(/^https?:\/\/(www\.)?/,""))}</a></div>
+      ${badge ? `<span class="badge">${badge}</span>` : ""}
+    </div>${jobsHtml}</div>`;
+}
+
+function jobRow(j){
+  const meta = [j.location, j.department].filter(Boolean).join(" · ");
+  return `<a class="job" href="${esc(j.url)}" target="_blank" rel="noopener">
+    <div><div class="t">${esc(j.title)}</div>${meta ? `<div class="m">${esc(meta)}</div>` : ""}</div>
+    <span class="apply">Apply →</span></a>`;
+}
+
+function render(){
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const loc = document.getElementById("loc").value;
+  const dept = document.getElementById("dept").value;
+  const list = document.getElementById("list");
+  let html = "", count = 0;
+
+  for (const c of DATA.companies){
+    const visible = c.jobs.map(j => ({...j, company:c.name})).filter(j => matches(j, q, loc, dept));
+    if (view === "jobs"){
+      if (!visible.length) continue;
+      count += visible.length;
+      html += companyCard(c, visible.map(jobRow).join(""), `${visible.length} open role${visible.length>1?"s":""}`);
+    } else {
+      if (q && !c.name.toLowerCase().includes(q) && !visible.length) continue;
+      count++;
+      const inner = visible.length ? visible.map(jobRow).join("")
+        : `<a class="careers-link" href="${esc(c.careers_url)}" target="_blank" rel="noopener">View careers page →</a>`;
+      html += companyCard(c, inner, visible.length ? `${visible.length} open role${visible.length>1?"s":""}` : "");
+    }
+  }
+
+  document.getElementById("count").textContent = view === "jobs"
+    ? `${count} role${count===1?"":"s"} matching`
+    : `${count} compan${count===1?"y":"ies"}`;
+  list.innerHTML = html || '<div class="empty">No matching roles. Try clearing filters.</div>';
+}
+</script>
+</body>
+</html>
