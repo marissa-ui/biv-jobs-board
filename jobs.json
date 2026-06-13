@@ -1,63 +1,337 @@
 {
-  "generated_at": "2026-06-11T00:00:00+00:00",
-  "total_jobs": 15,
-  "_note": "Demo data. CivilGrid jobs are live from their Ashby API (fetched 2026-06-11). Floodbase role is from their careers page. Run fetch_jobs.py to regenerate.",
+  "generated_at": "2026-06-13T09:33:28.832584+00:00",
+  "total_jobs": 22,
   "companies": [
-    { "name": "2S Water", "website": "https://2swater.com", "careers_url": "https://2swater.com", "jobs": [] },
-    { "name": "Aclarity", "website": "https://www.aclaritywater.com", "careers_url": "https://www.aclaritywater.com/careers", "jobs": [] },
-    { "name": "AlgaFilm", "website": "https://algafilm.com", "careers_url": "https://algafilm.com", "jobs": [] },
-    { "name": "Aqua Membranes", "website": "https://aquamembranes.com", "careers_url": "https://aquamembranes.com", "jobs": [] },
-    { "name": "Aquafortus", "website": "https://www.aquafortus.net", "careers_url": "https://www.aquafortus.net", "jobs": [] },
-    { "name": "Aquatic Labs", "website": "https://www.aquatic-labs.com", "careers_url": "https://www.aquatic-labs.com", "jobs": [] },
-    { "name": "AquiSense", "website": "https://aquisense.com", "careers_url": "https://aquisense.com/careers/", "jobs": [] },
-    { "name": "Beagle Services", "website": "https://www.beagleservices.com", "careers_url": "https://www.beagleservices.com", "jobs": [] },
-    { "name": "Cala Systems", "website": "https://www.calasystems.com", "careers_url": "https://www.calasystems.com", "jobs": [] },
+    {
+      "name": "2S Water",
+      "website": "https://2swater.com",
+      "careers_url": "https://2swater.com",
+      "jobs": []
+    },
+    {
+      "name": "Aclarity",
+      "website": "https://www.aclaritywater.com",
+      "careers_url": "https://www.aclaritywater.com/careers",
+      "jobs": []
+    },
+    {
+      "name": "AlgaFilm",
+      "website": "https://algafilm.com",
+      "careers_url": "https://algafilm.com",
+      "jobs": []
+    },
+    {
+      "name": "Aqua Membranes",
+      "website": "https://aquamembranes.com",
+      "careers_url": "https://aquamembranes.com",
+      "jobs": []
+    },
+    {
+      "name": "Aquafortus",
+      "website": "https://www.aquafortus.net",
+      "careers_url": "https://www.aquafortus.net",
+      "jobs": []
+    },
+    {
+      "name": "Aquatic Labs",
+      "website": "https://www.aquatic-labs.com",
+      "careers_url": "https://www.aquatic-labs.com",
+      "jobs": []
+    },
+    {
+      "name": "AquiSense",
+      "website": "https://aquisense.com",
+      "careers_url": "https://aquisense.com/careers/",
+      "jobs": []
+    },
+    {
+      "name": "Beagle Services",
+      "website": "https://www.beagleservices.com",
+      "careers_url": "https://www.beagleservices.com",
+      "jobs": []
+    },
+    {
+      "name": "Cala Systems",
+      "website": "https://www.calasystems.com",
+      "careers_url": "https://www.calasystems.com",
+      "jobs": []
+    },
     {
       "name": "CivilGrid",
       "website": "https://www.civilgrid.com",
       "careers_url": "https://www.civilgrid.com/careers",
       "jobs": [
-        { "title": "Business Development Representative", "location": "Denver / Boston / Philadelphia / Charlotte / Kansas City", "department": "Sales", "url": "https://jobs.ashbyhq.com/civilgrid/b20ce02c-358f-43dd-959f-fb0706aae7b0", "posted_at": "" },
-        { "title": "Staff Front End Engineer", "location": "Boston", "department": "Product & Engineering", "url": "https://jobs.ashbyhq.com/civilgrid/81c7cc74-7346-4128-acc3-60f451563f11", "posted_at": "" },
-        { "title": "Civil Engineer - New Graduate", "location": "Denver / Kansas City / Charlotte", "department": "Data", "url": "https://jobs.ashbyhq.com/civilgrid/8d515956-0589-4c0b-bd61-2a3d8679e62f", "posted_at": "" },
-        { "title": "Office Manager", "location": "San Francisco", "department": "Operations", "url": "https://jobs.ashbyhq.com/civilgrid/6bb25fdb-21ca-4be2-aa3f-1b5a9d1c42a7", "posted_at": "" },
-        { "title": "Utility Research Operations Specialist", "location": "Charlotte", "department": "Data", "url": "https://jobs.ashbyhq.com/civilgrid/52cdcdb1-cd69-4a75-8268-ad91fbd2aacf", "posted_at": "" },
-        { "title": "Sales Operations Specialist", "location": "San Francisco", "department": "Sales", "url": "https://jobs.ashbyhq.com/civilgrid/e4dae547-f19e-4a47-8205-a15107e268e6", "posted_at": "" },
-        { "title": "Head of Product", "location": "San Francisco / Boston", "department": "Product & Engineering", "url": "https://jobs.ashbyhq.com/civilgrid/87029ef9-9026-4855-b683-70b43644731a", "posted_at": "" },
-        { "title": "Full Stack Engineer", "location": "Boston", "department": "Product & Engineering", "url": "https://jobs.ashbyhq.com/civilgrid/da8e47bb-0383-490a-810a-c64cd3e26970", "posted_at": "" },
-        { "title": "Head of Customer Success", "location": "", "department": "Customer Success", "url": "https://jobs.ashbyhq.com/civilgrid/34f42cc9-c4d0-44f0-99a1-7cfbb7788c7b", "posted_at": "" },
-        { "title": "Engineering Manager", "location": "", "department": "Product & Engineering", "url": "https://jobs.ashbyhq.com/civilgrid/f5f553c1-01c6-4eed-8e16-98889a65710c", "posted_at": "" },
-        { "title": "Infrastructure & Security Engineer", "location": "", "department": "Product & Engineering", "url": "https://jobs.ashbyhq.com/civilgrid/7a1e8a0e-027e-4274-941f-200b9821ba35", "posted_at": "" },
-        { "title": "Account Executive - Utilities", "location": "", "department": "Sales", "url": "https://jobs.ashbyhq.com/civilgrid/a7af8803-c3ff-4722-8f70-631a5d9cb525", "posted_at": "" },
-        { "title": "Account Executive - Government", "location": "", "department": "Sales", "url": "https://jobs.ashbyhq.com/civilgrid/11b15865-01a2-43a3-80e6-1665be97bde9", "posted_at": "" },
-        { "title": "Account Executive - Engineering Firms", "location": "", "department": "Sales", "url": "https://jobs.ashbyhq.com/civilgrid/c1812e98-4f83-494f-a6b5-864c912a1df7", "posted_at": "" }
+        {
+          "title": "Business Development Representative",
+          "location": "Denver / Boston / Philadelphia / Charlotte / Kansas City",
+          "department": "Sales",
+          "url": "https://jobs.ashbyhq.com/civilgrid/b20ce02c-358f-43dd-959f-fb0706aae7b0",
+          "posted_at": "2026-05-12T21:25:50.214+00:00"
+        },
+        {
+          "title": "Staff Front End Engineer",
+          "location": "Boston",
+          "department": "Product & Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/81c7cc74-7346-4128-acc3-60f451563f11",
+          "posted_at": "2026-05-07T01:15:01.504+00:00"
+        },
+        {
+          "title": "Utility Research Operations Specialist",
+          "location": "Charlotte",
+          "department": "Data",
+          "url": "https://jobs.ashbyhq.com/civilgrid/52cdcdb1-cd69-4a75-8268-ad91fbd2aacf",
+          "posted_at": "2026-05-05T15:11:55.980+00:00"
+        },
+        {
+          "title": "Sales Operations Specialist",
+          "location": "San Francisco",
+          "department": "Sales",
+          "url": "https://jobs.ashbyhq.com/civilgrid/e4dae547-f19e-4a47-8205-a15107e268e6",
+          "posted_at": "2026-05-07T00:42:20.170+00:00"
+        },
+        {
+          "title": "Head of Product",
+          "location": "San Francisco / Boston",
+          "department": "Product & Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/87029ef9-9026-4855-b683-70b43644731a",
+          "posted_at": "2026-05-07T00:51:34.149+00:00"
+        },
+        {
+          "title": "Full Stack Engineer",
+          "location": "Boston",
+          "department": "Product & Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/da8e47bb-0383-490a-810a-c64cd3e26970",
+          "posted_at": "2026-05-07T01:07:44.403+00:00"
+        },
+        {
+          "title": "Head of Customer Success",
+          "location": "San Francisco",
+          "department": "Customer Success",
+          "url": "https://jobs.ashbyhq.com/civilgrid/34f42cc9-c4d0-44f0-99a1-7cfbb7788c7b",
+          "posted_at": "2026-05-08T17:56:06.838+00:00"
+        },
+        {
+          "title": "Engineering Manager",
+          "location": "Boston",
+          "department": "Product & Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/f5f553c1-01c6-4eed-8e16-98889a65710c",
+          "posted_at": "2026-05-12T13:03:34.994+00:00"
+        },
+        {
+          "title": "Infrastructure & Security Engineer",
+          "location": "Boston",
+          "department": "Product & Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/7a1e8a0e-027e-4274-941f-200b9821ba35",
+          "posted_at": "2026-05-18T20:54:02.780+00:00"
+        },
+        {
+          "title": "Senior Account Executive - Utilities",
+          "location": "Remote / San Francisco",
+          "department": "Sales",
+          "url": "https://jobs.ashbyhq.com/civilgrid/a7af8803-c3ff-4722-8f70-631a5d9cb525",
+          "posted_at": "2026-05-22T16:09:48.265+00:00"
+        },
+        {
+          "title": "Account Executive - Government",
+          "location": "Remote / Boston / Charlotte / Philadelphia",
+          "department": "Sales",
+          "url": "https://jobs.ashbyhq.com/civilgrid/11b15865-01a2-43a3-80e6-1665be97bde9",
+          "posted_at": "2026-05-22T16:10:03.496+00:00"
+        }
       ]
     },
-    { "name": "CNSRV", "website": "https://cnsrv.com", "careers_url": "https://cnsrv.com", "jobs": [] },
-    { "name": "Daupler", "website": "https://daupler.com", "careers_url": "https://daupler.com/careers", "jobs": [] },
-    { "name": "Flocean", "website": "https://www.flocean.green", "careers_url": "https://www.flocean.green", "jobs": [] },
+    {
+      "name": "CNSRV",
+      "website": "https://cnsrv.com",
+      "careers_url": "https://cnsrv.com",
+      "jobs": []
+    },
+    {
+      "name": "Daupler",
+      "website": "https://daupler.com",
+      "careers_url": "https://daupler.com/careers",
+      "jobs": []
+    },
+    {
+      "name": "Flocean",
+      "website": "https://www.flocean.green",
+      "careers_url": "https://www.flocean.green",
+      "jobs": []
+    },
     {
       "name": "Floodbase",
       "website": "https://www.floodbase.com",
       "careers_url": "https://www.floodbase.com/careers",
+      "jobs": []
+    },
+    {
+      "name": "HOPE Hydration",
+      "website": "https://www.hopehydration.com",
+      "careers_url": "https://www.hopehydration.com",
+      "jobs": []
+    },
+    {
+      "name": "Irrigreen",
+      "website": "https://irrigreen.com",
+      "careers_url": "https://irrigreen.com/pages/careers",
+      "jobs": []
+    },
+    {
+      "name": "Laiier",
+      "website": "https://www.laiier.io",
+      "careers_url": "https://www.laiier.io",
+      "jobs": []
+    },
+    {
+      "name": "NLine Energy",
+      "website": "https://www.nlineenergy.com",
+      "careers_url": "https://www.nlineenergy.com",
+      "jobs": []
+    },
+    {
+      "name": "Power & Water",
+      "website": "https://www.powerandwater.com",
+      "careers_url": "https://www.powerandwater.com",
+      "jobs": []
+    },
+    {
+      "name": "Previsico",
+      "website": "https://previsico.com",
+      "careers_url": "https://previsico.com",
+      "jobs": []
+    },
+    {
+      "name": "SewerAI",
+      "website": "https://www.sewerai.com",
+      "careers_url": "https://www.sewerai.com/careers",
       "jobs": [
-        { "title": "VP of Product", "location": "New York or Boston (Hybrid)", "department": "Product", "url": "https://tally.so/r/Npodkp", "posted_at": "" }
+        {
+          "title": "General Application",
+          "location": "Hybrid",
+          "department": "Any Department",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/58eccfc8-69ea-476d-a556-5b19c2c7b308",
+          "posted_at": "2025-09-24T17:35:46.462+00:00"
+        },
+        {
+          "title": "Senior Staff Accountant",
+          "location": "Hybrid",
+          "department": "G&A",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/1f34345d-5fc4-4fd6-86ed-5cac1aa1837a",
+          "posted_at": "2026-04-28T22:44:14.366+00:00"
+        },
+        {
+          "title": "ML Ops Engineer (AI)",
+          "location": "Remote",
+          "department": "Engineering",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/6f08a873-0f08-42d1-a636-73d218fea5e0",
+          "posted_at": "2026-04-28T22:39:17.996+00:00"
+        },
+        {
+          "title": "Senior Staff Software Engineer",
+          "location": "Remote",
+          "department": "Engineering",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/264e4c4a-8a2b-4a49-9bbc-23413a64ab4b",
+          "posted_at": "2026-04-30T18:24:51.656+00:00"
+        },
+        {
+          "title": "Senior Product Manager, AI & Operations",
+          "location": "Hybrid",
+          "department": "Product & Design",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/a4c332fb-4247-43d2-96d2-eb57ceca9db4",
+          "posted_at": "2026-05-21T22:12:48.791+00:00"
+        },
+        {
+          "title": "VP of Customer Success",
+          "location": "Hybrid",
+          "department": "Sales & Marketing",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/7993418f-75e0-40f8-b932-bd4a1be0b647",
+          "posted_at": "2026-05-20T23:48:27.916+00:00"
+        },
+        {
+          "title": "Sales Development Representative",
+          "location": "Remote",
+          "department": "Sales & Marketing",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/e667996d-c027-4ab2-b7bd-f828ef93dcb0",
+          "posted_at": "2026-06-01T15:23:33.325+00:00"
+        },
+        {
+          "title": "Contracts Administrator",
+          "location": "Hybrid ",
+          "department": "G&A",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/fd529f60-e0a1-45ad-8a0f-56764828ddd2",
+          "posted_at": "2026-06-04T16:58:10.981+00:00"
+        }
       ]
     },
-    { "name": "HOPE Hydration", "website": "https://www.hopehydration.com", "careers_url": "https://www.hopehydration.com", "jobs": [] },
-    { "name": "Irrigreen", "website": "https://irrigreen.com", "careers_url": "https://irrigreen.com/pages/careers", "jobs": [] },
-    { "name": "Laiier", "website": "https://www.laiier.io", "careers_url": "https://www.laiier.io", "jobs": [] },
-    { "name": "NLine Energy", "website": "https://www.nlineenergy.com", "careers_url": "https://www.nlineenergy.com", "jobs": [] },
-    { "name": "Power & Water", "website": "https://www.powerandwater.com", "careers_url": "https://www.powerandwater.com", "jobs": [] },
-    { "name": "Previsico", "website": "https://previsico.com", "careers_url": "https://previsico.com", "jobs": [] },
-    { "name": "SewerAI", "website": "https://www.sewerai.com", "careers_url": "https://www.sewerai.com/careers", "jobs": [] },
-    { "name": "Showerstream", "website": "https://showerstream.net", "careers_url": "https://showerstream.net", "jobs": [] },
-    { "name": "Spout", "website": "https://www.spoutwater.com", "careers_url": "https://www.spoutwater.com", "jobs": [] },
-    { "name": "Subeca", "website": "https://www.subeca.com", "careers_url": "https://www.subeca.com", "jobs": [] },
-    { "name": "SwiftComply", "website": "https://www.swiftcomply.com", "careers_url": "https://www.swiftcomply.com/careers/", "jobs": [] },
-    { "name": "TeamSolve", "website": "https://teamsolve.com", "careers_url": "https://teamsolve.com", "jobs": [] },
-    { "name": "Waterly", "website": "https://www.waterly.com", "careers_url": "https://www.waterly.com", "jobs": [] },
-    { "name": "Ziptility", "website": "https://www.ziptility.com", "careers_url": "https://www.ziptility.com", "jobs": [] },
-    { "name": "ZwitterCo", "website": "https://zwitterco.com", "careers_url": "https://zwitterco.com/careers/", "jobs": [] }
+    {
+      "name": "Showerstream",
+      "website": "https://showerstream.net",
+      "careers_url": "https://showerstream.net",
+      "jobs": []
+    },
+    {
+      "name": "Spout",
+      "website": "https://www.spoutwater.com",
+      "careers_url": "https://www.spoutwater.com",
+      "jobs": []
+    },
+    {
+      "name": "Subeca",
+      "website": "https://www.subeca.com",
+      "careers_url": "https://www.subeca.com",
+      "jobs": []
+    },
+    {
+      "name": "SwiftComply",
+      "website": "https://www.swiftcomply.com",
+      "careers_url": "https://www.swiftcomply.com/careers/",
+      "jobs": []
+    },
+    {
+      "name": "TeamSolve",
+      "website": "https://teamsolve.com",
+      "careers_url": "https://teamsolve.com",
+      "jobs": []
+    },
+    {
+      "name": "Waterly",
+      "website": "https://www.waterly.com",
+      "careers_url": "https://www.waterly.com",
+      "jobs": []
+    },
+    {
+      "name": "Ziptility",
+      "website": "https://www.ziptility.com",
+      "careers_url": "https://www.ziptility.com",
+      "jobs": []
+    },
+    {
+      "name": "ZwitterCo",
+      "website": "https://zwitterco.com",
+      "careers_url": "https://zwitterco.com/careers/",
+      "jobs": [
+        {
+          "title": "External Manufacturing Manager",
+          "location": "Woburn, MA",
+          "department": "Operations",
+          "url": "https://zwitterco.breezy.hr/p/a7d4d6c9f3ed-external-manufacturing-manager",
+          "posted_at": "2026-06-09T19:14:40.582Z"
+        },
+        {
+          "title": "Quality Control Technician",
+          "location": "Woburn, MA",
+          "department": "Operations",
+          "url": "https://zwitterco.breezy.hr/p/a27be753ba36-quality-control-technician",
+          "posted_at": "2026-06-09T19:08:41.974Z"
+        },
+        {
+          "title": "Senior Sales Engineer (US)",
+          "location": "United States",
+          "department": "Sales",
+          "url": "https://zwitterco.breezy.hr/p/694f04e2d168-senior-sales-engineer-us",
+          "posted_at": "2026-03-31T02:26:49.244Z"
+        }
+      ]
+    }
   ]
 }
