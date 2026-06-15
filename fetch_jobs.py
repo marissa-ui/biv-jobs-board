@@ -6,8 +6,9 @@ Reads companies.json, pulls live job postings from each company's ATS
 public API (the same trick Getro uses), and writes jobs.json for the
 static frontend (index.html).
 
-Supported ATSs: Greenhouse, Lever, Ashby, Workable, Recruitee, Breezy.
-No API keys needed - these are all public endpoints.
+Supported ATSs: Greenhouse, Lever, Ashby, Workable, Recruitee, Breezy, Gusto.
+No API keys needed - these are all public endpoints (Gusto is parsed from
+its public, server-rendered board page).
 
 Usage:  python3 fetch_jobs.py
 Deps:   pip install requests
@@ -125,6 +126,45 @@ def fetch_breezy(slug):
     ]
 
 
+def _parse_gusto(html):
+    """Parse postings out of a Gusto public board page (server-rendered HTML).
+    Each posting is an <a href="/postings/..."> wrapping an <h3> title and
+    one or more <p> lines (first = location, second = employment type)."""
+    jobs = []
+    for m in re.finditer(r'<a[^>]+href="(/postings/[^"]+)"[^>]*>(.*?)</a>', html, re.DOTALL):
+        href, inner = m.group(1), m.group(2)
+        tm = re.search(r'<h3[^>]*>(.*?)</h3>', inner, re.DOTALL)
+        if not tm:
+            continue
+        title = re.sub(r'<[^>]+>', '', tm.group(1)).replace('&amp;', '&').strip()
+        texts = []
+        for p in re.findall(r'<p[^>]*>(.*?)</p>', inner, re.DOTALL):
+            t = re.sub(r'<[^>]+>', ' ', p).replace('&amp;', '&')
+            t = re.sub(r'\s+', ' ', t).strip()
+            if t:
+                texts.append(t)
+        jobs.append({
+            "title": title,
+            "location": texts[0] if texts else "",
+            "department": "",
+            "url": "https://jobs.gusto.com" + href,
+            "posted_at": "",
+        })
+    return jobs
+
+
+def fetch_gusto(slug):
+    """slug is the full Gusto board id from jobs.gusto.com/boards/<slug>."""
+    url = f"https://jobs.gusto.com/boards/{slug}"
+    jobs = _parse_gusto(get_html(url))
+    if not jobs:  # rare; fall back to a rendered fetch if available
+        try:
+            jobs = _parse_gusto(get_html(url, render=True))
+        except Exception:
+            pass
+    return jobs
+
+
 FETCHERS = {
     "greenhouse": fetch_greenhouse,
     "lever": fetch_lever,
@@ -132,6 +172,7 @@ FETCHERS = {
     "workable": fetch_workable,
     "recruitee": fetch_recruitee,
     "breezy": fetch_breezy,
+    "gusto": fetch_gusto,
 }
 
 # ---------------------------------------------------------------------------
@@ -148,6 +189,7 @@ ATS_URL_PATTERNS = {
     "workable":   r"apply\.workable\.com/([A-Za-z0-9_-]+)",
     "recruitee":  r"https?://([A-Za-z0-9-]+)\.recruitee\.com",
     "breezy":     r"https?://([A-Za-z0-9-]+)\.breezy\.hr",
+    "gusto":      r"jobs\.gusto\.com/boards/([A-Za-z0-9-]+)",
 }
 SLUG_BLOCKLIST = {"api", "www", "embed", "j", "jobs", "careers"}
 
