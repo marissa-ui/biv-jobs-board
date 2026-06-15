@@ -53,6 +53,13 @@
   .careers-link{display:block;padding:13px 20px;border-top:1px solid var(--border);font-size:.88rem;font-weight:500;color:var(--navy);text-decoration:none}
   .careers-link:hover{background:#faf9f3}
   .empty{padding:40px;text-align:center;color:var(--muted)}
+  .results{background:var(--card);border:1px solid var(--border)}
+  .result{display:flex;align-items:center;gap:12px;padding:13px 16px;border-top:1px solid var(--border);text-decoration:none;color:inherit}
+  .results .result:first-child{border-top:none}
+  .result:hover{background:#faf9f3}
+  .result .rcol{min-width:0}
+  .result .t{font-weight:600;font-size:.95rem;color:var(--navy)}
+  .result .m{font-size:.82rem;color:var(--muted);margin-top:2px}
 
   footer{background:var(--cream);margin-top:40px;padding:30px 24px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:center}
   footer .logo-mark{margin-bottom:0;height:60px;width:60px}
@@ -71,7 +78,7 @@
 </header>
 
 <div class="controls">
-  <input id="q" type="search" placeholder="Search roles or companies…">
+  <input id="q" type="search" placeholder="Search by role, skill, or ‘remote’…">
   <select id="loc"><option value="">All locations</option></select>
   <select id="dept"><option value="">All departments</option></select>
 </div>
@@ -133,10 +140,46 @@ function setView(v){
   render();
 }
 
-function matches(j, q, loc, dept){
-  return (!q || (j.title + " " + j.company + " " + j.department).toLowerCase().includes(q)) &&
-         (!loc || j.location.includes(loc)) &&
-         (!dept || j.department === dept);
+function passesFilters(j, loc, dept){
+  return (!loc || j.location.includes(loc)) && (!dept || j.department === dept);
+}
+
+// Lightweight smart search: understands role synonyms, seniority and work mode,
+// and ranks jobs by fit — entirely in the browser, no server or API needed.
+const SYN = {
+  "engineering":["engineer","engineering","developer","dev","software","swe","frontend","front end","front-end","backend","back end","back-end","full stack","fullstack","full-stack","devops","infrastructure","infra","platform","mobile","ios","android","embedded","firmware","hardware","mechanical","electrical"],
+  "data & ml":["data","analytics","analyst","scientist","ml","machine learning","ai","artificial intelligence","data science"],
+  "product":["product","pm","product manager","product management"],
+  "design":["design","designer","ux","ui","user experience","graphic"],
+  "sales":["sales","account executive","ae","sdr","bdr","business development","revenue","partnerships"],
+  "marketing":["marketing","growth","demand gen","content","seo","communications","brand"],
+  "customer success":["customer success","csm","support","customer support","implementation"],
+  "operations":["operations","ops","supply chain","logistics","procurement","program manager","project manager"],
+  "finance & g&a":["finance","accounting","accountant","controller","fp&a","g&a","legal","people","hr","talent","recruiting","recruiter"],
+  "science & r&d":["scientist","science","research","chemist","biologist","lab"]
+};
+const SENIOR = ["intern","internship","entry","junior","associate","senior","staff","principal","lead","head","manager","director","vp","vice president","chief","executive"];
+const REMOTE = ["remote","hybrid","on-site","onsite","on site","in office","in-office"];
+const qtokens = s => ((s||"").toLowerCase().match(/[a-z0-9&+#.]+/g) || []).filter(w => w.length > 1);
+
+function scoreJob(j, q){
+  if (!q) return 0;
+  const ql = q.toLowerCase();
+  const title = (j.title||"").toLowerCase();
+  const dept = (j.department||"").toLowerCase();
+  const hay = (j.title+" "+j.company+" "+j.department+" "+j.location).toLowerCase();
+  let score = 0;
+  if (title.includes(ql)) score += 12; else if (hay.includes(ql)) score += 6;
+  for (const w of qtokens(q)){ if (title.includes(w)) score += 4; else if (hay.includes(w)) score += 2; }
+  for (const canon in SYN){
+    const terms = SYN[canon];
+    if (ql.includes(canon) || terms.some(t => ql.includes(t))){
+      if (dept.includes(canon) || terms.some(t => title.includes(t) || dept.includes(t))) score += 8;
+    }
+  }
+  for (const s of SENIOR){ if (ql.includes(s) && title.includes(s)) score += 5; }
+  for (const r of REMOTE){ if (ql.includes(r) && hay.includes(r.replace("-"," "))) score += 5; }
+  return score;
 }
 
 function initials(name){ return name.split(/\s+/).map(w=>w[0]).join("").slice(0,2).toUpperCase(); }
@@ -191,27 +234,50 @@ function jobRow(j){
 }
 
 function render(){
-  const q = document.getElementById("q").value.trim().toLowerCase();
+  const q = document.getElementById("q").value.trim();
+  const ql = q.toLowerCase();
   const loc = document.getElementById("loc").value;
   const dept = document.getElementById("dept").value;
   const list = document.getElementById("list");
-  let html = "", count = 0;
 
+  if (q && view === "jobs"){
+    const byCompany = {}; DATA.companies.forEach(c => byCompany[c.name] = c);
+    const scored = allJobs()
+      .filter(j => passesFilters(j, loc, dept))
+      .map(j => ({ j, s: scoreJob(j, q) }))
+      .filter(x => x.s > 0)
+      .sort((a,b) => b.s - a.s);
+    document.getElementById("count").textContent =
+      `${scored.length} best match${scored.length===1?"":"es"} for “${esc(q)}”`;
+    if (!scored.length){ list.innerHTML = '<div class="empty">No matching roles. Try a different role, skill, or “remote”.</div>'; return; }
+    list.innerHTML = '<div class="results">' + scored.map(({j}) => {
+      const c = byCompany[j.company] || {website:"", logo:null, name:j.company};
+      const fresh = daysAgo(j.posted_at);
+      const meta = [j.location, j.department].filter(Boolean).join(" · ");
+      return `<a class="result" href="${esc(j.url)}" target="_blank" rel="noopener">
+        ${logoHtml(c)}
+        <div class="rcol"><div class="t">${esc(j.title)}</div>
+          <div class="m">${esc(j.company)}${meta?" · "+esc(meta):""}${fresh?` · <span class="new">${fresh}</span>`:""}</div></div>
+        <span class="apply">Apply →</span></a>`;
+    }).join("") + '</div>';
+    return;
+  }
+
+  let html = "", count = 0;
   for (const c of DATA.companies){
-    const visible = c.jobs.map(j => ({...j, company:c.name})).filter(j => matches(j, q, loc, dept));
+    const visible = c.jobs.map(j => ({...j, company:c.name})).filter(j => passesFilters(j, loc, dept));
     if (view === "jobs"){
       if (!visible.length) continue;
       count += visible.length;
       html += companyCard(c, visible.map(jobRow).join(""), `${visible.length} open role${visible.length>1?"s":""}`);
     } else {
-      if (q && !(c.name + " " + (c.description||"")).toLowerCase().includes(q) && !visible.length) continue;
+      if (ql && !(c.name + " " + (c.description||"")).toLowerCase().includes(ql) && !visible.length) continue;
       count++;
       const inner = visible.length ? visible.map(jobRow).join("")
         : `<a class="careers-link" href="${esc(c.careers_url)}" target="_blank" rel="noopener">View careers page →</a>`;
       html += companyCard(c, inner, visible.length ? `${visible.length} open role${visible.length>1?"s":""}` : "");
     }
   }
-
   document.getElementById("count").textContent = view === "jobs"
     ? `${count} role${count===1?"":"s"} matching`
     : `${count} compan${count===1?"y":"ies"}`;
