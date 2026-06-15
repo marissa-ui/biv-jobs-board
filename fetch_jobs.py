@@ -293,6 +293,8 @@ def main():
             "name": c["name"],
             "website": c["website"],
             "careers_url": c.get("careers_url") or c["website"],
+            "logo": c.get("logo"),
+            "description": c.get("description", ""),
             "jobs": [],
         }
         ats = c.get("ats")
