@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-15T12:39:41.006123+00:00",
-  "total_jobs": 22,
+  "generated_at": "2026-06-15T18:53:03.409057+00:00",
+  "total_jobs": 24,
   "companies": [
     {
       "name": "2S Water",
@@ -35,8 +35,23 @@
     {
       "name": "Aquatic Labs",
       "website": "https://www.aquatic-labs.com",
-      "careers_url": "https://www.aquatic-labs.com",
-      "jobs": []
+      "careers_url": "https://www.aquatic-labs.com/careers",
+      "jobs": [
+        {
+          "title": "Open Application",
+          "location": "Cambridge, MA Remote",
+          "department": "",
+          "url": "https://jobs.gusto.com/postings/aquatic-labs-open-application-ffaf5a29-4c35-4d7a-915c-fb9610a2afb0",
+          "posted_at": ""
+        },
+        {
+          "title": "Senior Mechanical Engineer - Manufacturing & Product Development",
+          "location": "Cambridge, MA",
+          "department": "",
+          "url": "https://jobs.gusto.com/postings/aquatic-labs-senior-mechanical-engineer-manufacturing-product-development-75f067a6-08c8-4e2a-8f28-d43655ddd5de",
+          "posted_at": ""
+        }
+      ]
     },
     {
       "name": "AquiSense",
@@ -62,13 +77,6 @@
       "careers_url": "https://www.civilgrid.com/careers",
       "jobs": [
         {
-          "title": "Business Development Representative",
-          "location": "Denver / Boston / Philadelphia / Charlotte / Kansas City",
-          "department": "Sales",
-          "url": "https://jobs.ashbyhq.com/civilgrid/b20ce02c-358f-43dd-959f-fb0706aae7b0",
-          "posted_at": "2026-05-12T21:25:50.214+00:00"
-        },
-        {
           "title": "Staff Front End Engineer",
           "location": "Boston",
           "department": "Product & Engineering",
@@ -81,6 +89,13 @@
           "department": "Data",
           "url": "https://jobs.ashbyhq.com/civilgrid/52cdcdb1-cd69-4a75-8268-ad91fbd2aacf",
           "posted_at": "2026-05-05T15:11:55.980+00:00"
+        },
+        {
+          "title": "Product Marketing Manager",
+          "location": "San Francisco / Boston / Remote",
+          "department": "Marketing",
+          "url": "https://jobs.ashbyhq.com/civilgrid/d0afac7f-aa47-4f63-a229-496d497020e5",
+          "posted_at": "2026-06-15T18:21:48.752+00:00"
         },
         {
           "title": "Sales Operations Specialist",
