@@ -5,48 +5,66 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jobs — Burnt Island Ventures Portfolio</title>
 <meta name="description" content="Open roles across the Burnt Island Ventures portfolio. Build your career in water.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --biv-blue:#1b3a5c; --biv-blue-light:#2c5a8c; --accent:#3aa0d8;
-    --bg:#f6f8fa; --card:#ffffff; --text:#1c2733; --muted:#5e6f80; --border:#e2e8ee;
+    --navy:#001E40; --navy-line:#13335a; --gold:#FFC700; --cream:#E9E8D9;
+    --bg:#f4f3ec; --card:#ffffff; --text:#16202b; --muted:#5f6f80; --border:#e2e1d6;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
-  header{background:var(--biv-blue);color:#fff;padding:48px 24px 40px;text-align:center}
-  header h1{font-size:2rem;font-weight:700;letter-spacing:-.02em}
-  header p{margin-top:8px;opacity:.85;font-size:1.05rem}
-  .stats{margin-top:14px;font-size:.9rem;opacity:.75}
-  .wrap{max-width:980px;margin:0 auto;padding:24px}
+  body{font-family:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+
+  header{background:var(--navy);color:#fff;padding:30px 24px 38px;text-align:center}
+  .logo-lockup{display:inline-flex;flex-direction:column;align-items:flex-start;gap:1px;border:2px solid #fff;padding:10px 12px;line-height:1.12;font-weight:600;font-size:.72rem;letter-spacing:.01em;text-align:left;margin-bottom:18px}
+  header h1{font-size:2.1rem;font-weight:700;letter-spacing:-.02em}
+  header p{margin-top:8px;opacity:.85;font-size:1.05rem;font-weight:400}
+  .stats{margin-top:14px;font-size:.88rem;color:var(--gold);font-weight:500}
+
   .controls{display:flex;flex-wrap:wrap;gap:10px;margin:-46px auto 26px;max-width:980px;padding:0 24px;position:relative}
-  .controls input,.controls select{padding:11px 14px;border:1px solid var(--border);border-radius:8px;font-size:.95rem;background:var(--card);box-shadow:0 2px 10px rgba(15,40,70,.10)}
+  .controls input,.controls select{padding:12px 14px;border:1px solid var(--border);font-size:.95rem;background:var(--card);color:var(--text);font-family:inherit;box-shadow:0 2px 12px rgba(0,30,64,.10)}
   .controls input{flex:2 1 260px}
-  .controls select{flex:1 1 160px;color:var(--text)}
+  .controls select{flex:1 1 150px}
+  .controls input:focus,.controls select:focus{outline:2px solid var(--gold);outline-offset:-1px}
+
+  .wrap{max-width:980px;margin:0 auto;padding:24px}
   .tabs{display:flex;gap:8px;margin-bottom:18px}
-  .tabs button{padding:8px 18px;border:1px solid var(--border);background:var(--card);border-radius:20px;font-size:.9rem;cursor:pointer;color:var(--muted)}
-  .tabs button.active{background:var(--biv-blue);border-color:var(--biv-blue);color:#fff}
+  .tabs button{padding:9px 20px;border:1px solid var(--navy);background:var(--card);font-size:.9rem;font-weight:500;cursor:pointer;color:var(--navy);font-family:inherit}
+  .tabs button.active{background:var(--navy);color:#fff}
   .count{font-size:.85rem;color:var(--muted);margin-bottom:14px}
-  .company{background:var(--card);border:1px solid var(--border);border-radius:12px;margin-bottom:14px;overflow:hidden}
-  .company-head{display:flex;align-items:center;gap:12px;padding:16px 20px}
-  .company-head .logo{width:38px;height:38px;border-radius:8px;background:var(--biv-blue-light);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;flex-shrink:0}
-  .company-head h2{font-size:1.05rem;font-weight:650}
-  .company-head .badge{margin-left:auto;background:#e8f3fb;color:var(--biv-blue-light);font-size:.78rem;font-weight:600;padding:4px 10px;border-radius:12px;white-space:nowrap}
+
+  .company{background:var(--card);border:1px solid var(--border);margin-bottom:14px;overflow:hidden}
+  .company-head{display:flex;align-items:center;gap:13px;padding:16px 20px}
+  .logo{width:42px;height:42px;flex-shrink:0;object-fit:contain;background:#fff;border:1px solid var(--border)}
+  .logo.init{display:flex;align-items:center;justify-content:center;background:var(--navy);color:var(--gold);font-weight:600;font-size:1rem;border:none}
+  .company-head h2{font-size:1.08rem;font-weight:600;color:var(--navy)}
+  .company-head .desc{font-size:.82rem;color:var(--muted);margin-top:3px;line-height:1.4;max-width:64ch}
+  .company-head .badge{margin-left:auto;background:var(--gold);color:var(--navy);font-size:.76rem;font-weight:600;padding:5px 11px;white-space:nowrap}
   .company-head a.site{font-size:.82rem;color:var(--muted);text-decoration:none}
-  .company-head a.site:hover{color:var(--accent)}
+  .company-head a.site:hover{color:var(--navy)}
+
   .job{display:flex;align-items:center;gap:12px;padding:13px 20px;border-top:1px solid var(--border);text-decoration:none;color:inherit}
-  .job:hover{background:#f3f8fc}
-  .job .t{font-weight:550;font-size:.95rem}
+  .job:hover{background:#faf9f3}
+  .job .t{font-weight:500;font-size:.95rem}
   .job .m{font-size:.82rem;color:var(--muted);margin-top:2px}
-  .job .apply{margin-left:auto;color:var(--accent);font-size:.85rem;font-weight:600;white-space:nowrap}
-  .careers-link{display:block;padding:13px 20px;border-top:1px solid var(--border);font-size:.88rem;color:var(--biv-blue-light);text-decoration:none}
-  .careers-link:hover{background:#f3f8fc}
+  .job .new{color:var(--navy);font-weight:600}
+  .job .apply{margin-left:auto;background:var(--gold);color:var(--navy);font-size:.82rem;font-weight:600;padding:6px 12px;white-space:nowrap}
+  .careers-link{display:block;padding:13px 20px;border-top:1px solid var(--border);font-size:.88rem;font-weight:500;color:var(--navy);text-decoration:none}
+  .careers-link:hover{background:#faf9f3}
   .empty{padding:40px;text-align:center;color:var(--muted)}
-  footer{text-align:center;padding:30px;font-size:.82rem;color:var(--muted)}
-  footer a{color:var(--biv-blue-light)}
+
+  footer{background:var(--cream);margin-top:40px;padding:30px 24px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:center}
+  footer .logo-lockup{margin-bottom:0;border-color:var(--navy);background:var(--navy);color:#fff}
+  footer .ft{font-size:.86rem;color:var(--navy)}
+  footer .ft .upd{color:var(--muted);margin-top:3px}
+  footer a{color:var(--navy);font-weight:500}
   @media(max-width:640px){.company-head{flex-wrap:wrap}.company-head .badge{margin-left:0}}
 </style>
 </head>
 <body>
 <header>
+  <div class="logo-lockup">Burnt<br>Island<br>Ventures</div>
   <h1>Water Jobs</h1>
   <p>Open roles across the Burnt Island Ventures portfolio</p>
   <div class="stats" id="stats"></div>
@@ -68,8 +86,11 @@
 </div>
 
 <footer>
-  A <a href="https://www.burntislandventures.com">Burnt Island Ventures</a> portfolio jobs board ·
-  <span id="updated"></span>
+  <div class="logo-lockup">Burnt<br>Island<br>Ventures</div>
+  <div class="ft">
+    A <a href="https://www.burntislandventures.com">Burnt Island Ventures</a> portfolio jobs board
+    <div class="upd" id="updated"></div>
+  </div>
 </footer>
 
 <script>
@@ -119,20 +140,53 @@ function matches(j, q, loc, dept){
 }
 
 function initials(name){ return name.split(/\s+/).map(w=>w[0]).join("").slice(0,2).toUpperCase(); }
+function domainOf(url){ return (url||"").replace(/^https?:\/\/(www\.)?/,"").split("/")[0]; }
+
+// Real logo via icon.horse, then Google favicon, then initials tile.
+// Logo source cascade: Visible (BIV-curated) → icon.horse → Google favicon → initials tile.
+function logoHtml(c){
+  const d = domainOf(c.website);
+  const chain = [];
+  if (c.logo) chain.push(c.logo);
+  chain.push("https://icon.horse/icon/" + d);
+  chain.push("https://www.google.com/s2/favicons?domain=" + d + "&sz=128");
+  const rest = chain.slice(1).join("|");
+  return `<img class="logo" alt="${esc(c.name)} logo" loading="lazy"
+    src="${esc(chain[0])}" data-rest="${esc(rest)}" data-init="${esc(initials(c.name))}"
+    onerror="logoFallback(this)">`;
+}
+function logoFallback(img){
+  const rest = (img.dataset.rest || "").split("|").filter(Boolean);
+  if (rest.length){ img.src = rest.shift(); img.dataset.rest = rest.join("|"); return; }
+  const tile = document.createElement("div");
+  tile.className = "logo init"; tile.textContent = img.dataset.init;
+  img.replaceWith(tile);
+}
+
+function daysAgo(iso){
+  if(!iso) return "";
+  const d = (Date.now() - new Date(iso).getTime()) / 86400000;
+  if (isNaN(d) || d < 0) return "";
+  if (d < 14) return `New · ${Math.max(1,Math.round(d))}d ago`;
+  return "";
+}
 
 function companyCard(c, jobsHtml, badge){
   return `<div class="company">
     <div class="company-head">
-      <div class="logo">${initials(c.name)}</div>
-      <div><h2>${esc(c.name)}</h2><a class="site" href="${esc(c.website)}" target="_blank" rel="noopener">${esc(c.website.replace(/^https?:\/\/(www\.)?/,""))}</a></div>
+      ${logoHtml(c)}
+      <div><h2>${esc(c.name)}</h2>${c.description ? `<div class="desc">${esc(c.description)}</div>` : ""}<a class="site" href="${esc(c.website)}" target="_blank" rel="noopener">${esc(domainOf(c.website))}</a></div>
       ${badge ? `<span class="badge">${badge}</span>` : ""}
     </div>${jobsHtml}</div>`;
 }
 
 function jobRow(j){
+  const fresh = daysAgo(j.posted_at);
   const meta = [j.location, j.department].filter(Boolean).join(" · ");
+  const metaHtml = (meta || fresh)
+    ? `<div class="m">${esc(meta)}${fresh ? `${meta ? " · " : ""}<span class="new">${fresh}</span>` : ""}</div>` : "";
   return `<a class="job" href="${esc(j.url)}" target="_blank" rel="noopener">
-    <div><div class="t">${esc(j.title)}</div>${meta ? `<div class="m">${esc(meta)}</div>` : ""}</div>
+    <div><div class="t">${esc(j.title)}</div>${metaHtml}</div>
     <span class="apply">Apply →</span></a>`;
 }
 
@@ -150,7 +204,7 @@ function render(){
       count += visible.length;
       html += companyCard(c, visible.map(jobRow).join(""), `${visible.length} open role${visible.length>1?"s":""}`);
     } else {
-      if (q && !c.name.toLowerCase().includes(q) && !visible.length) continue;
+      if (q && !(c.name + " " + (c.description||"")).toLowerCase().includes(q) && !visible.length) continue;
       count++;
       const inner = visible.length ? visible.map(jobRow).join("")
         : `<a class="careers-link" href="${esc(c.careers_url)}" target="_blank" rel="noopener">View careers page →</a>`;
