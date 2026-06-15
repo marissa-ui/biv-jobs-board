@@ -1,12 +1,12 @@
 {
-  "_comment": "BIV portfolio config. ats: greenhouse | lever | ashby | workable | recruitee | breezy | null. When ats is null, the company appears on the board with a 'View careers page' link only. Fill in ats/slug as companies confirm their ATS.",
+  "_comment": "BIV portfolio config. ats: greenhouse | lever | ashby | workable | recruitee | breezy | gusto | null. When ats is null, the company appears on the board with a 'View careers page' link only (the scraper still tries to auto-detect an ATS on the careers page). Fill in ats/slug as companies confirm their ATS. For gusto, slug is the full board id from the jobs.gusto.com/boards/<slug> URL.",
   "companies": [
     { "name": "2S Water",         "website": "https://2swater.com",                 "careers_url": "https://2swater.com",                          "ats": null, "slug": null },
     { "name": "Aclarity",         "website": "https://www.aclaritywater.com",       "careers_url": "https://www.aclaritywater.com/careers",         "ats": null, "slug": null },
     { "name": "AlgaFilm",         "website": "https://algafilm.com",                "careers_url": "https://algafilm.com",                          "ats": null, "slug": null },
     { "name": "Aqua Membranes",   "website": "https://aquamembranes.com",           "careers_url": "https://aquamembranes.com",                     "ats": null, "slug": null },
     { "name": "Aquafortus",       "website": "https://www.aquafortus.net",          "careers_url": "https://www.aquafortus.net",                    "ats": null, "slug": null },
-    { "name": "Aquatic Labs",     "website": "https://www.aquatic-labs.com",        "careers_url": "https://www.aquatic-labs.com",                  "ats": null, "slug": null },
+    { "name": "Aquatic Labs",     "website": "https://www.aquatic-labs.com",        "careers_url": "https://www.aquatic-labs.com/careers",          "ats": "gusto", "slug": "aquatic-labs-8d113062-708f-4c04-ba0f-e3fe1c9ef468" },
     { "name": "AquiSense",        "website": "https://aquisense.com",               "careers_url": "https://aquisense.com/careers/",                "ats": null, "slug": null },
     { "name": "Beagle Services",  "website": "https://www.beagleservices.com",      "careers_url": "https://www.beagleservices.com",                "ats": null, "slug": null },
     { "name": "Cala Systems",     "website": "https://www.calasystems.com",         "careers_url": "https://www.calasystems.com",                   "ats": null, "slug": null },
@@ -21,14 +21,14 @@
     { "name": "NLine Energy",     "website": "https://www.nlineenergy.com",         "careers_url": "https://www.nlineenergy.com",                   "ats": null, "slug": null },
     { "name": "Power & Water",    "website": "https://www.powerandwater.com",       "careers_url": "https://www.powerandwater.com",                 "ats": null, "slug": null },
     { "name": "Previsico",        "website": "https://previsico.com",               "careers_url": "https://previsico.com",                         "ats": null, "slug": null },
-    { "name": "SewerAI",          "website": "https://www.sewerai.com",             "careers_url": "https://www.sewerai.com/careers",               "ats": null, "slug": null },
+    { "name": "SewerAI",          "website": "https://www.sewerai.com",             "careers_url": "https://www.sewerai.com/careers",               "ats": "ashby", "slug": "sewer-ai" },
     { "name": "Showerstream",     "website": "https://showerstream.net",            "careers_url": "https://showerstream.net",                      "ats": null, "slug": null },
     { "name": "Spout",            "website": "https://www.spoutwater.com",          "careers_url": "https://www.spoutwater.com",                    "ats": null, "slug": null },
     { "name": "Subeca",           "website": "https://www.subeca.com",              "careers_url": "https://www.subeca.com",                        "ats": null, "slug": null },
     { "name": "SwiftComply",      "website": "https://www.swiftcomply.com",         "careers_url": "https://www.swiftcomply.com/careers/",          "ats": null, "slug": null },
     { "name": "TeamSolve",        "website": "https://teamsolve.com",               "careers_url": "https://teamsolve.com",                         "ats": null, "slug": null },
     { "name": "Waterly",          "website": "https://www.waterly.com",             "careers_url": "https://www.waterly.com",                       "ats": null, "slug": null },
-    { "name": "Ziptility",        "website": "https://www.ziptility.com",           "careers_url": "https://www.ziptility.com",                     "ats": null, "slug": null },
-    { "name": "ZwitterCo",        "website": "https://zwitterco.com",               "careers_url": "https://zwitterco.com/careers/",                "ats": null, "slug": null }
+    { "name": "Ziptility",        "website": "https://www.ziptility.com",           "careers_url": "https://www.ziptility.com",                     "ats": "workable", "slug": "ziptility" },
+    { "name": "ZwitterCo",        "website": "https://zwitterco.com",               "careers_url": "https://zwitterco.com/careers/",                "ats": "breezy", "slug": "zwitterco" }
   ]
 }
