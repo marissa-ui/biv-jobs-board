@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jobs — Burnt Island Ventures Portfolio</title>
+<title>Jobs at Burnt Island Ventures</title>
 <meta name="description" content="Open roles across the Burnt Island Ventures portfolio. Build your career in water.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,7 +103,7 @@
     <a class="act act-outline" href="https://daffy-column-d14.notion.site/dbabdf667d8349f8819bd78887e5a4cb?pvs=105" target="_blank" rel="noopener">Join the Talent Network →</a>
     <input type="file" id="resumeFile" accept=".pdf,.doc,.docx,.txt" hidden>
   </div>
-  <p class="hero-note">Upload your resume and we’ll highlight the open roles that best fit your background. It’s matched entirely in your browser — your file is never uploaded or stored.</p>
+  <p class="hero-note">Upload your resume and we’ll highlight the open roles that best fit your background. It’s matched entirely in your browser, so your file is never uploaded or stored.</p>
 </header>
 
 <div class="controls">
@@ -136,7 +136,7 @@ let view = "jobs";
 
 fetch("jobs.json").then(r => r.json()).then(d => { DATA = d; init(); })
   .catch(() => { document.getElementById("list").innerHTML =
-    '<div class="empty">Could not load jobs.json — serve this folder over HTTP (e.g. <code>python3 -m http.server</code>).</div>'; });
+    '<div class="empty">Could not load jobs.json. Serve this folder over HTTP (e.g. <code>python3 -m http.server</code>).</div>'; });
 
 function init(){
   const jobs = allJobs();
@@ -175,7 +175,7 @@ function passesFilters(j, loc, dept){
 }
 
 // Lightweight smart search: understands role synonyms, seniority and work mode,
-// and ranks jobs by fit — entirely in the browser, no server or API needed.
+// and ranks jobs by fit, entirely in the browser; no server or API needed.
 const SYN = {
   "engineering":["engineer","engineering","developer","dev","software","swe","frontend","front end","front-end","backend","back end","back-end","full stack","fullstack","full-stack","devops","infrastructure","infra","platform","mobile","ios","android","embedded","firmware","hardware","mechanical","electrical"],
   "data & ml":["data","analytics","analyst","scientist","ml","machine learning","ai","artificial intelligence","data science"],
