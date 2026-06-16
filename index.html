@@ -80,6 +80,7 @@
   .act-gold{background:var(--gold);color:var(--navy);border-color:var(--gold)}
   .act-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
   .act-outline:hover{border-color:#fff}
+  .hero-note{margin:14px auto 0;max-width:580px;font-size:.82rem;line-height:1.5;color:rgba(255,255,255,.72)}
   .resumebar{background:var(--card);border:1px solid var(--border);padding:12px 16px;margin-bottom:16px;font-size:.88rem;color:var(--text);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
   .resumebar[hidden]{display:none}
   .resumebar .clearbtn{margin-left:auto;background:var(--navy);color:#fff;border:none;font-family:inherit;font-size:.82rem;font-weight:600;padding:6px 12px;cursor:pointer}
@@ -98,10 +99,11 @@
   <p>Open roles across the Burnt Island Ventures portfolio</p>
   <div class="stats" id="stats"></div>
   <div class="hero-actions">
-    <button class="act act-gold" id="resumeBtn">Match my résumé to roles</button>
+    <button class="act act-gold" id="resumeBtn">Match my resume to roles</button>
     <a class="act act-outline" href="https://daffy-column-d14.notion.site/dbabdf667d8349f8819bd78887e5a4cb?pvs=105" target="_blank" rel="noopener">Join the Talent Network →</a>
     <input type="file" id="resumeFile" accept=".pdf,.doc,.docx,.txt" hidden>
   </div>
+  <p class="hero-note">Upload your resume and we’ll highlight the open roles that best fit your background. It’s matched entirely in your browser — your file is never uploaded or stored.</p>
 </header>
 
 <div class="controls">
@@ -347,7 +349,7 @@ function renderResumeMatches(){
   const byC={}; DATA.companies.forEach(c=>byC[c.name]=c);
   const scored = allJobs().map(j=>{ const c=byC[j.company]; return {j,c,s:matchScore(j,c,window.RESUME)}; }).filter(x=>x.s>0).sort((a,b)=>b.s-a.s);
   const maxS = scored.length?scored[0].s:0;
-  document.getElementById("count").textContent = scored.length ? (scored.length+" role"+(scored.length===1?"":"s")+" match your résumé") : "No close matches";
+  document.getElementById("count").textContent = scored.length ? (scored.length+" role"+(scored.length===1?"":"s")+" match your resume") : "No close matches";
   if(!scored.length){ list.innerHTML='<div class="empty">No close matches found. Join the Talent Network and we’ll reach out when something fits.</div>'; return; }
   list.innerHTML='<div class="results">'+scored.map(function(x){
     const j=x.j,c=x.c,s=x.s;
@@ -362,7 +364,7 @@ function renderResumeMatches(){
   btn.onclick=function(){ file.click(); };
   file.onchange=async function(e){
     const f=e.target.files[0]; if(!f) return;
-    bar.hidden=false; bar.innerHTML="Reading your résumé…";
+    bar.hidden=false; bar.innerHTML="Reading your resume…";
     let text="";
     try{
       if(/\.pdf$/i.test(f.name)){ const ab=await f.arrayBuffer(); const pdf=await pdfjsLib.getDocument({data:ab}).promise; for(let p=1;p<=pdf.numPages;p++){ const pg=await pdf.getPage(p); const tc=await pg.getTextContent(); text+=" "+tc.items.map(i=>i.str).join(" "); } }
@@ -371,7 +373,7 @@ function renderResumeMatches(){
     }catch(err){ bar.innerHTML="Couldn’t read that file. Please try a PDF, DOCX, or TXT."; return; }
     if((text||"").replace(/\s+/g," ").trim().length<40){ bar.innerHTML="Couldn’t pull enough text (a scanned PDF?). Try another file, or use search."; return; }
     window.RESUME=resumeInfo(text);
-    bar.innerHTML='Showing roles matched to <strong>'+esc(f.name)+'</strong>. Your résumé stays in your browser. <button class="clearbtn" id="clearResume">Clear</button>';
+    bar.innerHTML='Showing roles matched to <strong>'+esc(f.name)+'</strong>. Your resume stays in your browser. <button class="clearbtn" id="clearResume">Clear</button>';
     document.getElementById("clearResume").onclick=function(){ window.RESUME=null; bar.hidden=true; bar.innerHTML=""; render(); };
     document.getElementById("q").value=""; document.getElementById("loc").value=""; document.getElementById("dept").value="";
     setView("jobs"); render();
