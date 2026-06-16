@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-15T20:13:53.475674+00:00",
-  "total_jobs": 24,
+  "generated_at": "2026-06-16T11:32:08.672738+00:00",
+  "total_jobs": 26,
   "companies": [
     {
       "name": "2S Water",
@@ -388,7 +388,14 @@
           "location": "Woburn, MA",
           "department": "Operations",
           "url": "https://zwitterco.breezy.hr/p/a7d4d6c9f3ed-external-manufacturing-manager",
-          "posted_at": "2026-06-09T19:14:40.582Z"
+          "posted_at": "2026-06-15T21:47:11.243Z"
+        },
+        {
+          "title": "Inventory / Supply Chain Analyst",
+          "location": "Woburn, MA",
+          "department": null,
+          "url": "https://zwitterco.breezy.hr/p/8ba50b4af7b5-inventory-supply-chain-analyst",
+          "posted_at": "2026-06-15T21:52:07.121Z"
         },
         {
           "title": "Quality Control Technician",
@@ -403,6 +410,13 @@
           "department": "Sales",
           "url": "https://zwitterco.breezy.hr/p/694f04e2d168-senior-sales-engineer-us",
           "posted_at": "2026-03-31T02:26:49.244Z"
+        },
+        {
+          "title": "Senior Supply Chain Planner",
+          "location": "Woburn, MA",
+          "department": null,
+          "url": "https://zwitterco.breezy.hr/p/027bff606c25-senior-supply-chain-planner",
+          "posted_at": "2026-06-15T21:56:04.272Z"
         }
       ]
     }
