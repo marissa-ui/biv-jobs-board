@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-16T11:32:08.672738+00:00",
-  "total_jobs": 26,
+  "generated_at": "2026-06-17T11:15:34.644783+00:00",
+  "total_jobs": 21,
   "companies": [
     {
       "name": "2S Water",
@@ -270,13 +270,6 @@
           "posted_at": "2025-09-24T17:35:46.462+00:00"
         },
         {
-          "title": "Senior Staff Accountant",
-          "location": "Hybrid",
-          "department": "G&A",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/1f34345d-5fc4-4fd6-86ed-5cac1aa1837a",
-          "posted_at": "2026-04-28T22:44:14.366+00:00"
-        },
-        {
           "title": "ML Ops Engineer (AI)",
           "location": "Remote",
           "department": "Engineering",
@@ -317,6 +310,13 @@
           "department": "G&A",
           "url": "https://jobs.ashbyhq.com/sewer-ai/fd529f60-e0a1-45ad-8a0f-56764828ddd2",
           "posted_at": "2026-06-04T16:58:10.981+00:00"
+        },
+        {
+          "title": "NASSCO Data Technician \u2014 Temp-to-Hire",
+          "location": "Remote",
+          "department": "COGS",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/f9401e64-1cc5-41b8-9653-ea85c550bd94",
+          "posted_at": "2026-06-16T20:29:57.589+00:00"
         }
       ]
     },
@@ -382,43 +382,7 @@
       "careers_url": "https://zwitterco.com/careers/",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/0babb9bd-624e-4a5f-9d8e-71622e475404/zwitterco.com",
       "description": "Fouling-resistant membranes for industrial wastewater and food processing",
-      "jobs": [
-        {
-          "title": "External Manufacturing Manager",
-          "location": "Woburn, MA",
-          "department": "Operations",
-          "url": "https://zwitterco.breezy.hr/p/a7d4d6c9f3ed-external-manufacturing-manager",
-          "posted_at": "2026-06-15T21:47:11.243Z"
-        },
-        {
-          "title": "Inventory / Supply Chain Analyst",
-          "location": "Woburn, MA",
-          "department": null,
-          "url": "https://zwitterco.breezy.hr/p/8ba50b4af7b5-inventory-supply-chain-analyst",
-          "posted_at": "2026-06-15T21:52:07.121Z"
-        },
-        {
-          "title": "Quality Control Technician",
-          "location": "Woburn, MA",
-          "department": "Operations",
-          "url": "https://zwitterco.breezy.hr/p/a27be753ba36-quality-control-technician",
-          "posted_at": "2026-06-09T19:08:41.974Z"
-        },
-        {
-          "title": "Senior Sales Engineer (US)",
-          "location": "United States",
-          "department": "Sales",
-          "url": "https://zwitterco.breezy.hr/p/694f04e2d168-senior-sales-engineer-us",
-          "posted_at": "2026-03-31T02:26:49.244Z"
-        },
-        {
-          "title": "Senior Supply Chain Planner",
-          "location": "Woburn, MA",
-          "department": null,
-          "url": "https://zwitterco.breezy.hr/p/027bff606c25-senior-supply-chain-planner",
-          "posted_at": "2026-06-15T21:56:04.272Z"
-        }
-      ]
+      "jobs": []
     }
   ]
 }
