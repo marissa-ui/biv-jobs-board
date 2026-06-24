@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T10:03:02.306881+00:00",
+  "generated_at": "2026-06-24T09:49:44.738837+00:00",
   "total_jobs": 26,
   "companies": [
     {
@@ -298,13 +298,6 @@
           "posted_at": "2026-05-20T23:48:27.916+00:00"
         },
         {
-          "title": "Sales Development Representative",
-          "location": "Remote",
-          "department": "Sales & Marketing",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/e667996d-c027-4ab2-b7bd-f828ef93dcb0",
-          "posted_at": "2026-06-01T15:23:33.325+00:00"
-        },
-        {
           "title": "Contracts Administrator",
           "location": "Hybrid ",
           "department": "G&A",
@@ -317,6 +310,13 @@
           "department": "COGS",
           "url": "https://jobs.ashbyhq.com/sewer-ai/f9401e64-1cc5-41b8-9653-ea85c550bd94",
           "posted_at": "2026-06-16T20:29:57.589+00:00"
+        },
+        {
+          "title": "Accounts Receivable Specialist",
+          "location": "Hybrid",
+          "department": "G&A",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/74f4fefb-15fa-4149-9839-3b77660c5723",
+          "posted_at": "2026-06-23T16:38:44.206+00:00"
         }
       ]
     },
