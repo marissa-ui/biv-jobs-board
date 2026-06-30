@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T11:22:29.519296+00:00",
+  "generated_at": "2026-06-30T10:00:13.518028+00:00",
   "total_jobs": 28,
   "companies": [
     {
@@ -258,12 +258,12 @@
         {
           "title": "Wastewater Civil Engineer",
           "location": "Hybrid",
-          "department": "Engineering",
+          "department": "Product & Design",
           "url": "https://jobs.ashbyhq.com/sewer-ai/244621fe-f6e9-488f-81d5-49d4bbc40a9f",
           "posted_at": "2026-06-26T20:40:44.663+00:00"
         },
         {
-          "title": "Senior Staff Software Engineer",
+          "title": "Senior Software Engineer",
           "location": "Remote",
           "department": "Engineering",
           "url": "https://jobs.ashbyhq.com/sewer-ai/264e4c4a-8a2b-4a49-9bbc-23413a64ab4b",
@@ -282,13 +282,6 @@
           "department": "Engineering",
           "url": "https://jobs.ashbyhq.com/sewer-ai/6e2ce43b-de4d-43ad-81dc-0b7d0d10a50d",
           "posted_at": "2026-06-26T22:59:39.283+00:00"
-        },
-        {
-          "title": "ML Ops Engineer (AI)",
-          "location": "Remote",
-          "department": "Engineering",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/6f08a873-0f08-42d1-a636-73d218fea5e0",
-          "posted_at": "2026-04-28T22:39:17.996+00:00"
         },
         {
           "title": "Accounts Receivable Specialist",
@@ -324,6 +317,13 @@
           "department": "COGS",
           "url": "https://jobs.ashbyhq.com/sewer-ai/f9401e64-1cc5-41b8-9653-ea85c550bd94",
           "posted_at": "2026-06-16T20:29:57.589+00:00"
+        },
+        {
+          "title": "Inbound Sales Development Representative",
+          "location": "Remote",
+          "department": "Sales & Marketing",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/fc9f9d34-efaa-43e4-bc98-c75ec4b7dd3b",
+          "posted_at": "2026-06-29T19:20:34.214+00:00"
         },
         {
           "title": "Contracts Administrator",
