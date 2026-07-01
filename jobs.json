@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T10:00:13.518028+00:00",
+  "generated_at": "2026-07-01T10:09:23.467344+00:00",
   "total_jobs": 28,
   "companies": [
     {
@@ -109,13 +109,6 @@
           "department": "Customer Success",
           "url": "https://jobs.ashbyhq.com/civilgrid/34f42cc9-c4d0-44f0-99a1-7cfbb7788c7b",
           "posted_at": "2026-05-08T17:56:06.838+00:00"
-        },
-        {
-          "title": "Utility Research Operations Specialist",
-          "location": "Charlotte",
-          "department": "Data",
-          "url": "https://jobs.ashbyhq.com/civilgrid/52cdcdb1-cd69-4a75-8268-ad91fbd2aacf",
-          "posted_at": "2026-05-05T15:11:55.980+00:00"
         },
         {
           "title": "Staff Front End Engineer",
@@ -296,6 +289,13 @@
           "department": "Sales & Marketing",
           "url": "https://jobs.ashbyhq.com/sewer-ai/7993418f-75e0-40f8-b932-bd4a1be0b647",
           "posted_at": "2026-05-20T23:48:27.916+00:00"
+        },
+        {
+          "title": "Financial Planning & Analysis, Sr. Manager",
+          "location": "Hybrid ",
+          "department": "G&A",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/8bcf20ce-1427-4cf1-b59c-72abd43e2b62",
+          "posted_at": "2026-06-30T15:57:25.978+00:00"
         },
         {
           "title": "Senior Product Manager, AI & Operations",
