@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-06T10:58:42.980169+00:00",
-  "total_jobs": 28,
+  "generated_at": "2026-07-07T10:00:37.781368+00:00",
+  "total_jobs": 25,
   "companies": [
     {
       "name": "2S Water",
@@ -96,27 +96,6 @@
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/19a19a78-3433-4d57-96c6-c665403fd5de/civilgrid.com",
       "description": "Construction intelligence platform aggregating site data for developers and engineers",
       "jobs": [
-        {
-          "title": "Account Executive - Government",
-          "location": "Remote / Boston / Charlotte / Philadelphia",
-          "department": "Sales",
-          "url": "https://jobs.ashbyhq.com/civilgrid/11b15865-01a2-43a3-80e6-1665be97bde9",
-          "posted_at": "2026-05-22T16:10:03.496+00:00"
-        },
-        {
-          "title": "Head of Customer Success",
-          "location": "San Francisco",
-          "department": "Customer Success",
-          "url": "https://jobs.ashbyhq.com/civilgrid/34f42cc9-c4d0-44f0-99a1-7cfbb7788c7b",
-          "posted_at": "2026-05-08T17:56:06.838+00:00"
-        },
-        {
-          "title": "Staff Front End Engineer",
-          "location": "Boston",
-          "department": "Product & Engineering",
-          "url": "https://jobs.ashbyhq.com/civilgrid/81c7cc74-7346-4128-acc3-60f451563f11",
-          "posted_at": "2026-05-07T01:15:01.504+00:00"
-        },
         {
           "title": "Head of Product",
           "location": "San Francisco / Boston",
