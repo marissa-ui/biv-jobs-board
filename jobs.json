@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-07T10:00:37.781368+00:00",
-  "total_jobs": 25,
+  "generated_at": "2026-07-08T08:44:53.679011+00:00",
+  "total_jobs": 26,
   "companies": [
     {
       "name": "2S Water",
@@ -96,6 +96,13 @@
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/19a19a78-3433-4d57-96c6-c665403fd5de/civilgrid.com",
       "description": "Construction intelligence platform aggregating site data for developers and engineers",
       "jobs": [
+        {
+          "title": "Computer Vision Engineer",
+          "location": "Boston",
+          "department": "Product & Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/67d7852c-de46-4903-80ff-4351a6d10f40",
+          "posted_at": "2026-07-07T17:06:19.740+00:00"
+        },
         {
           "title": "Head of Product",
           "location": "San Francisco / Boston",
