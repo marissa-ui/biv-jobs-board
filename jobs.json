@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-09T10:07:26.835130+00:00",
-  "total_jobs": 26,
+  "generated_at": "2026-07-10T09:53:23.653674+00:00",
+  "total_jobs": 27,
   "companies": [
     {
       "name": "2S Water",
@@ -132,6 +132,13 @@
           "posted_at": "2026-05-07T01:07:44.403+00:00"
         },
         {
+          "title": "Digitization Project Manager",
+          "location": "Remote / Charlotte / Kansas City / Denver",
+          "department": "Data",
+          "url": "https://jobs.ashbyhq.com/civilgrid/efc87fb0-9bd0-4ed7-9352-169488802391",
+          "posted_at": "2026-07-10T00:47:23.708+00:00"
+        },
+        {
           "title": "Engineering Manager",
           "location": "Boston",
           "department": "Product & Engineering",
@@ -228,11 +235,11 @@
       "description": "AI that analyzes sewer-pipe inspection footage and detects defects",
       "jobs": [
         {
-          "title": "Wastewater Civil Engineer",
+          "title": "General Application",
           "location": "Hybrid",
-          "department": "Product & Design",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/244621fe-f6e9-488f-81d5-49d4bbc40a9f",
-          "posted_at": "2026-06-26T20:40:44.663+00:00"
+          "department": "Any Department",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/58eccfc8-69ea-476d-a556-5b19c2c7b308",
+          "posted_at": "2025-09-24T17:35:46.462+00:00"
         },
         {
           "title": "Senior Software Engineer",
@@ -242,25 +249,11 @@
           "posted_at": "2026-04-30T18:24:51.656+00:00"
         },
         {
-          "title": "General Application",
+          "title": "Senior Product Manager, AI & Operations",
           "location": "Hybrid",
-          "department": "Any Department",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/58eccfc8-69ea-476d-a556-5b19c2c7b308",
-          "posted_at": "2025-09-24T17:35:46.462+00:00"
-        },
-        {
-          "title": "ProServe Solutions Engineer",
-          "location": "Remote",
-          "department": "Engineering",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/6e2ce43b-de4d-43ad-81dc-0b7d0d10a50d",
-          "posted_at": "2026-06-26T22:59:39.283+00:00"
-        },
-        {
-          "title": "Accounts Receivable Specialist",
-          "location": "Hybrid",
-          "department": "G&A",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/74f4fefb-15fa-4149-9839-3b77660c5723",
-          "posted_at": "2026-06-23T16:38:44.206+00:00"
+          "department": "Product & Design",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/a4c332fb-4247-43d2-96d2-eb57ceca9db4",
+          "posted_at": "2026-05-21T22:12:48.791+00:00"
         },
         {
           "title": "VP of Customer Success",
@@ -270,32 +263,11 @@
           "posted_at": "2026-05-20T23:48:27.916+00:00"
         },
         {
-          "title": "VP of Product",
-          "location": "Hybrid ",
-          "department": "Product & Design",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/853ff8c2-1759-432d-a86f-2cb1d0d086ec",
-          "posted_at": "2026-07-02T18:44:56.179+00:00"
-        },
-        {
-          "title": "Financial Planning & Analysis, Sr. Manager",
+          "title": "Contracts Administrator",
           "location": "Hybrid ",
           "department": "G&A",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/8bcf20ce-1427-4cf1-b59c-72abd43e2b62",
-          "posted_at": "2026-06-30T15:57:25.978+00:00"
-        },
-        {
-          "title": "Senior Product Manager, AI & Operations",
-          "location": "Hybrid",
-          "department": "Product & Design",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/a4c332fb-4247-43d2-96d2-eb57ceca9db4",
-          "posted_at": "2026-05-21T22:12:48.791+00:00"
-        },
-        {
-          "title": "Junior Analytics Engineer",
-          "location": "Hybrid ",
-          "department": "Engineering",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/e08c2c76-acea-4742-bd6f-32482c819b8c",
-          "posted_at": "2026-06-26T22:29:18.033+00:00"
+          "url": "https://jobs.ashbyhq.com/sewer-ai/fd529f60-e0a1-45ad-8a0f-56764828ddd2",
+          "posted_at": "2026-06-04T16:58:10.981+00:00"
         },
         {
           "title": "NASSCO Data Technician \u2014 Temp-to-Hire",
@@ -305,6 +277,41 @@
           "posted_at": "2026-06-16T20:29:57.589+00:00"
         },
         {
+          "title": "Accounts Receivable Specialist",
+          "location": "Hybrid",
+          "department": "G&A",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/74f4fefb-15fa-4149-9839-3b77660c5723",
+          "posted_at": "2026-06-23T16:38:44.206+00:00"
+        },
+        {
+          "title": "Wastewater Civil Engineer",
+          "location": "Hybrid",
+          "department": "Product & Design",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/244621fe-f6e9-488f-81d5-49d4bbc40a9f",
+          "posted_at": "2026-06-26T20:40:44.663+00:00"
+        },
+        {
+          "title": "Junior Analytics Engineer",
+          "location": "Hybrid ",
+          "department": "Engineering",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/e08c2c76-acea-4742-bd6f-32482c819b8c",
+          "posted_at": "2026-06-26T22:29:18.033+00:00"
+        },
+        {
+          "title": "ProServe Solutions Engineer",
+          "location": "Remote",
+          "department": "Engineering",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/6e2ce43b-de4d-43ad-81dc-0b7d0d10a50d",
+          "posted_at": "2026-06-26T22:59:39.283+00:00"
+        },
+        {
+          "title": "VP of Product",
+          "location": "Hybrid ",
+          "department": "Product & Design",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/853ff8c2-1759-432d-a86f-2cb1d0d086ec",
+          "posted_at": "2026-07-02T18:44:56.179+00:00"
+        },
+        {
           "title": "Inbound Sales Development Representative",
           "location": "Remote",
           "department": "Sales & Marketing",
@@ -312,11 +319,11 @@
           "posted_at": "2026-06-29T19:20:34.214+00:00"
         },
         {
-          "title": "Contracts Administrator",
+          "title": "Financial Planning & Analysis, Sr. Manager",
           "location": "Hybrid ",
           "department": "G&A",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/fd529f60-e0a1-45ad-8a0f-56764828ddd2",
-          "posted_at": "2026-06-04T16:58:10.981+00:00"
+          "url": "https://jobs.ashbyhq.com/sewer-ai/8bcf20ce-1427-4cf1-b59c-72abd43e2b62",
+          "posted_at": "2026-06-30T15:57:25.978+00:00"
         }
       ]
     },
