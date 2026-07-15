@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-14T08:26:42.318122+00:00",
-  "total_jobs": 25,
+  "generated_at": "2026-07-15T08:33:01.235767+00:00",
+  "total_jobs": 26,
   "companies": [
     {
       "name": "2S Water",
@@ -96,6 +96,13 @@
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/19a19a78-3433-4d57-96c6-c665403fd5de/civilgrid.com",
       "description": "Construction intelligence platform aggregating site data for developers and engineers",
       "jobs": [
+        {
+          "title": "Head of Customer Success",
+          "location": "San Francisco",
+          "department": "Customer Success",
+          "url": "https://jobs.ashbyhq.com/civilgrid/34f42cc9-c4d0-44f0-99a1-7cfbb7788c7b",
+          "posted_at": "2026-07-14T21:56:14.524+00:00"
+        },
         {
           "title": "Computer Vision Engineer",
           "location": "Boston",
