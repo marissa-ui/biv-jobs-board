@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-15T08:33:01.235767+00:00",
-  "total_jobs": 26,
+  "generated_at": "2026-07-16T08:31:13.622340+00:00",
+  "total_jobs": 24,
   "companies": [
     {
       "name": "2S Water",
@@ -55,13 +55,6 @@
           "department": "",
           "url": "https://jobs.gusto.com/postings/aquatic-labs-open-application-ffaf5a29-4c35-4d7a-915c-fb9610a2afb0",
           "posted_at": ""
-        },
-        {
-          "title": "Senior Mechanical Engineer - Manufacturing & Product Development",
-          "location": "Cambridge, MA",
-          "department": "",
-          "url": "https://jobs.gusto.com/postings/aquatic-labs-senior-mechanical-engineer-manufacturing-product-development-75f067a6-08c8-4e2a-8f28-d43655ddd5de",
-          "posted_at": ""
         }
       ]
     },
@@ -97,27 +90,6 @@
       "description": "Construction intelligence platform aggregating site data for developers and engineers",
       "jobs": [
         {
-          "title": "Head of Customer Success",
-          "location": "San Francisco",
-          "department": "Customer Success",
-          "url": "https://jobs.ashbyhq.com/civilgrid/34f42cc9-c4d0-44f0-99a1-7cfbb7788c7b",
-          "posted_at": "2026-07-14T21:56:14.524+00:00"
-        },
-        {
-          "title": "Computer Vision Engineer",
-          "location": "Boston",
-          "department": "Product & Engineering",
-          "url": "https://jobs.ashbyhq.com/civilgrid/67d7852c-de46-4903-80ff-4351a6d10f40",
-          "posted_at": "2026-07-07T17:06:19.740+00:00"
-        },
-        {
-          "title": "Senior Account Executive - Utilities",
-          "location": "Remote / San Francisco",
-          "department": "Sales",
-          "url": "https://jobs.ashbyhq.com/civilgrid/a7af8803-c3ff-4722-8f70-631a5d9cb525",
-          "posted_at": "2026-05-22T16:09:48.265+00:00"
-        },
-        {
           "title": "Product Marketing Manager",
           "location": "San Francisco / Boston / Remote",
           "department": "Marketing",
@@ -132,11 +104,32 @@
           "posted_at": "2026-05-07T01:07:44.403+00:00"
         },
         {
+          "title": "Head of Customer Success",
+          "location": "San Francisco",
+          "department": "Customer Success",
+          "url": "https://jobs.ashbyhq.com/civilgrid/34f42cc9-c4d0-44f0-99a1-7cfbb7788c7b",
+          "posted_at": "2026-07-14T21:56:14.524+00:00"
+        },
+        {
           "title": "Engineering Manager",
           "location": "Boston",
           "department": "Product & Engineering",
           "url": "https://jobs.ashbyhq.com/civilgrid/f5f553c1-01c6-4eed-8e16-98889a65710c",
           "posted_at": "2026-05-12T13:03:34.994+00:00"
+        },
+        {
+          "title": "Senior Account Executive - Utilities",
+          "location": "Remote / San Francisco",
+          "department": "Sales",
+          "url": "https://jobs.ashbyhq.com/civilgrid/a7af8803-c3ff-4722-8f70-631a5d9cb525",
+          "posted_at": "2026-05-22T16:09:48.265+00:00"
+        },
+        {
+          "title": "Computer Vision Engineer",
+          "location": "Boston",
+          "department": "Product & Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/67d7852c-de46-4903-80ff-4351a6d10f40",
+          "posted_at": "2026-07-07T17:06:19.740+00:00"
         }
       ]
     },
@@ -396,13 +389,6 @@
           "department": null,
           "url": "https://zwitterco.breezy.hr/p/8ba50b4af7b5-inventory-supply-chain-analyst",
           "posted_at": "2026-06-15T21:52:07.121Z"
-        },
-        {
-          "title": "Quality Control Technician",
-          "location": "Woburn, MA",
-          "department": "Operations",
-          "url": "https://zwitterco.breezy.hr/p/a27be753ba36-quality-control-technician",
-          "posted_at": "2026-06-09T19:08:41.974Z"
         },
         {
           "title": "Senior Sales Engineer (US)",
