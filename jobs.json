@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-16T08:31:13.622340+00:00",
-  "total_jobs": 24,
+  "generated_at": "2026-07-17T08:26:11.710655+00:00",
+  "total_jobs": 25,
   "companies": [
     {
       "name": "2S Water",
@@ -310,6 +310,13 @@
           "department": "G&A",
           "url": "https://jobs.ashbyhq.com/sewer-ai/8bcf20ce-1427-4cf1-b59c-72abd43e2b62",
           "posted_at": "2026-06-30T15:57:25.978+00:00"
+        },
+        {
+          "title": "Account Executive",
+          "location": "Remote",
+          "department": "Sales & Marketing",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/c13f0d51-ee3e-44f0-8c46-d75d37a26e87",
+          "posted_at": "2026-07-16T22:37:04.544+00:00"
         }
       ]
     },
