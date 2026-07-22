@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-21T08:44:17.931280+00:00",
-  "total_jobs": 25,
+  "generated_at": "2026-07-22T08:44:24.337826+00:00",
+  "total_jobs": 26,
   "companies": [
     {
       "name": "2S Water",
@@ -305,14 +305,14 @@
           "posted_at": "2026-06-29T19:20:34.214+00:00"
         },
         {
-          "title": "Financial Planning & Analysis, Sr. Manager",
-          "location": "Hybrid ",
-          "department": "G&A",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/8bcf20ce-1427-4cf1-b59c-72abd43e2b62",
-          "posted_at": "2026-06-30T15:57:25.978+00:00"
+          "title": "Account Executive, Enterprise",
+          "location": "Remote",
+          "department": "Sales & Marketing",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/69c33686-9a00-4dba-8f22-1f45112b4c82",
+          "posted_at": "2026-07-21T17:24:34.438+00:00"
         },
         {
-          "title": "Account Executive",
+          "title": "Account Executive, SMB (Municipal & Utility)",
           "location": "Remote",
           "department": "Sales & Marketing",
           "url": "https://jobs.ashbyhq.com/sewer-ai/c13f0d51-ee3e-44f0-8c46-d75d37a26e87",
@@ -324,6 +324,13 @@
           "department": "Sales & Marketing",
           "url": "https://jobs.ashbyhq.com/sewer-ai/1ce4681f-b2f1-403b-95c1-85bbf66950b9",
           "posted_at": "2026-07-17T15:13:02.559+00:00"
+        },
+        {
+          "title": "Account Executive, Mid-Market",
+          "location": "Remote",
+          "department": "Sales & Marketing",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/931eacf2-91ce-408b-a5e7-c9d266d5987d",
+          "posted_at": "2026-07-21T21:30:57.622+00:00"
         }
       ]
     },
