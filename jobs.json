@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-23T08:45:20.138295+00:00",
-  "total_jobs": 26,
+  "generated_at": "2026-07-24T08:41:20.495730+00:00",
+  "total_jobs": 27,
   "companies": [
     {
       "name": "2S Water",
@@ -331,6 +331,13 @@
           "department": "G&A",
           "url": "https://jobs.ashbyhq.com/sewer-ai/6b556e1c-b3e0-4b55-bb78-629a3a10bd21",
           "posted_at": "2026-07-22T16:48:37.150+00:00"
+        },
+        {
+          "title": "Outbound, Sales Development Representative",
+          "location": "Remote",
+          "department": "Sales & Marketing",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/c44fab48-ecda-4c67-8c4b-9628822f4d3f",
+          "posted_at": "2026-07-23T19:34:49.258+00:00"
         }
       ]
     },
@@ -402,7 +409,7 @@
           "location": "Woburn, MA",
           "department": "Operations",
           "url": "https://zwitterco.breezy.hr/p/a7d4d6c9f3ed-external-manufacturing-manager",
-          "posted_at": "2026-07-17T21:11:35.360Z"
+          "posted_at": "2026-07-23T18:16:43.724Z"
         },
         {
           "title": "Senior Sales Engineer (US)",
