@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-24T08:41:20.495730+00:00",
-  "total_jobs": 27,
+  "generated_at": "2026-07-25T08:21:39.172875+00:00",
+  "total_jobs": 29,
   "companies": [
     {
       "name": "2S Water",
@@ -97,13 +97,6 @@
           "posted_at": "2026-06-15T18:21:48.752+00:00"
         },
         {
-          "title": "Full Stack Engineer",
-          "location": "Boston",
-          "department": "Product & Engineering",
-          "url": "https://jobs.ashbyhq.com/civilgrid/da8e47bb-0383-490a-810a-c64cd3e26970",
-          "posted_at": "2026-05-07T01:07:44.403+00:00"
-        },
-        {
           "title": "Head of Customer Success",
           "location": "San Francisco",
           "department": "Customer Success",
@@ -130,6 +123,27 @@
           "department": "Product & Engineering",
           "url": "https://jobs.ashbyhq.com/civilgrid/67d7852c-de46-4903-80ff-4351a6d10f40",
           "posted_at": "2026-07-07T17:06:19.740+00:00"
+        },
+        {
+          "title": "Customer Success Manager - US East",
+          "location": "Remote / Boston / Charlotte",
+          "department": "Customer Success",
+          "url": "https://jobs.ashbyhq.com/civilgrid/a9c27a0f-59f3-4066-b8c6-2e210480c1ce",
+          "posted_at": "2026-07-24T21:01:33.198+00:00"
+        },
+        {
+          "title": "SWE II Backend Engineer",
+          "location": "Boston",
+          "department": "Product & Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/afe23d29-00cd-438e-ac4f-0368d261742e",
+          "posted_at": "2026-07-24T17:39:19.066+00:00"
+        },
+        {
+          "title": "Senior Backend Engineer",
+          "location": "Boston",
+          "department": "Product & Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/01d9ae3e-7388-43b7-90e4-c7f5e1fa3a18",
+          "posted_at": "2026-07-24T17:47:44.046+00:00"
         }
       ]
     },
