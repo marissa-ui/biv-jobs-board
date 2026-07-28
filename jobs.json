@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-27T10:08:48.153222+00:00",
-  "total_jobs": 29,
+  "generated_at": "2026-07-28T08:50:46.413207+00:00",
+  "total_jobs": 30,
   "companies": [
     {
       "name": "2S Water",
@@ -97,13 +97,6 @@
           "posted_at": "2026-06-15T18:21:48.752+00:00"
         },
         {
-          "title": "Head of Customer Success",
-          "location": "San Francisco",
-          "department": "Customer Success",
-          "url": "https://jobs.ashbyhq.com/civilgrid/34f42cc9-c4d0-44f0-99a1-7cfbb7788c7b",
-          "posted_at": "2026-07-14T21:56:14.524+00:00"
-        },
-        {
           "title": "Engineering Manager",
           "location": "Boston",
           "department": "Product & Engineering",
@@ -126,7 +119,7 @@
         },
         {
           "title": "Customer Success Manager - US East",
-          "location": "Remote / Boston / Charlotte",
+          "location": "Remote / Boston / Charlotte / Philadelphia",
           "department": "Customer Success",
           "url": "https://jobs.ashbyhq.com/civilgrid/a9c27a0f-59f3-4066-b8c6-2e210480c1ce",
           "posted_at": "2026-07-24T21:01:33.198+00:00"
@@ -144,6 +137,13 @@
           "department": "Product & Engineering",
           "url": "https://jobs.ashbyhq.com/civilgrid/01d9ae3e-7388-43b7-90e4-c7f5e1fa3a18",
           "posted_at": "2026-07-24T17:47:44.046+00:00"
+        },
+        {
+          "title": "Customer Success Manager - US Central",
+          "location": "Remote / Kansas City / Denver",
+          "department": "Customer Success",
+          "url": "https://jobs.ashbyhq.com/civilgrid/e0dc3345-2163-4758-a67b-c1962000cfab",
+          "posted_at": "2026-07-27T19:57:49.426+00:00"
         }
       ]
     },
@@ -345,6 +345,13 @@
           "department": "G&A",
           "url": "https://jobs.ashbyhq.com/sewer-ai/6b556e1c-b3e0-4b55-bb78-629a3a10bd21",
           "posted_at": "2026-07-22T16:48:37.150+00:00"
+        },
+        {
+          "title": "Technical Account Manager",
+          "location": "Remote",
+          "department": "COGS",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/3e70623d-eb4c-469f-97e3-349ec55e03e2",
+          "posted_at": "2026-07-27T23:08:29.027+00:00"
         },
         {
           "title": "Outbound, Sales Development Representative",
