@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-28T08:50:46.413207+00:00",
-  "total_jobs": 30,
+  "generated_at": "2026-07-29T08:55:34.102150+00:00",
+  "total_jobs": 26,
   "companies": [
     {
       "name": "2S Water",
@@ -118,20 +118,6 @@
           "posted_at": "2026-07-07T17:06:19.740+00:00"
         },
         {
-          "title": "Customer Success Manager - US East",
-          "location": "Remote / Boston / Charlotte / Philadelphia",
-          "department": "Customer Success",
-          "url": "https://jobs.ashbyhq.com/civilgrid/a9c27a0f-59f3-4066-b8c6-2e210480c1ce",
-          "posted_at": "2026-07-24T21:01:33.198+00:00"
-        },
-        {
-          "title": "SWE II Backend Engineer",
-          "location": "Boston",
-          "department": "Product & Engineering",
-          "url": "https://jobs.ashbyhq.com/civilgrid/afe23d29-00cd-438e-ac4f-0368d261742e",
-          "posted_at": "2026-07-24T17:39:19.066+00:00"
-        },
-        {
           "title": "Senior Backend Engineer",
           "location": "Boston",
           "department": "Product & Engineering",
@@ -139,11 +125,11 @@
           "posted_at": "2026-07-24T17:47:44.046+00:00"
         },
         {
-          "title": "Customer Success Manager - US Central",
-          "location": "Remote / Kansas City / Denver",
-          "department": "Customer Success",
-          "url": "https://jobs.ashbyhq.com/civilgrid/e0dc3345-2163-4758-a67b-c1962000cfab",
-          "posted_at": "2026-07-27T19:57:49.426+00:00"
+          "title": "Software Developer in Test",
+          "location": "Boston",
+          "department": "Product & Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/9accbdad-aa59-47f1-b240-c1357f79b33a",
+          "posted_at": "2026-07-28T22:41:50.390+00:00"
         }
       ]
     },
@@ -249,13 +235,6 @@
           "posted_at": "2026-04-30T18:24:51.656+00:00"
         },
         {
-          "title": "Senior Product Manager, AI & Operations",
-          "location": "Hybrid",
-          "department": "Product & Design",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/a4c332fb-4247-43d2-96d2-eb57ceca9db4",
-          "posted_at": "2026-05-21T22:12:48.791+00:00"
-        },
-        {
           "title": "VP of Customer Success",
           "location": "Hybrid",
           "department": "Sales & Marketing",
@@ -289,13 +268,6 @@
           "department": "Engineering",
           "url": "https://jobs.ashbyhq.com/sewer-ai/e08c2c76-acea-4742-bd6f-32482c819b8c",
           "posted_at": "2026-06-26T22:29:18.033+00:00"
-        },
-        {
-          "title": "ProServe Solutions Engineer",
-          "location": "Remote",
-          "department": "Engineering",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/6e2ce43b-de4d-43ad-81dc-0b7d0d10a50d",
-          "posted_at": "2026-06-26T22:59:39.283+00:00"
         },
         {
           "title": "VP of Product",
