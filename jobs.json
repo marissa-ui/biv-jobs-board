@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-29T08:55:34.102150+00:00",
-  "total_jobs": 26,
+  "generated_at": "2026-07-30T08:45:09.106222+00:00",
+  "total_jobs": 27,
   "companies": [
     {
       "name": "2S Water",
@@ -331,6 +331,13 @@
           "department": "Sales & Marketing",
           "url": "https://jobs.ashbyhq.com/sewer-ai/c44fab48-ecda-4c67-8c4b-9628822f4d3f",
           "posted_at": "2026-07-23T19:34:49.258+00:00"
+        },
+        {
+          "title": "HR Generalist",
+          "location": "Hybrid",
+          "department": "G&A",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/368d1a71-b9de-431b-81a7-a63cf88a1de5",
+          "posted_at": "2026-07-29T17:10:51.462+00:00"
         }
       ]
     },
@@ -416,7 +423,7 @@
           "location": "Woburn, MA",
           "department": null,
           "url": "https://zwitterco.breezy.hr/p/027bff606c25-senior-supply-chain-planner",
-          "posted_at": "2026-06-16T21:24:19.779Z"
+          "posted_at": "2026-07-29T17:51:12.692Z"
         }
       ]
     }
