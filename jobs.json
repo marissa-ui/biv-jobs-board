@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-03T10:04:57.069922+00:00",
-  "total_jobs": 26,
+  "generated_at": "2026-08-04T08:55:32.064623+00:00",
+  "total_jobs": 25,
   "companies": [
     {
       "name": "2S Water",
@@ -123,13 +123,6 @@
           "department": "Product & Engineering",
           "url": "https://jobs.ashbyhq.com/civilgrid/01d9ae3e-7388-43b7-90e4-c7f5e1fa3a18",
           "posted_at": "2026-07-24T17:47:44.046+00:00"
-        },
-        {
-          "title": "Software Developer in Test",
-          "location": "Boston",
-          "department": "Product & Engineering",
-          "url": "https://jobs.ashbyhq.com/civilgrid/9accbdad-aa59-47f1-b240-c1357f79b33a",
-          "posted_at": "2026-07-28T22:41:50.390+00:00"
         }
       ]
     },
