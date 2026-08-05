@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-04T08:55:32.064623+00:00",
-  "total_jobs": 25,
+  "generated_at": "2026-08-05T08:52:09.734038+00:00",
+  "total_jobs": 23,
   "companies": [
     {
       "name": "2S Water",
@@ -90,13 +90,6 @@
       "description": "Construction intelligence platform aggregating site data for developers and engineers",
       "jobs": [
         {
-          "title": "Product Marketing Manager",
-          "location": "San Francisco / Boston / Remote",
-          "department": "Marketing",
-          "url": "https://jobs.ashbyhq.com/civilgrid/d0afac7f-aa47-4f63-a229-496d497020e5",
-          "posted_at": "2026-06-15T18:21:48.752+00:00"
-        },
-        {
           "title": "Engineering Manager",
           "location": "Boston",
           "department": "Product & Engineering",
@@ -109,13 +102,6 @@
           "department": "Sales",
           "url": "https://jobs.ashbyhq.com/civilgrid/a7af8803-c3ff-4722-8f70-631a5d9cb525",
           "posted_at": "2026-05-22T16:09:48.265+00:00"
-        },
-        {
-          "title": "Computer Vision Engineer",
-          "location": "Boston",
-          "department": "Product & Engineering",
-          "url": "https://jobs.ashbyhq.com/civilgrid/67d7852c-de46-4903-80ff-4351a6d10f40",
-          "posted_at": "2026-07-07T17:06:19.740+00:00"
         },
         {
           "title": "Senior Backend Engineer",
