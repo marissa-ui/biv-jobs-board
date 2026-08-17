@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-16T06:56:56.499475+00:00",
-  "total_jobs": 21,
+  "generated_at": "2026-08-17T07:13:23.017914+00:00",
+  "total_jobs": 23,
   "companies": [
     {
       "name": "2S Water",
@@ -89,6 +89,20 @@
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/19a19a78-3433-4d57-96c6-c665403fd5de/civilgrid.com",
       "description": "Construction intelligence platform aggregating site data for developers and engineers",
       "jobs": [
+        {
+          "title": "Director/Senior Director, Product Management",
+          "location": "Boston",
+          "department": "Product & Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/932fa162-00f3-494d-98e8-d7bdcebd6c8e",
+          "posted_at": "2026-08-17T00:02:19.430+00:00"
+        },
+        {
+          "title": "UX Researcher",
+          "location": "Boston / San Francisco",
+          "department": "Product & Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/a24e063f-7ee6-4941-a4ec-fed6d2b60763",
+          "posted_at": "2026-08-17T00:35:44.574+00:00"
+        },
         {
           "title": "Engineering Manager",
           "location": "Boston",
