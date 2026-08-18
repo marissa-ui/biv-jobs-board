@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-17T07:13:23.017914+00:00",
-  "total_jobs": 23,
+  "generated_at": "2026-08-18T06:59:37.090140+00:00",
+  "total_jobs": 25,
   "companies": [
     {
       "name": "2S Water",
@@ -92,21 +92,21 @@
         {
           "title": "Director/Senior Director, Product Management",
           "location": "Boston",
-          "department": "Product & Engineering",
+          "department": "Product",
           "url": "https://jobs.ashbyhq.com/civilgrid/932fa162-00f3-494d-98e8-d7bdcebd6c8e",
           "posted_at": "2026-08-17T00:02:19.430+00:00"
         },
         {
           "title": "UX Researcher",
           "location": "Boston / San Francisco",
-          "department": "Product & Engineering",
+          "department": "Product",
           "url": "https://jobs.ashbyhq.com/civilgrid/a24e063f-7ee6-4941-a4ec-fed6d2b60763",
           "posted_at": "2026-08-17T00:35:44.574+00:00"
         },
         {
           "title": "Engineering Manager",
           "location": "Boston",
-          "department": "Product & Engineering",
+          "department": "Engineering",
           "url": "https://jobs.ashbyhq.com/civilgrid/f5f553c1-01c6-4eed-8e16-98889a65710c",
           "posted_at": "2026-05-12T13:03:34.994+00:00"
         },
@@ -116,6 +116,20 @@
           "department": "Sales",
           "url": "https://jobs.ashbyhq.com/civilgrid/a7af8803-c3ff-4722-8f70-631a5d9cb525",
           "posted_at": "2026-05-22T16:09:48.265+00:00"
+        },
+        {
+          "title": "Senior UX Designer",
+          "location": "Boston",
+          "department": "Product",
+          "url": "https://jobs.ashbyhq.com/civilgrid/77638cea-216f-46b9-8442-a97ff68f569e",
+          "posted_at": "2026-08-17T15:32:04.152+00:00"
+        },
+        {
+          "title": "Account Executive - Government",
+          "location": "Remote / San Francisco",
+          "department": "Sales",
+          "url": "https://jobs.ashbyhq.com/civilgrid/7553450f-4663-4c5c-840f-3df6c9d124dd",
+          "posted_at": "2026-08-18T01:11:09.632+00:00"
         }
       ]
     },
