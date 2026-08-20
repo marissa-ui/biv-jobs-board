@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T06:59:37.090140+00:00",
-  "total_jobs": 25,
+  "generated_at": "2026-08-20T07:01:32.940239+00:00",
+  "total_jobs": 23,
   "companies": [
     {
       "name": "2S Water",
@@ -95,13 +95,6 @@
           "department": "Product",
           "url": "https://jobs.ashbyhq.com/civilgrid/932fa162-00f3-494d-98e8-d7bdcebd6c8e",
           "posted_at": "2026-08-17T00:02:19.430+00:00"
-        },
-        {
-          "title": "UX Researcher",
-          "location": "Boston / San Francisco",
-          "department": "Product",
-          "url": "https://jobs.ashbyhq.com/civilgrid/a24e063f-7ee6-4941-a4ec-fed6d2b60763",
-          "posted_at": "2026-08-17T00:35:44.574+00:00"
         },
         {
           "title": "Engineering Manager",
@@ -226,13 +219,6 @@
           "department": "Any Department",
           "url": "https://jobs.ashbyhq.com/sewer-ai/58eccfc8-69ea-476d-a556-5b19c2c7b308",
           "posted_at": "2025-09-24T17:35:46.462+00:00"
-        },
-        {
-          "title": "Senior Software Engineer",
-          "location": "Remote",
-          "department": "Engineering",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/264e4c4a-8a2b-4a49-9bbc-23413a64ab4b",
-          "posted_at": "2026-04-30T18:24:51.656+00:00"
         },
         {
           "title": "VP of Customer Success",
