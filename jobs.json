@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T07:01:32.940239+00:00",
-  "total_jobs": 23,
+  "generated_at": "2026-08-21T07:01:29.929422+00:00",
+  "total_jobs": 24,
   "companies": [
     {
       "name": "2S Water",
@@ -109,6 +109,13 @@
           "department": "Sales",
           "url": "https://jobs.ashbyhq.com/civilgrid/a7af8803-c3ff-4722-8f70-631a5d9cb525",
           "posted_at": "2026-05-22T16:09:48.265+00:00"
+        },
+        {
+          "title": "Business Development Representative",
+          "location": "Boston / Remote",
+          "department": "Sales",
+          "url": "https://jobs.ashbyhq.com/civilgrid/4497c0dd-09e8-4b9c-915b-47cbbac049df",
+          "posted_at": "2026-08-20T21:15:13.897+00:00"
         },
         {
           "title": "Senior UX Designer",
