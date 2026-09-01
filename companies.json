@@ -31,9 +31,9 @@
     {
       "name": "Aqua Membranes",
       "website": "https://aquamembranes.com",
-      "careers_url": "https://aquamembranes.com",
-      "ats": null,
-      "slug": null,
+      "careers_url": "https://aquamembranes.com/careers/",
+      "ats": "bamboohr",
+      "slug": "aquamembranes",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/59cfe07d-4371-4d37-a249-5a5ff27a8052/Screenshot_2026-06-09_at_2_24_16_PM.png",
       "description": "Printed spacer technology for higher-performance reverse-osmosis membranes"
     },
@@ -103,9 +103,9 @@
     {
       "name": "Daupler",
       "website": "https://daupler.com",
-      "careers_url": "https://daupler.com/careers",
-      "ats": null,
-      "slug": null,
+      "careers_url": "https://daupler.com/about-us/careers",
+      "ats": "bamboohr",
+      "slug": "daupler",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/c71c7b07-fe3d-4e08-8774-e1e0e43aa875/daupler.com",
       "description": "Software to triage and manage utility response to network issues"
     },
