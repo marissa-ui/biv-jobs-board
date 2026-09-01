@@ -126,6 +126,32 @@ def fetch_breezy(slug):
     ]
 
 
+def fetch_bamboohr(slug):
+    """BambooHR public board. The board page itself is client-rendered, but
+    /careers/list serves the same postings as JSON. Location arrives in either
+    `location` or `atsLocation`, and neither carries a posting date."""
+    data = get_json(f"https://{slug}.bamboohr.com/careers/list")
+    jobs = []
+    for j in data.get("result", []):
+        loc = j.get("location") or {}
+        ats = j.get("atsLocation") or {}
+        parts = [
+            loc.get("city") or ats.get("city"),
+            loc.get("state") or ats.get("state") or ats.get("province"),
+        ]
+        location = ", ".join(p for p in parts if p)
+        if not location and j.get("isRemote"):
+            location = "Remote"
+        jobs.append({
+            "title": j.get("jobOpeningName", "").strip(),
+            "location": location,
+            "department": j.get("departmentLabel", "") or "",
+            "url": f"https://{slug}.bamboohr.com/careers/{j['id']}",
+            "posted_at": "",
+        })
+    return [j for j in jobs if j["title"]]
+
+
 def _parse_gusto(html):
     """Parse postings out of a Gusto public board page (server-rendered HTML).
     Each posting is an <a href="/postings/..."> wrapping an <h3> title and
@@ -173,6 +199,7 @@ FETCHERS = {
     "recruitee": fetch_recruitee,
     "breezy": fetch_breezy,
     "gusto": fetch_gusto,
+    "bamboohr": fetch_bamboohr,
 }
 
 # ---------------------------------------------------------------------------
@@ -190,6 +217,7 @@ ATS_URL_PATTERNS = {
     "recruitee":  r"https?://([A-Za-z0-9-]+)\.recruitee\.com",
     "breezy":     r"https?://([A-Za-z0-9-]+)\.breezy\.hr",
     "gusto":      r"jobs\.gusto\.com/boards/([A-Za-z0-9-]+)",
+    "bamboohr":   r"https?://([A-Za-z0-9-]+)\.bamboohr\.com",
 }
 SLUG_BLOCKLIST = {"api", "www", "embed", "j", "jobs", "careers"}
 
