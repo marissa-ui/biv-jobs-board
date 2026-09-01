@@ -6,19 +6,31 @@ on:
   workflow_dispatch:        # manual "Run workflow" button
 permissions:
   contents: write
+concurrency:
+  group: update-jobs
+  cancel-in-progress: false
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with: { python-version: "3.12" }
-      - run: pip install requests playwright && playwright install chromium --with-deps
-      - run: python fetch_jobs.py --render
+      - run: pip install "requests==2.34.2"
+      - run: python fetch_jobs.py
       - name: Commit updated jobs.json
         run: |
+          total=$(python -c "import json; print(json.load(open('jobs.json'))['total_jobs'])")
+          if [ "$total" -eq 0 ]; then
+            echo "::warning::Fetched 0 jobs - keeping the previous jobs.json rather than publishing an empty board."
+            git checkout -- jobs.json
+            exit 0
+          fi
           git config user.name "jobs-bot"
           git config user.email "actions@github.com"
           git add jobs.json
-          git diff --cached --quiet || git commit -m "Update jobs $(date -u +%F)"
+          git diff --cached --quiet && { echo "No change."; exit 0; }
+          git commit -m "Update jobs $(date -u +%F)"
+          git pull --rebase --autostash
           git push
