@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-31T13:28:45.778458+00:00",
-  "total_jobs": 18,
+  "generated_at": "2026-09-01T16:39:47.158684+00:00",
+  "total_jobs": 22,
   "companies": [
     {
       "name": "2S Water",
@@ -29,10 +29,25 @@
     {
       "name": "Aqua Membranes",
       "website": "https://aquamembranes.com",
-      "careers_url": "https://aquamembranes.com",
+      "careers_url": "https://aquamembranes.com/careers/",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/59cfe07d-4371-4d37-a249-5a5ff27a8052/Screenshot_2026-06-09_at_2_24_16_PM.png",
       "description": "Printed spacer technology for higher-performance reverse-osmosis membranes",
-      "jobs": []
+      "jobs": [
+        {
+          "title": "Production Technician",
+          "location": "Knoxville, Tennessee",
+          "department": "Production",
+          "url": "https://aquamembranes.bamboohr.com/careers/32",
+          "posted_at": ""
+        },
+        {
+          "title": "Sales Manager",
+          "location": "Knoxville, Tennessee",
+          "department": "Sales",
+          "url": "https://aquamembranes.bamboohr.com/careers/45",
+          "posted_at": ""
+        }
+      ]
     },
     {
       "name": "Aquafortus",
@@ -97,11 +112,11 @@
           "posted_at": "2026-08-17T00:02:19.430+00:00"
         },
         {
-          "title": "Business Development Representative",
-          "location": "Boston / Remote",
-          "department": "Sales",
-          "url": "https://jobs.ashbyhq.com/civilgrid/4497c0dd-09e8-4b9c-915b-47cbbac049df",
-          "posted_at": "2026-08-20T21:15:13.897+00:00"
+          "title": "Customer Success Manager - US East",
+          "location": "Remote / Boston / Charlotte / Philadelphia",
+          "department": "Customer Success",
+          "url": "https://jobs.ashbyhq.com/civilgrid/a9c27a0f-59f3-4066-b8c6-2e210480c1ce",
+          "posted_at": "2026-08-31T19:01:10.544+00:00"
         },
         {
           "title": "Senior UX Designer",
@@ -130,10 +145,25 @@
     {
       "name": "Daupler",
       "website": "https://daupler.com",
-      "careers_url": "https://daupler.com/careers",
+      "careers_url": "https://daupler.com/about-us/careers",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/c71c7b07-fe3d-4e08-8774-e1e0e43aa875/daupler.com",
       "description": "Software to triage and manage utility response to network issues",
-      "jobs": []
+      "jobs": [
+        {
+          "title": "Business Development Representative",
+          "location": "",
+          "department": "Sales",
+          "url": "https://daupler.bamboohr.com/careers/25",
+          "posted_at": ""
+        },
+        {
+          "title": "Account Manager",
+          "location": "Overland Park, Kansas",
+          "department": "Account Management",
+          "url": "https://daupler.bamboohr.com/careers/42",
+          "posted_at": ""
+        }
+      ]
     },
     {
       "name": "Flocean",
