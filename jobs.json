@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-02T11:04:35.060424+00:00",
-  "total_jobs": 21,
+  "generated_at": "2026-09-03T11:01:58.378317+00:00",
+  "total_jobs": 20,
   "companies": [
     {
       "name": "2S Water",
@@ -377,15 +377,7 @@
       "careers_url": "https://zwitterco.com/careers/",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/0babb9bd-624e-4a5f-9d8e-71622e475404/zwitterco.com",
       "description": "Fouling-resistant membranes for industrial wastewater and food processing",
-      "jobs": [
-        {
-          "title": "Senior Sales Engineer (US)",
-          "location": "United States",
-          "department": "Sales",
-          "url": "https://zwitterco.breezy.hr/p/694f04e2d168-senior-sales-engineer-us",
-          "posted_at": "2026-03-31T02:26:49.244Z"
-        }
-      ]
+      "jobs": []
     }
   ]
 }
