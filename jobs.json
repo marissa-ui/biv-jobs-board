@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T11:01:58.378317+00:00",
+  "generated_at": "2026-09-04T11:02:51.903480+00:00",
   "total_jobs": 20,
   "companies": [
     {
@@ -110,6 +110,13 @@
           "department": "Product",
           "url": "https://jobs.ashbyhq.com/civilgrid/932fa162-00f3-494d-98e8-d7bdcebd6c8e",
           "posted_at": "2026-08-17T00:02:19.430+00:00"
+        },
+        {
+          "title": "UX Researcher",
+          "location": "Boston / San Francisco",
+          "department": "Product",
+          "url": "https://jobs.ashbyhq.com/civilgrid/a24e063f-7ee6-4941-a4ec-fed6d2b60763",
+          "posted_at": "2026-09-03T19:25:15.375+00:00"
         },
         {
           "title": "Senior UX Designer",
@@ -298,13 +305,6 @@
           "department": "COGS",
           "url": "https://jobs.ashbyhq.com/sewer-ai/3e70623d-eb4c-469f-97e3-349ec55e03e2",
           "posted_at": "2026-07-27T23:08:29.027+00:00"
-        },
-        {
-          "title": "Outbound, Sales Development Representative",
-          "location": "Remote",
-          "department": "Sales & Marketing",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/c44fab48-ecda-4c67-8c4b-9628822f4d3f",
-          "posted_at": "2026-07-23T19:34:49.258+00:00"
         },
         {
           "title": "HR Generalist",
