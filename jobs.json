@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-04T11:02:51.903480+00:00",
-  "total_jobs": 20,
+  "generated_at": "2026-09-05T10:24:54.005374+00:00",
+  "total_jobs": 21,
   "companies": [
     {
       "name": "2S Water",
@@ -126,11 +126,18 @@
           "posted_at": "2026-08-17T15:32:04.152+00:00"
         },
         {
-          "title": "Account Executive - Government",
+          "title": "Account Executive - Government (California)",
           "location": "Remote / San Francisco",
           "department": "Sales",
           "url": "https://jobs.ashbyhq.com/civilgrid/7553450f-4663-4c5c-840f-3df6c9d124dd",
-          "posted_at": "2026-08-18T01:11:09.632+00:00"
+          "posted_at": "2026-09-04T17:57:24.951+00:00"
+        },
+        {
+          "title": "Account Executive - Government (Texas)",
+          "location": "Remote",
+          "department": "Sales",
+          "url": "https://jobs.ashbyhq.com/civilgrid/6496662d-bc9c-44e1-a7d8-11d6e2351033",
+          "posted_at": "2026-09-04T14:20:17.221+00:00"
         }
       ]
     },
