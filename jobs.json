@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T11:07:42.585956+00:00",
-  "total_jobs": 20,
+  "generated_at": "2026-09-10T11:03:48.229285+00:00",
+  "total_jobs": 21,
   "companies": [
     {
       "name": "2S Water",
@@ -312,6 +312,13 @@
           "department": "G&A",
           "url": "https://jobs.ashbyhq.com/sewer-ai/368d1a71-b9de-431b-81a7-a63cf88a1de5",
           "posted_at": "2026-07-29T17:10:51.462+00:00"
+        },
+        {
+          "title": "Revenue Operations Analyst",
+          "location": "Remote",
+          "department": "Sales & Marketing",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/f3039dc8-0ea7-4399-8e3d-b2d8bbba65fa",
+          "posted_at": "2026-09-09T22:05:37.192+00:00"
         }
       ]
     },
