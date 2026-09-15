@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-14T12:28:38.681627+00:00",
-  "total_jobs": 20,
+  "generated_at": "2026-09-15T11:32:44.000783+00:00",
+  "total_jobs": 21,
   "companies": [
     {
       "name": "2S Water",
@@ -131,6 +131,13 @@
           "department": "Sales",
           "url": "https://jobs.ashbyhq.com/civilgrid/6496662d-bc9c-44e1-a7d8-11d6e2351033",
           "posted_at": "2026-09-04T14:20:17.221+00:00"
+        },
+        {
+          "title": "Director of Sales",
+          "location": "Remote",
+          "department": "Sales",
+          "url": "https://jobs.ashbyhq.com/civilgrid/3cd23e2f-2aa6-4c89-81fd-11e990faab93",
+          "posted_at": "2026-09-14T22:33:50.917+00:00"
         }
       ]
     },
