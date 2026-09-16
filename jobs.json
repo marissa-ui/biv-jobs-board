@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T11:32:44.000783+00:00",
+  "generated_at": "2026-09-16T11:18:49.106503+00:00",
   "total_jobs": 21,
   "companies": [
     {
@@ -110,6 +110,13 @@
           "department": "Product",
           "url": "https://jobs.ashbyhq.com/civilgrid/932fa162-00f3-494d-98e8-d7bdcebd6c8e",
           "posted_at": "2026-08-17T00:02:19.430+00:00"
+        },
+        {
+          "title": "UX Researcher",
+          "location": "Boston",
+          "department": "Product",
+          "url": "https://jobs.ashbyhq.com/civilgrid/a24e063f-7ee6-4941-a4ec-fed6d2b60763",
+          "posted_at": "2026-09-15T16:08:49.000+00:00"
         },
         {
           "title": "Senior UX Designer",
@@ -305,13 +312,6 @@
           "department": "COGS",
           "url": "https://jobs.ashbyhq.com/sewer-ai/3e70623d-eb4c-469f-97e3-349ec55e03e2",
           "posted_at": "2026-07-27T23:08:29.027+00:00"
-        },
-        {
-          "title": "HR Generalist",
-          "location": "Hybrid",
-          "department": "G&A",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/368d1a71-b9de-431b-81a7-a63cf88a1de5",
-          "posted_at": "2026-07-29T17:10:51.462+00:00"
         },
         {
           "title": "Revenue Operations Analyst",
