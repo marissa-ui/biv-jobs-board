@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-16T11:18:49.106503+00:00",
-  "total_jobs": 21,
+  "generated_at": "2026-09-17T11:27:01.876828+00:00",
+  "total_jobs": 23,
   "companies": [
     {
       "name": "2S Water",
@@ -45,6 +45,13 @@
           "location": "Knoxville, Tennessee",
           "department": "Sales",
           "url": "https://aquamembranes.bamboohr.com/careers/45",
+          "posted_at": ""
+        },
+        {
+          "title": "Production Technician",
+          "location": "Albuquerque, New Mexico",
+          "department": "Production",
+          "url": "https://aquamembranes.bamboohr.com/careers/47",
           "posted_at": ""
         }
       ]
@@ -117,6 +124,13 @@
           "department": "Product",
           "url": "https://jobs.ashbyhq.com/civilgrid/a24e063f-7ee6-4941-a4ec-fed6d2b60763",
           "posted_at": "2026-09-15T16:08:49.000+00:00"
+        },
+        {
+          "title": "GIS Analyst",
+          "location": "Kansas City",
+          "department": "Data",
+          "url": "https://jobs.ashbyhq.com/civilgrid/e1f6f6c4-84e3-459c-84f4-c01ae5efcacf",
+          "posted_at": "2026-09-16T19:38:17.070+00:00"
         },
         {
           "title": "Senior UX Designer",
