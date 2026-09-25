@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T11:31:41.773257+00:00",
+  "generated_at": "2026-09-25T11:38:16.172055+00:00",
   "total_jobs": 22,
   "companies": [
     {
@@ -145,13 +145,6 @@
           "department": "Sales",
           "url": "https://jobs.ashbyhq.com/civilgrid/6496662d-bc9c-44e1-a7d8-11d6e2351033",
           "posted_at": "2026-09-04T14:20:17.221+00:00"
-        },
-        {
-          "title": "Director of Sales",
-          "location": "Remote",
-          "department": "Sales",
-          "url": "https://jobs.ashbyhq.com/civilgrid/3cd23e2f-2aa6-4c89-81fd-11e990faab93",
-          "posted_at": "2026-09-14T22:33:50.917+00:00"
         }
       ]
     },
@@ -326,6 +319,13 @@
           "department": "Sales & Marketing",
           "url": "https://jobs.ashbyhq.com/sewer-ai/f3039dc8-0ea7-4399-8e3d-b2d8bbba65fa",
           "posted_at": "2026-09-09T22:05:37.192+00:00"
+        },
+        {
+          "title": "Manager, Implementation & Professional Services",
+          "location": "Remote",
+          "department": "Engineering",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/6ebc9d93-6d42-46d3-abcf-071b3e01c31c",
+          "posted_at": "2026-09-24T20:36:10.364+00:00"
         }
       ]
     },
