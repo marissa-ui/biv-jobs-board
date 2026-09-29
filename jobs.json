@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-28T13:35:13.087436+00:00",
-  "total_jobs": 21,
+  "generated_at": "2026-09-29T12:35:57.196208+00:00",
+  "total_jobs": 22,
   "companies": [
     {
       "name": "2S Water",
@@ -256,6 +256,13 @@
           "department": "Any Department",
           "url": "https://jobs.ashbyhq.com/sewer-ai/58eccfc8-69ea-476d-a556-5b19c2c7b308",
           "posted_at": "2025-09-24T17:35:46.462+00:00"
+        },
+        {
+          "title": "Wastewater Civil Engineer",
+          "location": "Hybrid",
+          "department": "Product & Design",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/244621fe-f6e9-488f-81d5-49d4bbc40a9f",
+          "posted_at": "2026-09-28T15:27:11.678+00:00"
         },
         {
           "title": "VP of Product",
