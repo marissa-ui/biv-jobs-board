@@ -4,30 +4,27 @@ A self-hosted jobs board for the Burnt Island Ventures portfolio, working the sa
 
 ## How it works
 
-`companies.json` lists every portfolio company. For companies with a known ATS (Greenhouse, Lever, Ashby, Workable, Recruitee, or Breezy), `fetch_jobs.py` pulls their live openings and writes everything to `jobs.json`. `index.html` is a single-file static page that renders `jobs.json` with search and filters. Companies without a detected ATS still appear on the "All companies" tab with a link to their careers page.
+`companies.json` lists portfolio companies. `fetch_jobs.py` pulls public ATS feeds and selected employer careers pages into `jobs.json`. `index.html` renders the data with search and filters. Companies without verified openings still appear on the “All companies” tab with a careers link.
 
 ## Try it locally
 
 ```
 cd biv-jobs-board
-python3 -m http.server 8000
+pip install requests
+python -m unittest discover -s tests -v
+python fetch_jobs.py
+python -m http.server 8000
 ```
 
-Open http://localhost:8000 — it ships with live CivilGrid data (14 roles, fetched from their Ashby API) plus Floodbase's open role, so you can see exactly how it will look.
+Open http://localhost:8000 to see the latest generated data.
 
-To refresh the data: `pip install requests` then `python3 fetch_jobs.py`.
+## Coverage and diagnostics
 
-## Current ATS coverage
+The GitHub Actions workflow runs nightly and whenever the importer, configuration, tests, or workflow changes on `main`. It runs tests before refreshing. `jobs.json` records each company’s `source_status`: `ok`, `unverified`, `disabled`, `unsupported`, `error_stale`, or `error_no_prior` (plus `unsupported_stale` when applicable). It also lists fetch errors and companies with stale, unverified, disabled, or unsupported sources. If a fetch fails, previously published roles are retained and the workflow logs a warning. A successful zero-job response clears prior roles; a careers page without structured listings is marked unverified rather than confirmed empty.
 
-As of June 2026, probing found: CivilGrid → Ashby (confirmed, 14 live roles). Other companies' ATSs weren't directly identifiable, so their `ats` field in `companies.json` is `null`.
+Companies with `ats: null` are checked for an embedded ATS or schema.org JobPosting markup. Local `--render` support can run Playwright for JavaScript pages, but the production workflow runs without it. Prefer a direct ATS configuration when its board is verified. Floodbase has a dedicated parser for application links on its careers page.
 
-## Scraping fallback
-
-Companies with `ats: null` are scraped automatically from their careers page, in three layers: (1) detect an embedded or linked ATS in the page HTML (Greenhouse/Lever/Ashby/Workable/Recruitee/Breezy embeds) and switch to its clean API; (2) parse schema.org JobPosting markup, which many sites include for Google Jobs; (3) with the `--render` flag, execute the page's JavaScript via Playwright first — this catches client-rendered careers pages like SewerAI's. For `--render`: `pip install playwright && playwright install chromium`. The GitHub Actions workflow already runs with `--render`.
-
-If all three layers find nothing, the company still appears on the board with a careers-page link, so nothing silently disappears. Scraping is inherently less reliable than a configured ATS — when you learn a company's ATS, set `"ats"`/`"slug"` in `companies.json` and that company becomes rock-solid.
-
-Note on LinkedIn: this project deliberately does not scrape LinkedIn. Automated scraping violates LinkedIn's terms of service and is technically blocked; careers pages and ATS APIs are the legitimate sources for the same data.
+The project does not scrape LinkedIn.
 
 ## Deploying (free, ~30 minutes)
 
@@ -45,4 +42,4 @@ Your main site is on Squarespace. Squarespace can't run the nightly fetcher, so 
 
 ## Adding a company or ATS
 
-Add a line to `companies.json`. Supported `ats` values: `greenhouse`, `lever`, `ashby`, `workable`, `recruitee`, `breezy`. The slug is the company identifier in their job board URL, e.g. `jobs.ashbyhq.com/civilgrid` → slug `civilgrid`; `boards.greenhouse.io/acme` → slug `acme`.
+Add a line to `companies.json`. Supported `ats` values: `greenhouse`, `lever`, `ashby`, `workable`, `recruitee`, `breezy`, `bamboohr`, `gusto`, and the Floodbase-specific `floodbase`. The slug is the company identifier in their job board URL, e.g. `jobs.ashbyhq.com/civilgrid` → slug `civilgrid`; `boards.greenhouse.io/acme` → slug `acme`.

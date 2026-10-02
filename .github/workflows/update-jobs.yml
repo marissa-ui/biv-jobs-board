@@ -1,6 +1,13 @@
 # Refreshes jobs nightly and republishes the board via GitHub Pages.
 name: Update jobs
 on:
+  push:
+    branches: [main]
+    paths:
+      - companies.json
+      - fetch_jobs.py
+      - tests/**
+      - .github/workflows/update-jobs.yml
   schedule:
     - cron: "0 6 * * *"   # daily, 6:00 UTC
   workflow_dispatch:        # manual "Run workflow" button
@@ -18,7 +25,23 @@ jobs:
       - uses: actions/setup-python@v6
         with: { python-version: "3.12" }
       - run: pip install "requests==2.34.2"
+      - run: python -m unittest discover -s tests -v
       - run: python fetch_jobs.py
+      - name: Report source errors
+        run: |
+          python - <<'PY'
+          import json
+          data = json.load(open("jobs.json"))
+          errors = data.get("fetch_errors", [])
+          if errors:
+              print("::warning::" + str(len(errors)) + " source fetches failed; previous roles were retained where available.")
+              for error in errors:
+                  print("::warning::" + error)
+          for key in ("stale_companies", "unverified_companies", "disabled_companies", "unsupported_companies"):
+              names = data.get(key, [])
+              if names:
+                  print("::warning::" + key + ": " + ", ".join(names))
+          PY
       - name: Commit updated jobs.json
         run: |
           total=$(python -c "import json; print(json.load(open('jobs.json'))['total_jobs'])")

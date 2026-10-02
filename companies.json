@@ -1,5 +1,5 @@
 {
-  "_comment": "BIV portfolio config. ats: greenhouse | lever | ashby | workable | recruitee | breezy | gusto | null. When ats is null, the company appears on the board with a 'View careers page' link only (the scraper still tries to auto-detect an ATS on the careers page). Fill in ats/slug as companies confirm their ATS. For gusto, slug is the full board id from the jobs.gusto.com/boards/<slug> URL. logo + description are sourced from Visible (BIV portfolio profiles); logo falls back to icon.horse / favicon / initials if the URL ever fails.",
+  "_comment": "BIV portfolio config. ats: greenhouse | lever | ashby | workable | recruitee | breezy | gusto | bamboohr | floodbase | null. When ats is null, the company appears on the board with a 'View careers page' link only (the scraper still tries to auto-detect an ATS on the careers page). Fill in ats/slug as companies confirm their ATS. For gusto, slug is the full board id from the jobs.gusto.com/boards/<slug> URL. logo + description are sourced from Visible (BIV portfolio profiles); logo falls back to icon.horse / favicon / initials if the URL ever fails.",
   "companies": [
     {
       "name": "2S Water",
@@ -67,11 +67,20 @@
     {
       "name": "Beagle Services",
       "website": "https://www.beagleservices.com",
-      "careers_url": "https://www.beagleservices.com",
-      "ats": null,
-      "slug": null,
+      "careers_url": "https://beagle-services.breezy.hr/",
+      "ats": "breezy",
+      "slug": "beagle-services",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/6853dbc3-6c8a-4121-9e0c-5bf7834aae7d/beagle_services.com",
       "description": "Installer for home and commercial water IoT, leak detection, and shutoff"
+    },
+    {
+      "name": "Biota",
+      "website": "https://biota-labs.com/",
+      "careers_url": "https://biota-labs.com/",
+      "ats": null,
+      "slug": null,
+      "logo": null,
+      "description": "Rapid PFAS testing and laboratory tools for treatment and cleanup"
     },
     {
       "name": "Cala Systems",
@@ -101,6 +110,24 @@
       "description": "Sustainable, efficient equipment for commercial kitchens"
     },
     {
+      "name": "CREW Carbon",
+      "website": "https://crewcarbon.com/",
+      "careers_url": "https://crewcarbon.com/careers/",
+      "ats": "ashby",
+      "slug": "crewcarbon",
+      "logo": null,
+      "description": "Wastewater process intensification and carbon removal"
+    },
+    {
+      "name": "Current Software",
+      "website": "https://www.currentsoftware.app/",
+      "careers_url": "https://www.currentsoftware.app/",
+      "ats": null,
+      "slug": null,
+      "logo": null,
+      "description": "Cloud-native billing and payments software for water utilities"
+    },
+    {
       "name": "Daupler",
       "website": "https://daupler.com",
       "careers_url": "https://daupler.com/about-us/careers",
@@ -108,6 +135,15 @@
       "slug": "daupler",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/c71c7b07-fe3d-4e08-8774-e1e0e43aa875/daupler.com",
       "description": "Software to triage and manage utility response to network issues"
+    },
+    {
+      "name": "EPOCH",
+      "website": "https://epoch.blue/",
+      "careers_url": "https://epoch.blue/",
+      "ats": null,
+      "slug": null,
+      "logo": null,
+      "description": "First-mile data and environmental intelligence for supply chains"
     },
     {
       "name": "Flocean",
@@ -122,7 +158,7 @@
       "name": "Floodbase",
       "website": "https://www.floodbase.com",
       "careers_url": "https://www.floodbase.com/careers",
-      "ats": null,
+      "ats": "floodbase",
       "slug": null,
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/8e003798-7fd9-44db-9a0c-570278872709/floodbase.com",
       "description": "Near real-time flood tracking, powering parametric flood insurance"
@@ -234,6 +270,16 @@
       "slug": null,
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/0d93de67-76e7-4877-ad8b-297655bb0b5e/teamsolve.com",
       "description": "Generative-AI operations and maintenance assistant for water and energy utilities"
+    },
+    {
+      "name": "Verdi",
+      "website": "https://www.verdi.ag/",
+      "careers_url": "https://verdiag.applytojobs.ca/",
+      "ats": null,
+      "slug": null,
+      "logo": null,
+      "description": "Irrigation automation and controls for farms",
+      "scrape": false
     },
     {
       "name": "Waterly",

@@ -15,9 +15,12 @@ Deps:   pip install requests
 """
 
 import json
+import re
 import sys
 from datetime import datetime, timezone
+from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlparse, urlunparse
 
 import requests
 
@@ -191,6 +194,97 @@ def fetch_gusto(slug):
     return jobs
 
 
+class _FloodbaseLinks(HTMLParser):
+    """Collect application links and their visible text from Floodbase's careers page."""
+
+    def __init__(self):
+        super().__init__()
+        self.links = []
+        self.current = None
+        self.title_depth = 0
+        self.title_parts = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "a":
+            href = dict(attrs).get("href", "")
+            parsed = urlparse(href)
+            if parsed.netloc.lower() in {"tally.so", "www.tally.so"} and parsed.path.startswith("/r/"):
+                clean_url = urlunparse(("https", "tally.so", parsed.path.rstrip("/"), "", "", ""))
+                self.current = {"url": clean_url, "parts": [], "titles": []}
+        elif self.current is not None:
+            if self.title_depth:
+                self.title_depth += 1
+            elif tag in {"h1", "h2", "h3", "h4", "h5", "h6"} or any(
+                token in dict(attrs).get("class", "").lower()
+                for token in ("job-title", "role-title", "position-title")
+            ):
+                self.title_depth = 1
+                self.title_parts = []
+
+    def handle_data(self, data):
+        if self.current is not None:
+            value = " ".join(data.split())
+            if value:
+                self.current["parts"].append(value)
+                if self.title_depth:
+                    self.title_parts.append(value)
+
+    def handle_endtag(self, tag):
+        if self.current is None:
+            return
+        if tag == "a":
+            self.links.append(self.current)
+            self.current = None
+            self.title_depth = 0
+        elif self.title_depth:
+            self.title_depth -= 1
+            if not self.title_depth and self.title_parts:
+                self.current["titles"].append(" ".join(self.title_parts))
+
+
+def fetch_floodbase(_slug=None):
+    """Floodbase lists its current roles as Tally application links.
+
+    Its footer also links to an older Greenhouse board, so ATS auto-detection
+    cannot reliably identify the roles on the employer's current careers page.
+    """
+    parser = _FloodbaseLinks()
+    parser.feed(get_html("https://www.floodbase.com/careers"))
+    jobs = []
+    seen = set()
+    employment = re.compile(r"\b(?:full[ -]?time|part[ -]?time|contract|internship|temporary)\b", re.I)
+    work_modes = {"hybrid", "remote", "on-site", "onsite"}
+    for link in parser.links:
+        parts = link["parts"]
+        if not employment.search(" ".join(parts)) or link["url"] in seen:
+            continue
+        # Prefer the card's heading/title node. A text-only card can also place
+        # the role immediately after its employment-type label.
+        title = next((t for t in link["titles"] if not employment.fullmatch(t)), "")
+        if not title:
+            for index, part in enumerate(parts):
+                if employment.fullmatch(part) and index + 1 < len(parts):
+                    title = parts[index + 1]
+                    break
+        if not title:
+            raise ValueError(f"Floodbase job card has no readable title: {link['url']}")
+        position = parts.index(title) if title in parts else -1
+        location = ""
+        if position >= 0:
+            location = next((p for p in parts[position + 1:] if p.lower() not in work_modes), "")
+        type_index = next((i for i, p in enumerate(parts) if employment.fullmatch(p)), 0)
+        department = parts[type_index - 1] if type_index > 0 else ""
+        seen.add(link["url"])
+        jobs.append({
+            "title": title,
+            "location": location,
+            "department": department,
+            "url": link["url"],
+            "posted_at": "",
+        })
+    return jobs
+
+
 FETCHERS = {
     "greenhouse": fetch_greenhouse,
     "lever": fetch_lever,
@@ -200,13 +294,12 @@ FETCHERS = {
     "breezy": fetch_breezy,
     "gusto": fetch_gusto,
     "bamboohr": fetch_bamboohr,
+    "floodbase": fetch_floodbase,
 }
 
 # ---------------------------------------------------------------------------
 # Careers-page scraping fallback (used when ats is null in companies.json)
 # ---------------------------------------------------------------------------
-
-import re
 
 # If a careers page embeds or links an ATS, we detect it and use the clean API.
 ATS_URL_PATTERNS = {
@@ -315,6 +408,18 @@ def main():
     out_companies = []
     total = 0
     errors = []
+    previous_path = HERE / "jobs.json"
+    previous = {}
+    if previous_path.exists():
+        previous = {
+            c["name"]: c.get("jobs", [])
+            for c in json.loads(previous_path.read_text()).get("companies", [])
+        }
+    stale_companies = []
+    unverified_companies = []
+    failed_companies = []
+    unsupported_companies = []
+    disabled_companies = []
 
     for c in config["companies"]:
         entry = {
@@ -324,37 +429,67 @@ def main():
             "logo": c.get("logo"),
             "description": c.get("description", ""),
             "jobs": [],
+            "source_status": "unverified",
         }
         ats = c.get("ats")
-        if ats:
+        if ats and ats not in FETCHERS:
+            unsupported_companies.append(c["name"])
+            entry["jobs"] = previous.get(c["name"], [])
+            entry["source_status"] = "unsupported_stale" if entry["jobs"] else "unsupported"
+            print(f"  {c['name']:<20} {ats:<12} unsupported source", file=sys.stderr)
+        elif ats:
             try:
                 entry["jobs"] = FETCHERS[ats](c["slug"])
-                total += len(entry["jobs"])
+                entry["source_status"] = "ok"
                 print(f"  {c['name']:<20} {ats:<12} {len(entry['jobs'])} jobs")
             except Exception as e:
                 errors.append(f"{c['name']} ({ats}/{c['slug']}): {e}")
+                failed_companies.append(c["name"])
                 print(f"  {c['name']:<20} {ats:<12} ERROR: {e}", file=sys.stderr)
+        elif c.get("scrape", True) is False:
+            disabled_companies.append(c["name"])
+            entry["source_status"] = "disabled"
+            print(f"  {c['name']:<20} {'unverified':<12} careers link only")
         else:
             try:
                 jobs, how = fetch_scraped(entry["careers_url"], render=render)
                 entry["jobs"] = jobs
-                total += len(jobs)
+                if how != "no structured jobs found":
+                    entry["source_status"] = "ok"
                 print(f"  {c['name']:<20} {'scrape':<12} {len(jobs)} jobs ({how})")
             except Exception as e:
                 errors.append(f"{c['name']} (scrape): {e}")
+                failed_companies.append(c["name"])
                 print(f"  {c['name']:<20} {'scrape':<12} ERROR: {e}", file=sys.stderr)
+        if c["name"] in failed_companies:
+            entry["jobs"] = previous.get(c["name"], [])
+            entry["source_status"] = "error_stale" if entry["jobs"] else "error_no_prior"
+            if entry["jobs"]:
+                stale_companies.append(c["name"])
+        elif entry["source_status"] == "unverified":
+            unverified_companies.append(c["name"])
+        if entry["source_status"] == "unsupported_stale":
+            stale_companies.append(c["name"])
+        total += len(entry["jobs"])
         out_companies.append(entry)
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "total_jobs": total,
         "companies": out_companies,
+        "fetch_errors": errors,
+        "stale_companies": stale_companies,
+        "unverified_companies": unverified_companies,
+        "failed_companies": failed_companies,
+        "unsupported_companies": unsupported_companies,
+        "disabled_companies": disabled_companies,
     }
     (HERE / "jobs.json").write_text(json.dumps(output, indent=2))
     print(f"\nWrote jobs.json - {total} jobs across "
           f"{sum(1 for c in out_companies if c['jobs'])} companies.")
     if errors:
-        print(f"{len(errors)} fetch errors (companies kept with careers link only).")
+        print(f"{len(errors)} fetch errors; prior listings retained for: "
+              f"{', '.join(stale_companies)}.", file=sys.stderr)
 
 
 if __name__ == "__main__":
