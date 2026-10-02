@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-02T20:23:44.155199+00:00",
-  "total_jobs": 35,
+  "generated_at": "2026-10-02T20:46:41.860130+00:00",
+  "total_jobs": 37,
   "companies": [
     {
       "name": "2S Water",
       "website": "https://2swater.com",
-      "careers_url": "https://2swater.com",
+      "careers_url": "https://www.2swater.com/work-with-us/",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/85c3a854-93da-4bfa-98b7-617258e1f387/2s_water.com",
       "description": "Hardware and software to monitor metals in mining and industrial water",
       "jobs": [],
@@ -117,7 +117,7 @@
     {
       "name": "Cala Systems",
       "website": "https://www.calasystems.com",
-      "careers_url": "https://www.calasystems.com",
+      "careers_url": "https://www.calasystems.com/mission-and-careers",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/1ee9449d-bc83-4258-a4ff-e9db5b6fa24a/Screen_Shot_2024-08-12_at_11_50_15_AM.png",
       "description": "Smart heat-pump water heaters",
       "jobs": [],
@@ -316,7 +316,7 @@
     {
       "name": "Flocean",
       "website": "https://www.flocean.green",
-      "careers_url": "https://www.flocean.green",
+      "careers_url": "https://www.flocean.green/jobs",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/7c45b8f8-fa9e-4d03-aabd-ce262411727b/flocean.green",
       "description": "Subsea desalination producing freshwater for coastal and island operations",
       "jobs": [],
@@ -360,7 +360,7 @@
     {
       "name": "Laiier",
       "website": "https://www.laiier.io",
-      "careers_url": "https://www.laiier.io",
+      "careers_url": "https://www.laiier.io/careers",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/24107d53-289d-471f-b30c-62fc8354a1ba/laiier.io",
       "description": "Printed-sensor platform for early water-leak detection in buildings",
       "jobs": [],
@@ -378,7 +378,7 @@
     {
       "name": "Power & Water",
       "website": "https://www.powerandwater.com",
-      "careers_url": "https://www.powerandwater.com",
+      "careers_url": "https://www.powerandwater.com/jobs.php",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/0958c495-8018-428a-aa9f-b0e35526e642/power_and_water.com",
       "description": "Electrocoagulation systems for chemical-free wastewater treatment",
       "jobs": [],
@@ -387,7 +387,7 @@
     {
       "name": "Previsico",
       "website": "https://previsico.com",
-      "careers_url": "https://previsico.com",
+      "careers_url": "https://previsico.com/careers",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/adbc7f3a-854a-4198-8439-e983fd381b30/download-11.png",
       "description": "Property-level real-time flood forecasting and warnings",
       "jobs": [],
@@ -492,7 +492,7 @@
     {
       "name": "Spout",
       "website": "https://www.spoutwater.com",
-      "careers_url": "https://www.spoutwater.com",
+      "careers_url": "https://www.spoutwater.com/pages/contact",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/d703d543-a3a8-4367-8a3d-e3f96d38a79d/spout.com",
       "description": "Countertop appliance making drinking water from air",
       "jobs": [],
@@ -501,7 +501,7 @@
     {
       "name": "Subeca",
       "website": "https://www.subeca.com",
-      "careers_url": "https://www.subeca.com",
+      "careers_url": "https://www.subeca.com/careers",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/abb34448-290b-48e1-9896-04e02cb3a73a/subeca.com",
       "description": "Smart water-meter registers built on AWS and Amazon Sidewalk",
       "jobs": [],
@@ -513,8 +513,16 @@
       "careers_url": "https://www.swiftcomply.com/careers/",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/7adc190f-5e88-4962-83c1-df5e3cd100f4/swiftcomply.com",
       "description": "Compliance software for water utilities: FOG, backflow, stormwater, pretreatment",
-      "jobs": [],
-      "source_status": "unverified"
+      "jobs": [
+        {
+          "title": ".css-zyj4bp button:not([data-disabled=\"true\"]){background-color:#4890b3!important;}.css-zyj4bp button:not([data-disabled=\"true\"]) null svg circle{stroke:null!important;} .css-mks80q{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;box-sizing:border-box;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;height:32px;padding:0px 12px;border:none;border-radius:6px;outline:none;outline-offset:-1px;cursor:pointer;-webkit-transition:all 0.1s ease-in-out 0s;transition:all 0.1s ease-in-out 0s;background-color:#7a005d;color:#ffffff;}.css-mks80q:focus-visible{outline-color:var(--color-outline-focus, #5aa5e7);outline-width:2px;outline-style:solid;}.css-mks80q:disabled{cursor:not-allowed;}.css-mks80q:hover{background-color:rgba(135, 26, 109, 1.00);}.css-mks80q:active{background-color:rgba(149, 51, 125, 1.00);} .css-fgp6zh{white-space:nowrap;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:nowrap;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;visibility:unset;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;gap:6px;} .css-3f922o{font:normal 600 14px/20px Basel Grotesk;letter-spacing:0px;text-overflow:inherit;color:#ffffff;overflow:inherit;text-transform:none;margin:0;padding:0;} View job .css-c6wgpk{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:50%;color:#ffffff;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;font-size:16px;-webkit-transition:all 0.1s;transition:all 0.1s;box-sizing:border-box;line-height:1;letter-spacing:normal;}.css-c6wgpk:before{font-weight:normal;content:\"\\e9ff\";font-family:RipplingIconsKit;height:1em;width:1em;}.css-c6wgpk:focus:not(:focus-visible){outline:none;}.css-c6wgpk:focus-visible{outline-color:var(--color-outline-focus, #5aa5e7);outline-width:2px;outline-style:auto;}",
+          "location": "",
+          "department": "Revenue",
+          "url": "https://ats.rippling.com/en-US/swiftcomply/jobs/81c4c419-4097-4a0c-a0ed-1e5af5b2756f",
+          "posted_at": ""
+        }
+      ],
+      "source_status": "ok"
     },
     {
       "name": "TeamSolve",
@@ -537,11 +545,19 @@
     {
       "name": "Waterly",
       "website": "https://www.waterly.com",
-      "careers_url": "https://www.waterly.com",
+      "careers_url": "https://www.waterly.com/careers",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/80a83f68-1de2-420d-b270-c5ec72530aec/waterly.com",
       "description": "Software for water and wastewater data collection, reporting, and analytics",
-      "jobs": [],
-      "source_status": "unverified"
+      "jobs": [
+        {
+          "title": "Sales Manager(s)",
+          "location": "Remote",
+          "department": "",
+          "url": "https://www.waterly.com/s/Waterly-Sales_Manager.pdf",
+          "posted_at": ""
+        }
+      ],
+      "source_status": "ok"
     },
     {
       "name": "Ziptility",
@@ -585,9 +601,7 @@
     "Showerstream",
     "Spout",
     "Subeca",
-    "SwiftComply",
-    "TeamSolve",
-    "Waterly"
+    "TeamSolve"
   ],
   "failed_companies": [],
   "unsupported_companies": [],
