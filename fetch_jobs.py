@@ -298,8 +298,14 @@ class _RipplingLinks(HTMLParser):
         self.jobs = []
         self.text = []
         self.last_job = None
+        self.skip_text = 0
 
     def handle_starttag(self, tag, attrs):
+        if tag in {"style", "script"}:
+            self.skip_text += 1
+            return
+        if self.skip_text:
+            return
         if tag in {"h2", "h3"}:
             self.heading = []
         if tag == "a":
@@ -315,6 +321,8 @@ class _RipplingLinks(HTMLParser):
                 self.link = {"url": urlunparse(("https", "ats.rippling.com", parsed.path.rstrip("/"), "", "", "")), "parts": []}
 
     def handle_data(self, data):
+        if self.skip_text:
+            return
         value = " ".join(data.split())
         if not value:
             return
@@ -330,12 +338,17 @@ class _RipplingLinks(HTMLParser):
                 self.last_job["location"] = " / ".join(locations)
 
     def handle_endtag(self, tag):
+        if tag in {"style", "script"} and self.skip_text:
+            self.skip_text -= 1
+            return
+        if self.skip_text:
+            return
         if tag in {"h2", "h3"} and self.heading is not None:
             self.department = " ".join(self.heading)
             self.heading = None
         if tag == "a" and self.link is not None:
             title = " ".join(self.link["parts"])
-            if title and title.lower() != "view job":
+            if title and title.lower() != "view job" and len(title) <= 180:
                 job = {
                     "title": title,
                     "location": "",

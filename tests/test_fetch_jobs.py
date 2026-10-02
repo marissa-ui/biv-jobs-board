@@ -61,7 +61,7 @@ class FetchJobsTests(unittest.TestCase):
         </a>
         <p>Remote (Canada)</p><p>Remote (United States)</p>
         <a href="https://ats.rippling.com/en-US/swiftcomply/jobs/81c4c419-4097-4a0c-a0ed-1e5af5b2756f">
-          View job
+          <style>.css-mks80q{color:#fff}</style><button>View job</button>
         </a>
         '''
         with patch.object(fetch_jobs, "get_html", return_value=html):
