@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-02T12:18:54.854159+00:00",
-  "total_jobs": 23,
+  "generated_at": "2026-10-02T20:23:44.155199+00:00",
+  "total_jobs": 35,
   "companies": [
     {
       "name": "2S Water",
@@ -8,7 +8,8 @@
       "careers_url": "https://2swater.com",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/85c3a854-93da-4bfa-98b7-617258e1f387/2s_water.com",
       "description": "Hardware and software to monitor metals in mining and industrial water",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "Aclarity",
@@ -16,7 +17,8 @@
       "careers_url": "https://www.aclaritywater.com/careers",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/2c772c00-d4fe-4ae9-b9c6-1a438ac0c682/aclarity.com",
       "description": "Reactors that destroy PFAS in drinking water and waste streams",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "AlgaFilm",
@@ -24,7 +26,8 @@
       "careers_url": "https://algafilm.com",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/a57e6ebf-fcd6-41fe-b96b-5d0902f99d92/algalfilm_technologies.com",
       "description": "Algae-based wastewater treatment that captures nutrients and CO2",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "Aqua Membranes",
@@ -47,7 +50,8 @@
           "url": "https://aquamembranes.bamboohr.com/careers/47",
           "posted_at": ""
         }
-      ]
+      ],
+      "source_status": "ok"
     },
     {
       "name": "Aquafortus",
@@ -55,7 +59,8 @@
       "careers_url": "https://www.aquafortus.net",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/58a0a4f6-2110-495d-bb3d-05efc939c87b/aquafortus.com",
       "description": "Materials-science brine treatment for low-cost zero-liquid-discharge desalination",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "Aquatic Labs",
@@ -71,7 +76,8 @@
           "url": "https://jobs.gusto.com/postings/aquatic-labs-open-application-ffaf5a29-4c35-4d7a-915c-fb9610a2afb0",
           "posted_at": ""
         }
-      ]
+      ],
+      "source_status": "ok"
     },
     {
       "name": "AquiSense",
@@ -79,15 +85,34 @@
       "careers_url": "https://aquisense.com/careers/",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/ff5318e0-5294-4729-9f02-3862d383c6d5/download-9.png",
       "description": "UV-C LED disinfection for water, air, and surfaces",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "Beagle Services",
       "website": "https://www.beagleservices.com",
-      "careers_url": "https://www.beagleservices.com",
+      "careers_url": "https://beagle-services.breezy.hr/",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/6853dbc3-6c8a-4121-9e0c-5bf7834aae7d/beagle_services.com",
       "description": "Installer for home and commercial water IoT, leak detection, and shutoff",
-      "jobs": []
+      "jobs": [
+        {
+          "title": "Master Plumber",
+          "location": "Baltimore, MD",
+          "department": null,
+          "url": "https://beagle-services.breezy.hr/p/33e1b9287777-master-plumber",
+          "posted_at": "2026-05-15T18:14:07.849Z"
+        }
+      ],
+      "source_status": "ok"
+    },
+    {
+      "name": "Biota",
+      "website": "https://biota-labs.com/",
+      "careers_url": "https://biota-labs.com/",
+      "logo": null,
+      "description": "Rapid PFAS testing and laboratory tools for treatment and cleanup",
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "Cala Systems",
@@ -95,7 +120,8 @@
       "careers_url": "https://www.calasystems.com",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/1ee9449d-bc83-4258-a4ff-e9db5b6fa24a/Screen_Shot_2024-08-12_at_11_50_15_AM.png",
       "description": "Smart heat-pump water heaters",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "CivilGrid",
@@ -153,7 +179,8 @@
           "url": "https://jobs.ashbyhq.com/civilgrid/a54b1597-bc5f-4a4e-b5af-706d20b5166c",
           "posted_at": "2026-10-01T21:21:22.044+00:00"
         }
-      ]
+      ],
+      "source_status": "ok"
     },
     {
       "name": "CNSRV",
@@ -161,7 +188,97 @@
       "careers_url": "https://cnsrv.com",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/e24f9148-d1b0-4b2c-9565-d485c2718a3c/cnsrv_inc.com",
       "description": "Sustainable, efficient equipment for commercial kitchens",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
+    },
+    {
+      "name": "CREW Carbon",
+      "website": "https://crewcarbon.com/",
+      "careers_url": "https://crewcarbon.com/careers/",
+      "logo": null,
+      "description": "Wastewater process intensification and carbon removal",
+      "jobs": [
+        {
+          "title": "Technical Operations Lead",
+          "location": "Brooklyn, NY",
+          "department": "Operations",
+          "url": "https://jobs.ashbyhq.com/crewcarbon/9c22a74f-70ba-40bb-ad21-4ca999b92848",
+          "posted_at": "2026-08-11T23:58:12.999+00:00"
+        },
+        {
+          "title": "Chief of Staff",
+          "location": "Brooklyn, NY",
+          "department": "Operations",
+          "url": "https://jobs.ashbyhq.com/crewcarbon/79b550b4-ffe0-4c51-8a3a-ace9f63ae539",
+          "posted_at": "2026-08-11T23:59:38.100+00:00"
+        },
+        {
+          "title": "Wastewater Process Engineer",
+          "location": "Brooklyn, NY / New Haven, CT",
+          "department": "Operations",
+          "url": "https://jobs.ashbyhq.com/crewcarbon/c5f8fc75-e3dc-4ff8-85f8-b16e951b4755",
+          "posted_at": "2026-08-12T00:01:16.220+00:00"
+        },
+        {
+          "title": "General Application",
+          "location": "Brooklyn, NY",
+          "department": "General Interest",
+          "url": "https://jobs.ashbyhq.com/crewcarbon/9dba6564-63bb-4274-96bb-586e2d3bf1ed",
+          "posted_at": "2026-08-12T00:05:43.389+00:00"
+        },
+        {
+          "title": "Head of R&D and Lab Ops",
+          "location": "Brooklyn, NY / New Haven, CT",
+          "department": "R&D and Lab Ops",
+          "url": "https://jobs.ashbyhq.com/crewcarbon/42b2baa6-c474-4330-8ccc-8880879a9caa",
+          "posted_at": "2026-08-11T21:12:30.269+00:00"
+        },
+        {
+          "title": "Head of Technical Solutions",
+          "location": "Brooklyn, NY",
+          "department": "Process and Engineering ",
+          "url": "https://jobs.ashbyhq.com/crewcarbon/7ed9e721-37b4-40a5-bd3a-9fa80bcae407",
+          "posted_at": "2026-08-11T21:17:33.115+00:00"
+        },
+        {
+          "title": "Project Engineer",
+          "location": "Brooklyn, NY",
+          "department": "Operations",
+          "url": "https://jobs.ashbyhq.com/crewcarbon/8bf57994-db46-474c-89d9-ebd1379c6940",
+          "posted_at": "2026-08-17T15:45:35.611+00:00"
+        },
+        {
+          "title": "Full-Stack Data Scientist",
+          "location": "Brooklyn, NY / Remote / New Haven, CT",
+          "department": "Platform",
+          "url": "https://jobs.ashbyhq.com/crewcarbon/9cfa5eb7-402b-488f-b8af-7fabbd602541",
+          "posted_at": "2026-08-17T23:18:39.322+00:00"
+        },
+        {
+          "title": "Project Manager, Carbon Operations",
+          "location": "Brooklyn, NY",
+          "department": "R&D and Lab Ops",
+          "url": "https://jobs.ashbyhq.com/crewcarbon/871a856a-a355-4fa8-9660-753109531d8b",
+          "posted_at": "2026-09-28T02:09:15.340+00:00"
+        },
+        {
+          "title": "Associate Project Manager - Operations",
+          "location": "Brooklyn, NY",
+          "department": "Operations",
+          "url": "https://jobs.ashbyhq.com/crewcarbon/fa65f038-9f61-4ed3-bb53-ef0eeecd9475",
+          "posted_at": "2026-09-28T02:11:28.533+00:00"
+        }
+      ],
+      "source_status": "ok"
+    },
+    {
+      "name": "Current Software",
+      "website": "https://www.currentsoftware.app/",
+      "careers_url": "https://www.currentsoftware.app/",
+      "logo": null,
+      "description": "Cloud-native billing and payments software for water utilities",
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "Daupler",
@@ -184,7 +301,17 @@
           "url": "https://daupler.bamboohr.com/careers/42",
           "posted_at": ""
         }
-      ]
+      ],
+      "source_status": "ok"
+    },
+    {
+      "name": "EPOCH",
+      "website": "https://epoch.blue/",
+      "careers_url": "https://epoch.blue/",
+      "logo": null,
+      "description": "First-mile data and environmental intelligence for supply chains",
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "Flocean",
@@ -192,7 +319,8 @@
       "careers_url": "https://www.flocean.green",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/7c45b8f8-fa9e-4d03-aabd-ce262411727b/flocean.green",
       "description": "Subsea desalination producing freshwater for coastal and island operations",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "Floodbase",
@@ -200,7 +328,16 @@
       "careers_url": "https://www.floodbase.com/careers",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/8e003798-7fd9-44db-9a0c-570278872709/floodbase.com",
       "description": "Near real-time flood tracking, powering parametric flood insurance",
-      "jobs": []
+      "jobs": [
+        {
+          "title": "VP of Product",
+          "location": "New York or Boston",
+          "department": "Product",
+          "url": "https://tally.so/r/Npodkp",
+          "posted_at": ""
+        }
+      ],
+      "source_status": "ok"
     },
     {
       "name": "HOPE Hydration",
@@ -208,7 +345,8 @@
       "careers_url": "https://www.hopehydration.com",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/b087e6f8-3ba9-4b98-93a6-46ed503bc362/hope_hydration.com",
       "description": "Advertising-funded drinking-water hydration stations for public venues",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "Irrigreen",
@@ -216,7 +354,8 @@
       "careers_url": "https://irrigreen.com/pages/careers",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/4e2c7f01-d340-4620-b78b-28072ea761a1/irrigreen.com",
       "description": "Robotic sprinkler systems that roughly halve irrigation water use",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "Laiier",
@@ -224,7 +363,8 @@
       "careers_url": "https://www.laiier.io",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/24107d53-289d-471f-b30c-62fc8354a1ba/laiier.io",
       "description": "Printed-sensor platform for early water-leak detection in buildings",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "NLine Energy",
@@ -232,7 +372,8 @@
       "careers_url": "https://www.nlineenergy.com",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/adef9e10-1df9-4655-9c9c-6caf91464ecd/nline_energy.com",
       "description": "In-conduit hydropower and energy recovery from waste steam",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "Power & Water",
@@ -240,7 +381,8 @@
       "careers_url": "https://www.powerandwater.com",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/0958c495-8018-428a-aa9f-b0e35526e642/power_and_water.com",
       "description": "Electrocoagulation systems for chemical-free wastewater treatment",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "Previsico",
@@ -248,7 +390,8 @@
       "careers_url": "https://previsico.com",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/adbc7f3a-854a-4198-8439-e983fd381b30/download-11.png",
       "description": "Property-level real-time flood forecasting and warnings",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "SewerAI",
@@ -334,7 +477,8 @@
           "url": "https://jobs.ashbyhq.com/sewer-ai/6ebc9d93-6d42-46d3-abcf-071b3e01c31c",
           "posted_at": "2026-09-24T20:36:10.364+00:00"
         }
-      ]
+      ],
+      "source_status": "ok"
     },
     {
       "name": "Showerstream",
@@ -342,7 +486,8 @@
       "careers_url": "https://showerstream.net",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/a1b2ddd3-61f4-4b16-9ec3-1102b4de3f9c/shower_stream.net",
       "description": "Occupancy sensors that cut hotel shower water and energy waste",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "Spout",
@@ -350,7 +495,8 @@
       "careers_url": "https://www.spoutwater.com",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/d703d543-a3a8-4367-8a3d-e3f96d38a79d/spout.com",
       "description": "Countertop appliance making drinking water from air",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "Subeca",
@@ -358,7 +504,8 @@
       "careers_url": "https://www.subeca.com",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/abb34448-290b-48e1-9896-04e02cb3a73a/subeca.com",
       "description": "Smart water-meter registers built on AWS and Amazon Sidewalk",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "SwiftComply",
@@ -366,7 +513,8 @@
       "careers_url": "https://www.swiftcomply.com/careers/",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/7adc190f-5e88-4962-83c1-df5e3cd100f4/swiftcomply.com",
       "description": "Compliance software for water utilities: FOG, backflow, stormwater, pretreatment",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "TeamSolve",
@@ -374,7 +522,17 @@
       "careers_url": "https://teamsolve.com",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/0d93de67-76e7-4877-ad8b-297655bb0b5e/teamsolve.com",
       "description": "Generative-AI operations and maintenance assistant for water and energy utilities",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
+    },
+    {
+      "name": "Verdi",
+      "website": "https://www.verdi.ag/",
+      "careers_url": "https://verdiag.applytojobs.ca/",
+      "logo": null,
+      "description": "Irrigation automation and controls for farms",
+      "jobs": [],
+      "source_status": "disabled"
     },
     {
       "name": "Waterly",
@@ -382,7 +540,8 @@
       "careers_url": "https://www.waterly.com",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/80a83f68-1de2-420d-b270-c5ec72530aec/waterly.com",
       "description": "Software for water and wastewater data collection, reporting, and analytics",
-      "jobs": []
+      "jobs": [],
+      "source_status": "unverified"
     },
     {
       "name": "Ziptility",
@@ -390,7 +549,8 @@
       "careers_url": "https://www.ziptility.com",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/f8a51fe2-6112-4be6-b4ad-70399ae122f6/ziptility.com",
       "description": "GIS and asset-management software for small water utilities",
-      "jobs": []
+      "jobs": [],
+      "source_status": "ok"
     },
     {
       "name": "ZwitterCo",
@@ -398,7 +558,40 @@
       "careers_url": "https://zwitterco.com/careers/",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/0babb9bd-624e-4a5f-9d8e-71622e475404/zwitterco.com",
       "description": "Fouling-resistant membranes for industrial wastewater and food processing",
-      "jobs": []
+      "jobs": [],
+      "source_status": "ok"
     }
+  ],
+  "fetch_errors": [],
+  "stale_companies": [],
+  "unverified_companies": [
+    "2S Water",
+    "Aclarity",
+    "AlgaFilm",
+    "Aquafortus",
+    "AquiSense",
+    "Biota",
+    "Cala Systems",
+    "CNSRV",
+    "Current Software",
+    "EPOCH",
+    "Flocean",
+    "HOPE Hydration",
+    "Irrigreen",
+    "Laiier",
+    "NLine Energy",
+    "Power & Water",
+    "Previsico",
+    "Showerstream",
+    "Spout",
+    "Subeca",
+    "SwiftComply",
+    "TeamSolve",
+    "Waterly"
+  ],
+  "failed_companies": [],
+  "unsupported_companies": [],
+  "disabled_companies": [
+    "Verdi"
   ]
 }
