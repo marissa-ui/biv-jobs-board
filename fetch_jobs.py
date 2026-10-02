@@ -6,7 +6,8 @@ Reads companies.json, pulls live job postings from each company's ATS
 public API (the same trick Getro uses), and writes jobs.json for the
 static frontend (index.html).
 
-Supported ATSs: Greenhouse, Lever, Ashby, Workable, Recruitee, Breezy, Gusto.
+Supported ATSs: Greenhouse, Lever, Ashby, Workable, Recruitee, Breezy, Gusto,
+BambooHR, and Rippling. Floodbase and Waterly use source-specific parsers.
 No API keys needed - these are all public endpoints (Gusto is parsed from
 its public, server-rendered board page).
 
@@ -20,7 +21,7 @@ import sys
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlparse, urlunparse
+from urllib.parse import urljoin, urlparse, urlunparse
 
 import requests
 
@@ -285,6 +286,114 @@ def fetch_floodbase(_slug=None):
     return jobs
 
 
+class _RipplingLinks(HTMLParser):
+    """Read visible public job links from a Rippling board's HTML."""
+
+    def __init__(self, slug):
+        super().__init__()
+        self.slug = slug
+        self.department = ""
+        self.heading = None
+        self.link = None
+        self.jobs = []
+        self.text = []
+        self.last_job = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag in {"h2", "h3"}:
+            self.heading = []
+        if tag == "a":
+            href = dict(attrs).get("href", "")
+            url = urljoin("https://ats.rippling.com/", href)
+            parsed = urlparse(url)
+            if parsed.netloc == "ats.rippling.com" and re.search(
+                rf"/(?:[a-z]{{2}}-[A-Z]{{2}}/)?{re.escape(self.slug)}/jobs/[0-9a-f-]{{36}}/?$",
+                parsed.path,
+            ):
+                if self.last_job and self.last_job["url"] != urlunparse(("https", "ats.rippling.com", parsed.path.rstrip("/"), "", "", "")):
+                    self.last_job = None
+                self.link = {"url": urlunparse(("https", "ats.rippling.com", parsed.path.rstrip("/"), "", "", "")), "parts": []}
+
+    def handle_data(self, data):
+        value = " ".join(data.split())
+        if not value:
+            return
+        self.text.append(value)
+        if self.heading is not None:
+            self.heading.append(value)
+        if self.link is not None:
+            self.link["parts"].append(value)
+        elif self.last_job is not None and re.match(r"Remote\s*\([^)]+\)", value, re.I):
+            locations = self.last_job.setdefault("_locations", [])
+            if value not in locations:
+                locations.append(value)
+                self.last_job["location"] = " / ".join(locations)
+
+    def handle_endtag(self, tag):
+        if tag in {"h2", "h3"} and self.heading is not None:
+            self.department = " ".join(self.heading)
+            self.heading = None
+        if tag == "a" and self.link is not None:
+            title = " ".join(self.link["parts"])
+            if title and title.lower() != "view job":
+                job = {
+                    "title": title,
+                    "location": "",
+                    "department": self.department,
+                    "url": self.link["url"],
+                    "posted_at": "",
+                }
+                self.jobs.append(job)
+                self.last_job = job
+            self.link = None
+
+
+def fetch_rippling(slug):
+    """Use only links on the public Rippling board, never private ATS APIs."""
+    html = get_html(f"https://ats.rippling.com/embed/{slug}/jobs")
+    parser = _RipplingLinks(slug)
+    parser.feed(html)
+    jobs = list({job["url"]: job for job in parser.jobs}.values())
+    for job in jobs:
+        job.pop("_locations", None)
+    if not jobs and not re.search(r"\b0 roles?\s+across\b", " ".join(parser.text), re.I):
+        raise ValueError(f"Rippling board for {slug} had no readable public job listings")
+    return jobs
+
+
+def fetch_waterly(_slug=None):
+    """Only current PDF listings linked in Waterly's live careers index."""
+    html = get_html("https://www.waterly.com/careers")
+    start = re.search(r"We are hiring for the following", html, re.I)
+    if not start:
+        raise ValueError("Waterly careers page has no recognizable current-openings section")
+    end = re.search(r"Think you (?:might|are)", html[start.end():], re.I)
+    section = html[start.end():start.end() + end.start()] if end else html[start.end():]
+    jobs = []
+    seen = set()
+    for attrs, body in re.findall(r"<li\b([^>]*)>(.*?)</li>", section, re.I | re.S):
+        if re.search(r"\bhidden\b|aria-hidden\s*=\s*['\"]?true|display\s*:\s*none|visibility\s*:\s*hidden", attrs + body.split(">")[0], re.I):
+            continue
+        for href, title_html in re.findall(r"<a\b[^>]*href=['\"]([^'\"]+\.pdf)['\"][^>]*>(.*?)</a>", body, re.I | re.S):
+            if re.search(r"\bhidden\b|display\s*:\s*none|visibility\s*:\s*hidden", title_html, re.I):
+                continue
+            url = urljoin("https://www.waterly.com/careers", href)
+            if urlparse(url).netloc != "www.waterly.com" or "/s/" not in urlparse(url).path:
+                continue
+            title = re.sub(r"<[^>]+>", " ", title_html)
+            title = " ".join(title.split())
+            if title and url not in seen:
+                seen.add(url)
+                jobs.append({
+                    "title": title,
+                    "location": "Remote" if re.search(r"full-time remote", html, re.I) else "",
+                    "department": "",
+                    "url": url,
+                    "posted_at": "",
+                })
+    return jobs
+
+
 FETCHERS = {
     "greenhouse": fetch_greenhouse,
     "lever": fetch_lever,
@@ -295,6 +404,8 @@ FETCHERS = {
     "gusto": fetch_gusto,
     "bamboohr": fetch_bamboohr,
     "floodbase": fetch_floodbase,
+    "rippling": fetch_rippling,
+    "waterly": fetch_waterly,
 }
 
 # ---------------------------------------------------------------------------

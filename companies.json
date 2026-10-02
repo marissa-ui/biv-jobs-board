@@ -1,10 +1,10 @@
 {
-  "_comment": "BIV portfolio config. ats: greenhouse | lever | ashby | workable | recruitee | breezy | gusto | bamboohr | floodbase | null. When ats is null, the company appears on the board with a 'View careers page' link only (the scraper still tries to auto-detect an ATS on the careers page). Fill in ats/slug as companies confirm their ATS. For gusto, slug is the full board id from the jobs.gusto.com/boards/<slug> URL. logo + description are sourced from Visible (BIV portfolio profiles); logo falls back to icon.horse / favicon / initials if the URL ever fails.",
+  "_comment": "BIV portfolio config. ats: greenhouse | lever | ashby | workable | recruitee | breezy | gusto | bamboohr | floodbase | rippling | waterly | null. When ats is null, the company appears on the board with a 'View careers page' link only (the scraper still tries to auto-detect an ATS on the careers page). Fill in ats/slug as companies confirm their ATS. For gusto, slug is the full board id from the jobs.gusto.com/boards/<slug> URL. logo + description are sourced from Visible (BIV portfolio profiles); logo falls back to icon.horse / favicon / initials if the URL ever fails.",
   "companies": [
     {
       "name": "2S Water",
       "website": "https://2swater.com",
-      "careers_url": "https://2swater.com",
+      "careers_url": "https://www.2swater.com/work-with-us/",
       "ats": null,
       "slug": null,
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/85c3a854-93da-4bfa-98b7-617258e1f387/2s_water.com",
@@ -85,7 +85,7 @@
     {
       "name": "Cala Systems",
       "website": "https://www.calasystems.com",
-      "careers_url": "https://www.calasystems.com",
+      "careers_url": "https://www.calasystems.com/mission-and-careers",
       "ats": null,
       "slug": null,
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/1ee9449d-bc83-4258-a4ff-e9db5b6fa24a/Screen_Shot_2024-08-12_at_11_50_15_AM.png",
@@ -148,7 +148,7 @@
     {
       "name": "Flocean",
       "website": "https://www.flocean.green",
-      "careers_url": "https://www.flocean.green",
+      "careers_url": "https://www.flocean.green/jobs",
       "ats": null,
       "slug": null,
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/7c45b8f8-fa9e-4d03-aabd-ce262411727b/flocean.green",
@@ -184,7 +184,7 @@
     {
       "name": "Laiier",
       "website": "https://www.laiier.io",
-      "careers_url": "https://www.laiier.io",
+      "careers_url": "https://www.laiier.io/careers",
       "ats": null,
       "slug": null,
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/24107d53-289d-471f-b30c-62fc8354a1ba/laiier.io",
@@ -202,7 +202,7 @@
     {
       "name": "Power & Water",
       "website": "https://www.powerandwater.com",
-      "careers_url": "https://www.powerandwater.com",
+      "careers_url": "https://www.powerandwater.com/jobs.php",
       "ats": null,
       "slug": null,
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/0958c495-8018-428a-aa9f-b0e35526e642/power_and_water.com",
@@ -211,7 +211,7 @@
     {
       "name": "Previsico",
       "website": "https://previsico.com",
-      "careers_url": "https://previsico.com",
+      "careers_url": "https://previsico.com/careers",
       "ats": null,
       "slug": null,
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/adbc7f3a-854a-4198-8439-e983fd381b30/download-11.png",
@@ -238,7 +238,7 @@
     {
       "name": "Spout",
       "website": "https://www.spoutwater.com",
-      "careers_url": "https://www.spoutwater.com",
+      "careers_url": "https://www.spoutwater.com/pages/contact",
       "ats": null,
       "slug": null,
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/d703d543-a3a8-4367-8a3d-e3f96d38a79d/spout.com",
@@ -247,7 +247,7 @@
     {
       "name": "Subeca",
       "website": "https://www.subeca.com",
-      "careers_url": "https://www.subeca.com",
+      "careers_url": "https://www.subeca.com/careers",
       "ats": null,
       "slug": null,
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/abb34448-290b-48e1-9896-04e02cb3a73a/subeca.com",
@@ -257,8 +257,8 @@
       "name": "SwiftComply",
       "website": "https://www.swiftcomply.com",
       "careers_url": "https://www.swiftcomply.com/careers/",
-      "ats": null,
-      "slug": null,
+      "ats": "rippling",
+      "slug": "swiftcomply",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/7adc190f-5e88-4962-83c1-df5e3cd100f4/swiftcomply.com",
       "description": "Compliance software for water utilities: FOG, backflow, stormwater, pretreatment"
     },
@@ -284,8 +284,8 @@
     {
       "name": "Waterly",
       "website": "https://www.waterly.com",
-      "careers_url": "https://www.waterly.com",
-      "ats": null,
+      "careers_url": "https://www.waterly.com/careers",
+      "ats": "waterly",
       "slug": null,
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/80a83f68-1de2-420d-b270-c5ec72530aec/waterly.com",
       "description": "Software for water and wastewater data collection, reporting, and analytics"
