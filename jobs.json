@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-12T15:06:44.727315+00:00",
-  "total_jobs": 29,
+  "generated_at": "2026-10-13T13:59:43.440694+00:00",
+  "total_jobs": 31,
   "companies": [
     {
       "name": "2S Water",
@@ -138,18 +138,32 @@
           "posted_at": "2026-08-17T15:32:04.152+00:00"
         },
         {
-          "title": "Business Development Representative - Government West",
+          "title": "Business Development Representative - Government (San Diego)",
           "location": "San Diego",
           "department": "Sales",
           "url": "https://jobs.ashbyhq.com/civilgrid/59c61568-a862-4765-81fd-6a7497b8a92a",
           "posted_at": "2026-10-01T16:46:20.214+00:00"
         },
         {
-          "title": "Account Executive - Government West",
+          "title": "Account Executive - Government (West)",
           "location": "Remote / San Francisco / San Diego",
           "department": "Sales",
           "url": "https://jobs.ashbyhq.com/civilgrid/a54b1597-bc5f-4a4e-b5af-706d20b5166c",
           "posted_at": "2026-10-01T21:21:22.044+00:00"
+        },
+        {
+          "title": "GIS Developer",
+          "location": "Kansas City",
+          "department": "Data",
+          "url": "https://jobs.ashbyhq.com/civilgrid/092ae4ef-44c6-4c92-a8ea-c29bb73582d7",
+          "posted_at": "2026-10-12T19:15:52.246+00:00"
+        },
+        {
+          "title": "Account Executive - Engineering Firms (West)",
+          "location": "Remote / San Francisco / San Diego",
+          "department": "Sales",
+          "url": "https://jobs.ashbyhq.com/civilgrid/071308c0-142d-47c2-ba3c-636715b60a1c",
+          "posted_at": "2026-10-13T01:04:01.675+00:00"
         }
       ],
       "source_status": "ok"
