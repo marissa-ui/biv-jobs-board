@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-14T11:36:37.501386+00:00",
-  "total_jobs": 30,
+  "generated_at": "2026-10-15T11:14:57.983916+00:00",
+  "total_jobs": 27,
   "companies": [
     {
       "name": "2S Water",
@@ -143,13 +143,6 @@
           "department": "Sales",
           "url": "https://jobs.ashbyhq.com/civilgrid/59c61568-a862-4765-81fd-6a7497b8a92a",
           "posted_at": "2026-10-01T16:46:20.214+00:00"
-        },
-        {
-          "title": "Account Executive - Government (West)",
-          "location": "Remote / San Francisco / San Diego",
-          "department": "Sales",
-          "url": "https://jobs.ashbyhq.com/civilgrid/a54b1597-bc5f-4a4e-b5af-706d20b5166c",
-          "posted_at": "2026-10-01T21:21:22.044+00:00"
         },
         {
           "title": "GIS Developer",
@@ -394,27 +387,6 @@
           "posted_at": "2026-09-28T15:27:11.678+00:00"
         },
         {
-          "title": "Account Executive, Enterprise",
-          "location": "Remote",
-          "department": "Sales & Marketing",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/69c33686-9a00-4dba-8f22-1f45112b4c82",
-          "posted_at": "2026-07-21T17:24:34.438+00:00"
-        },
-        {
-          "title": "Account Executive, Mid-Market",
-          "location": "Remote",
-          "department": "Sales & Marketing",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/931eacf2-91ce-408b-a5e7-c9d266d5987d",
-          "posted_at": "2026-07-21T21:30:57.622+00:00"
-        },
-        {
-          "title": "Executive Assistant",
-          "location": "Hybrid ",
-          "department": "G&A",
-          "url": "https://jobs.ashbyhq.com/sewer-ai/6b556e1c-b3e0-4b55-bb78-629a3a10bd21",
-          "posted_at": "2026-07-22T16:48:37.150+00:00"
-        },
-        {
           "title": "Revenue Operations Analyst",
           "location": "Remote",
           "department": "Sales & Marketing",
@@ -427,6 +399,13 @@
           "department": "Engineering",
           "url": "https://jobs.ashbyhq.com/sewer-ai/6ebc9d93-6d42-46d3-abcf-071b3e01c31c",
           "posted_at": "2026-09-24T20:36:10.364+00:00"
+        },
+        {
+          "title": "Forward Deployed Engineer",
+          "location": "Remote",
+          "department": "Engineering",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/2e60c0f9-8d15-4d65-a520-9a8ac728e30f",
+          "posted_at": "2026-10-14T22:59:58.054+00:00"
         }
       ],
       "source_status": "ok"
