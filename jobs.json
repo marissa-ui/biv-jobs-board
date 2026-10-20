@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-19T12:49:33.457131+00:00",
-  "total_jobs": 27,
+  "generated_at": "2026-10-20T11:19:02.359668+00:00",
+  "total_jobs": 26,
   "companies": [
     {
       "name": "2S Water",
@@ -131,11 +131,11 @@
           "posted_at": "2026-09-16T19:38:17.070+00:00"
         },
         {
-          "title": "Senior/Staff UX Designer",
-          "location": "Boston",
-          "department": "Product",
-          "url": "https://jobs.ashbyhq.com/civilgrid/77638cea-216f-46b9-8442-a97ff68f569e",
-          "posted_at": "2026-08-17T15:32:04.152+00:00"
+          "title": "Utility Research Coordinator",
+          "location": "Charlotte",
+          "department": "Data",
+          "url": "https://jobs.ashbyhq.com/civilgrid/4f2d8150-e456-4b9d-98d3-f28010b186b0",
+          "posted_at": "2026-10-19T18:24:00.721+00:00"
         },
         {
           "title": "Business Development Representative - Government (San Diego)",
@@ -150,13 +150,6 @@
           "department": "Data",
           "url": "https://jobs.ashbyhq.com/civilgrid/092ae4ef-44c6-4c92-a8ea-c29bb73582d7",
           "posted_at": "2026-10-12T19:15:52.246+00:00"
-        },
-        {
-          "title": "Account Executive - Engineering Firms (West)",
-          "location": "Remote / San Francisco / San Diego",
-          "department": "Sales",
-          "url": "https://jobs.ashbyhq.com/civilgrid/071308c0-142d-47c2-ba3c-636715b60a1c",
-          "posted_at": "2026-10-13T01:04:01.675+00:00"
         }
       ],
       "source_status": "ok"
