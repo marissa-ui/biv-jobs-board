@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-20T11:19:02.359668+00:00",
-  "total_jobs": 26,
+  "generated_at": "2026-10-21T11:34:54.146106+00:00",
+  "total_jobs": 28,
   "companies": [
     {
       "name": "2S Water",
@@ -41,6 +41,13 @@
           "location": "Knoxville, Tennessee",
           "department": "Production",
           "url": "https://aquamembranes.bamboohr.com/careers/32",
+          "posted_at": ""
+        },
+        {
+          "title": "Production Technician Lead",
+          "location": "Knoxville, Tennessee",
+          "department": "Production",
+          "url": "https://aquamembranes.bamboohr.com/careers/49",
           "posted_at": ""
         }
       ],
@@ -94,6 +101,13 @@
           "department": null,
           "url": "https://beagle-services.breezy.hr/p/33e1b9287777-master-plumber",
           "posted_at": "2026-05-15T18:14:07.849Z"
+        },
+        {
+          "title": "P1 Licensed Plumber",
+          "location": "Bridgeport, CT",
+          "department": null,
+          "url": "https://beagle-services.breezy.hr/p/abd8a1c1f9e4-p1-licensed-plumber",
+          "posted_at": "2026-10-20T17:23:29.300Z"
         }
       ],
       "source_status": "ok"
