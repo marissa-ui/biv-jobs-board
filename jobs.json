@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-21T11:34:54.146106+00:00",
-  "total_jobs": 28,
+  "generated_at": "2026-10-22T11:34:46.527339+00:00",
+  "total_jobs": 29,
   "companies": [
     {
       "name": "2S Water",
@@ -137,6 +137,13 @@
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/19a19a78-3433-4d57-96c6-c665403fd5de/civilgrid.com",
       "description": "Construction intelligence platform aggregating site data for developers and engineers",
       "jobs": [
+        {
+          "title": "Director/Senior Director, Product Management",
+          "location": "Boston",
+          "department": "Product",
+          "url": "https://jobs.ashbyhq.com/civilgrid/932fa162-00f3-494d-98e8-d7bdcebd6c8e",
+          "posted_at": "2026-10-21T15:33:02.861+00:00"
+        },
         {
           "title": "GIS Analyst",
           "location": "Kansas City",
