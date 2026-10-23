@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-22T11:34:46.527339+00:00",
-  "total_jobs": 29,
+  "generated_at": "2026-10-23T11:24:13.097667+00:00",
+  "total_jobs": 27,
   "companies": [
     {
       "name": "2S Water",
@@ -234,25 +234,11 @@
           "posted_at": "2026-08-17T15:45:35.611+00:00"
         },
         {
-          "title": "Full-Stack Data Scientist",
-          "location": "Brooklyn, NY / Remote / New Haven, CT",
-          "department": "Platform",
-          "url": "https://jobs.ashbyhq.com/crewcarbon/9cfa5eb7-402b-488f-b8af-7fabbd602541",
-          "posted_at": "2026-08-17T23:18:39.322+00:00"
-        },
-        {
           "title": "Project Manager, Carbon Operations",
           "location": "Brooklyn, NY",
           "department": "R&D and Lab Ops",
           "url": "https://jobs.ashbyhq.com/crewcarbon/871a856a-a355-4fa8-9660-753109531d8b",
           "posted_at": "2026-09-28T02:09:15.340+00:00"
-        },
-        {
-          "title": "Associate Project Manager - Operations",
-          "location": "Brooklyn, NY",
-          "department": "Operations",
-          "url": "https://jobs.ashbyhq.com/crewcarbon/fa65f038-9f61-4ed3-bb53-ef0eeecd9475",
-          "posted_at": "2026-09-28T02:11:28.533+00:00"
         }
       ],
       "source_status": "ok"
@@ -274,7 +260,7 @@
       "description": "Software to triage and manage utility response to network issues",
       "jobs": [
         {
-          "title": "Business Development Representative",
+          "title": "Internship: Business Development Representative",
           "location": "",
           "department": "Sales",
           "url": "https://daupler.bamboohr.com/careers/25",
