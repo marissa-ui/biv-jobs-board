@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-23T11:24:13.097667+00:00",
-  "total_jobs": 27,
+  "generated_at": "2026-10-24T10:43:19.740967+00:00",
+  "total_jobs": 26,
   "companies": [
     {
       "name": "2S Water",
@@ -138,18 +138,18 @@
       "description": "Construction intelligence platform aggregating site data for developers and engineers",
       "jobs": [
         {
+          "title": "IT/Office Support Technician - Boston",
+          "location": "Boston",
+          "department": "Operations",
+          "url": "https://jobs.ashbyhq.com/civilgrid/b2a8e625-a4e2-4a6c-baa5-529ab8ff1790",
+          "posted_at": "2026-10-23T15:11:13.651+00:00"
+        },
+        {
           "title": "Director/Senior Director, Product Management",
           "location": "Boston",
           "department": "Product",
           "url": "https://jobs.ashbyhq.com/civilgrid/932fa162-00f3-494d-98e8-d7bdcebd6c8e",
           "posted_at": "2026-10-21T15:33:02.861+00:00"
-        },
-        {
-          "title": "GIS Analyst",
-          "location": "Kansas City",
-          "department": "Data",
-          "url": "https://jobs.ashbyhq.com/civilgrid/e1f6f6c4-84e3-459c-84f4-c01ae5efcacf",
-          "posted_at": "2026-09-16T19:38:17.070+00:00"
         },
         {
           "title": "Utility Research Coordinator",
@@ -225,13 +225,6 @@
           "department": "Process and Engineering ",
           "url": "https://jobs.ashbyhq.com/crewcarbon/7ed9e721-37b4-40a5-bd3a-9fa80bcae407",
           "posted_at": "2026-08-11T21:17:33.115+00:00"
-        },
-        {
-          "title": "Project Engineer",
-          "location": "Brooklyn, NY",
-          "department": "Operations",
-          "url": "https://jobs.ashbyhq.com/crewcarbon/8bf57994-db46-474c-89d9-ebd1379c6940",
-          "posted_at": "2026-08-17T15:45:35.611+00:00"
         },
         {
           "title": "Project Manager, Carbon Operations",
