@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T12:35:10.404383+00:00",
+  "generated_at": "2026-10-29T12:45:25.512925+00:00",
   "total_jobs": 28,
   "companies": [
     {
@@ -27,7 +27,7 @@
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/a57e6ebf-fcd6-41fe-b96b-5d0902f99d92/algalfilm_technologies.com",
       "description": "Algae-based wastewater treatment that captures nutrients and CO2",
       "jobs": [],
-      "source_status": "error_no_prior"
+      "source_status": "unverified"
     },
     {
       "name": "Aqua Membranes",
@@ -36,13 +36,6 @@
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/59cfe07d-4371-4d37-a249-5a5ff27a8052/Screenshot_2026-06-09_at_2_24_16_PM.png",
       "description": "Printed spacer technology for higher-performance reverse-osmosis membranes",
       "jobs": [
-        {
-          "title": "Production Technician",
-          "location": "Knoxville, Tennessee",
-          "department": "Production",
-          "url": "https://aquamembranes.bamboohr.com/careers/32",
-          "posted_at": ""
-        },
         {
           "title": "Production Technician Lead",
           "location": "Knoxville, Tennessee",
@@ -178,6 +171,13 @@
           "department": "Data",
           "url": "https://jobs.ashbyhq.com/civilgrid/092ae4ef-44c6-4c92-a8ea-c29bb73582d7",
           "posted_at": "2026-10-12T19:15:52.246+00:00"
+        },
+        {
+          "title": "Account Executive - Engineering Firms (California)",
+          "location": "Remote / San Francisco / San Diego",
+          "department": "Sales",
+          "url": "https://jobs.ashbyhq.com/civilgrid/071308c0-142d-47c2-ba3c-636715b60a1c",
+          "posted_at": "2026-10-29T02:28:20.876+00:00"
         },
         {
           "title": "Senior Product Manager",
@@ -515,13 +515,12 @@
       "source_status": "ok"
     }
   ],
-  "fetch_errors": [
-    "AlgaFilm (scrape): HTTPSConnectionPool(host='algafilm.com', port=443): Read timed out. (read timeout=20)"
-  ],
+  "fetch_errors": [],
   "stale_companies": [],
   "unverified_companies": [
     "2S Water",
     "Aclarity",
+    "AlgaFilm",
     "Aquafortus",
     "AquiSense",
     "Biota",
@@ -541,9 +540,7 @@
     "Subeca",
     "TeamSolve"
   ],
-  "failed_companies": [
-    "AlgaFilm"
-  ],
+  "failed_companies": [],
   "unsupported_companies": [],
   "disabled_companies": [
     "Verdi"
