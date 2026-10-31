@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-30T12:36:55.654410+00:00",
-  "total_jobs": 27,
+  "generated_at": "2026-10-31T12:04:08.056435+00:00",
+  "total_jobs": 29,
   "companies": [
     {
       "name": "2S Water",
@@ -41,6 +41,13 @@
           "location": "Knoxville, Tennessee",
           "department": "Production",
           "url": "https://aquamembranes.bamboohr.com/careers/49",
+          "posted_at": ""
+        },
+        {
+          "title": "Office Assistant",
+          "location": "Knoxville, Tennessee",
+          "department": "Administration",
+          "url": "https://aquamembranes.bamboohr.com/careers/50",
           "posted_at": ""
         }
       ],
@@ -378,6 +385,13 @@
           "department": "Any Department",
           "url": "https://jobs.ashbyhq.com/sewer-ai/58eccfc8-69ea-476d-a556-5b19c2c7b308",
           "posted_at": "2025-09-24T17:35:46.462+00:00"
+        },
+        {
+          "title": "Sales Development Representative",
+          "location": "Remote",
+          "department": "Sales & Marketing",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/4418eb46-6ad1-4748-8b4f-5ea74218fb8b",
+          "posted_at": "2026-10-30T20:53:21.747+00:00"
         },
         {
           "title": "Wastewater Civil Engineer",
