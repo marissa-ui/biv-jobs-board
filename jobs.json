@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-01T13:04:03.191318+00:00",
-  "total_jobs": 29,
+  "generated_at": "2026-11-02T11:25:51.114236+00:00",
+  "total_jobs": 30,
   "companies": [
     {
       "name": "2S Water",
@@ -127,8 +127,16 @@
       "careers_url": "https://www.calasystems.com/mission-and-careers",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/1ee9449d-bc83-4258-a4ff-e9db5b6fa24a/Screen_Shot_2024-08-12_at_11_50_15_AM.png",
       "description": "Smart heat-pump water heaters",
-      "jobs": [],
-      "source_status": "unverified"
+      "jobs": [
+        {
+          "title": "Business Development Associate",
+          "location": "Wilmington, MA",
+          "department": "",
+          "url": "https://cdn.calasystems.com/documents/74c36614c7480611/Biz-Dev-Associate-JD.pdf",
+          "posted_at": ""
+        }
+      ],
+      "source_status": "ok"
     },
     {
       "name": "CivilGrid",
@@ -531,7 +539,6 @@
     "Aquafortus",
     "AquiSense",
     "Biota",
-    "Cala Systems",
     "CNSRV",
     "Current Software",
     "EPOCH",
