@@ -8,6 +8,89 @@ import fetch_jobs
 
 
 class FetchJobsTests(unittest.TestCase):
+    def cala_card(self, title="Biz Dev Associate", pdf="Biz-Dev-Associate-JD.pdf", attrs=""):
+        return f'''<div class="w-layout-layout quick-stack-28" {attrs}>
+          <div class="w-layout-cell"><div class="job-title">{title}</div>
+          <div>Based in our Wilmington, MA office.</div></div>
+          <div class="w-layout-cell"><a href="mailto:careers@calasystems.com">Apply</a>
+          <a href="https://cdn.calasystems.com/documents/current/{pdf}">Full Job Description</a>
+          </div></div>'''
+
+    def test_cala_current_card_and_location(self):
+        html = '<section class="section-38">' + self.cala_card() + '</section>'
+        with patch.object(fetch_jobs, "get_html", return_value=html):
+            self.assertEqual(fetch_jobs.fetch_cala(), [{
+                "title": "Business Development Associate", "location": "Wilmington, MA",
+                "department": "", "posted_at": "",
+                "url": "https://cdn.calasystems.com/documents/current/Biz-Dev-Associate-JD.pdf",
+            }])
+
+    def test_cala_excludes_hidden_orphan_pdfs_and_deduplicates(self):
+        old = self.cala_card("Old Engineer", "old.pdf")
+        html = (old + '<section class="section-38"><p>Send general inquiries</p>'
+                + self.cala_card() + self.cala_card()
+                + self.cala_card("Hidden", "hidden.pdf", "hidden")
+                + '<div style="display:none">' + old + '</div>'
+                + '<div aria-hidden="true">' + old + '</div>'
+                + '<div class="w-condition-invisible">' + old + '</div>'
+                + '<div class="quick-stack-28"><div></div><div></div></div>'
+                + '</section><a href="https://cdn.calasystems.com/documents/old.pdf">Old PDF</a>')
+        with patch.object(fetch_jobs, "get_html", return_value=html):
+            self.assertEqual([j["title"] for j in fetch_jobs.fetch_cala()], ["Business Development Associate"])
+
+    def test_cala_title_persists_across_refreshes_and_removed_role_clears(self):
+        html = '<section class="section-38">' + self.cala_card() + '</section>'
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "companies.json").write_text(json.dumps({"companies": [{
+                "name": "Cala Systems", "website": "https://www.calasystems.com",
+                "careers_url": "https://www.calasystems.com/mission-and-careers",
+                "ats": "cala", "slug": None,
+            }]}))
+            with patch.object(fetch_jobs, "HERE", root), \
+                 patch.object(fetch_jobs.sys, "argv", ["fetch_jobs.py"]):
+                for _ in range(2):
+                    with patch.object(fetch_jobs, "get_html", return_value=html):
+                        fetch_jobs.main()
+                    saved = json.loads((root / "jobs.json").read_text())
+                    self.assertEqual(saved["total_jobs"], 1)
+                    self.assertEqual(saved["companies"][0]["source_status"], "ok")
+                    self.assertEqual(saved["companies"][0]["jobs"][0]["title"],
+                                     "Business Development Associate")
+                with patch.object(fetch_jobs, "get_html", return_value='<section class="section-38"></section>'):
+                    fetch_jobs.main()
+                removed = json.loads((root / "jobs.json").read_text())
+                self.assertEqual(removed["total_jobs"], 0)
+                self.assertEqual(removed["companies"][0]["jobs"], [])
+
+    def test_cala_uses_current_title_not_cached_role(self):
+        html = '<section class="section-38">' + self.cala_card("New &amp; Updated Title") + '</section>'
+        with patch.object(fetch_jobs, "get_html", return_value=html):
+            self.assertEqual(fetch_jobs.fetch_cala()[0]["title"], "New & Updated Title")
+
+    def test_cala_removed_listing_clears_but_unrecognized_page_fails(self):
+        with patch.object(fetch_jobs, "get_html", return_value='<section class="section-38"><p>No openings</p></section>'):
+            self.assertEqual(fetch_jobs.fetch_cala(), [])
+        with patch.object(fetch_jobs, "get_html", return_value='<h1>Loading...</h1>'):
+            with self.assertRaises(ValueError):
+                fetch_jobs.fetch_cala()
+
+    def test_cala_malformed_and_external_job_descriptions_fail(self):
+        card = self.cala_card()
+        for html in [card.replace('cdn.calasystems.com', 'external.example'),
+                     card.replace('Full Job Description', 'Other PDF'),
+                     card.replace('Biz Dev Associate', ''),
+                     card.replace('.pdf', '.html')]:
+            with self.subTest(html=html), patch.object(fetch_jobs, "get_html", return_value='<section class="section-38">' + html + '</section>'):
+                with self.assertRaises(ValueError):
+                    fetch_jobs.fetch_cala()
+
+    def test_cala_conflicting_duplicate_fails(self):
+        html = '<section class="section-38">' + self.cala_card() + self.cala_card('Conflicting title') + '</section>'
+        with patch.object(fetch_jobs, "get_html", return_value=html):
+            with self.assertRaises(ValueError):
+                fetch_jobs.fetch_cala()
+
     def test_floodbase_uses_one_employer_listing(self):
         html = '''
         <a href="https://tally.so/r/Npodkp">
@@ -212,6 +295,7 @@ class FetchJobsTests(unittest.TestCase):
         self.assertEqual((by_name["SwiftComply"]["ats"], by_name["SwiftComply"]["slug"]),
                          ("rippling", "swiftcomply"))
         self.assertEqual(by_name["Waterly"]["ats"], "waterly")
+        self.assertEqual(by_name["Cala Systems"]["ats"], "cala")
         self.assertIsNone(by_name["AlgaFilm"]["ats"])
 
 

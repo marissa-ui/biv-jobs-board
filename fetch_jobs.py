@@ -7,7 +7,7 @@ public API (the same trick Getro uses), and writes jobs.json for the
 static frontend (index.html).
 
 Supported ATSs: Greenhouse, Lever, Ashby, Workable, Recruitee, Breezy, Gusto,
-BambooHR, and Rippling. Floodbase and Waterly use source-specific parsers.
+BambooHR, and Rippling. Cala, Floodbase, and Waterly use source-specific parsers.
 No API keys needed - these are all public endpoints (Gusto is parsed from
 its public, server-rendered board page).
 
@@ -407,6 +407,108 @@ def fetch_waterly(_slug=None):
     return jobs
 
 
+class _CalaCareers(HTMLParser):
+    """Read visible job cards, not orphaned PDFs or general-inquiry links."""
+
+    VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input",
+                 "link", "meta", "param", "source", "track", "wbr"}
+
+    def __init__(self):
+        super().__init__()
+        self.stack = []
+        self.cards = []
+        self.recognized = False
+
+    def handle_starttag(self, tag, attrs):
+        attrs = {key: value or "" for key, value in attrs}
+        classes = set(attrs.get("class", "").split())
+        parent = self.stack[-1] if self.stack else {}
+        hidden = (parent.get("hidden", False) or tag in {"script", "style", "template"}
+                  or "hidden" in attrs or attrs.get("aria-hidden", "").lower() == "true"
+                  or "w-condition-invisible" in classes
+                  or bool(re.search(r"display\s*:\s*none|visibility\s*:\s*hidden",
+                                    attrs.get("style", ""), re.I)))
+        careers = parent.get("careers", False) or (
+            tag == "section" and "section-38" in classes and not hidden)
+        if careers and not hidden:
+            self.recognized = True
+        card = parent.get("card")
+        if careers and "quick-stack-28" in classes and not hidden:
+            card = {"titles": [], "text": [], "links": []}
+            self.cards.append(card)
+        title = parent.get("title", False) or "job-title" in classes
+        link = parent.get("link")
+        if card is not None and tag == "a" and not hidden:
+            link = {"href": attrs.get("href", ""), "text": []}
+            card["links"].append(link)
+        node = {"tag": tag, "hidden": hidden, "careers": careers,
+                "card": card, "title": title, "link": link}
+        if tag not in self.VOID_TAGS:
+            self.stack.append(node)
+
+    def handle_endtag(self, tag):
+        for index in range(len(self.stack) - 1, -1, -1):
+            if self.stack[index]["tag"] == tag:
+                del self.stack[index:]
+                break
+
+    def handle_startendtag(self, tag, attrs):
+        self.handle_starttag(tag, attrs)
+        if tag not in self.VOID_TAGS:
+            self.handle_endtag(tag)
+
+    def handle_data(self, data):
+        node = self.stack[-1] if self.stack else {}
+        card = node.get("card")
+        text = " ".join(data.split())
+        if not text or node.get("hidden") or card is None:
+            return
+        card["text"].append(text)
+        if node.get("title"):
+            card["titles"].append(text)
+        if node.get("link") is not None:
+            node["link"]["text"].append(text)
+
+
+def fetch_cala(_slug=None):
+    """Use only current Cala careers cards with employer-hosted job descriptions.
+
+    The employer uses ordinary HTML and PDF links, not ATS/JobPosting markup.
+    A recognizable empty careers section clears removed roles; unreadable cards
+    raise an error so main() retains prior listings with a stale-source warning.
+    """
+    parser = _CalaCareers()
+    parser.feed(get_html("https://www.calasystems.com/mission-and-careers"))
+    if not parser.recognized:
+        raise ValueError("Cala careers page has no recognizable current-openings section")
+    jobs = {}
+    for card in parser.cards:
+        title = " ".join(card["titles"])
+        if not title and not card["text"]:
+            continue  # Cala keeps empty layout cells after its current listing.
+        links = []
+        for link in card["links"]:
+            url = urlparse(link["href"])
+            if (" ".join(link["text"]).lower() == "full job description"
+                    and url.scheme == "https" and url.netloc == "cdn.calasystems.com"
+                    and url.path.startswith("/documents/") and url.path.lower().endswith(".pdf")):
+                links.append(urlunparse((url.scheme, url.netloc, url.path, "", "", "")))
+        links = list(dict.fromkeys(links))
+        if not title or len(links) != 1:
+            raise ValueError("Cala job card has no unique readable title and employer PDF")
+        # Owner-approved expansion of the employer's abbreviated current title.
+        if title == "Biz Dev Associate":
+            title = "Business Development Associate"
+        location = re.search(r"\bin (?:our )?([A-Z][a-z]+(?: [A-Z][a-z]+)*, [A-Z]{2}) office",
+                             " ".join(card["text"]))
+        job = {"title": title, "location": location.group(1) if location else "",
+               "department": "", "url": links[0], "posted_at": ""}
+        if links[0] in jobs and jobs[links[0]] != job:
+            raise ValueError("Cala has conflicting cards for the same job description")
+        jobs[links[0]] = job
+    return list(jobs.values())
+
+
 FETCHERS = {
     "greenhouse": fetch_greenhouse,
     "lever": fetch_lever,
@@ -419,6 +521,7 @@ FETCHERS = {
     "floodbase": fetch_floodbase,
     "rippling": fetch_rippling,
     "waterly": fetch_waterly,
+    "cala": fetch_cala,
 }
 
 # ---------------------------------------------------------------------------
