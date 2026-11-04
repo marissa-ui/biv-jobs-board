@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-03T13:58:33.105058+00:00",
-  "total_jobs": 30,
+  "generated_at": "2026-11-04T14:13:24.661886+00:00",
+  "total_jobs": 32,
   "companies": [
     {
       "name": "2S Water",
@@ -9,7 +9,7 @@
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/85c3a854-93da-4bfa-98b7-617258e1f387/2s_water.com",
       "description": "Hardware and software to monitor metals in mining and industrial water",
       "jobs": [],
-      "source_status": "unverified"
+      "source_status": "error_no_prior"
     },
     {
       "name": "Aclarity",
@@ -41,13 +41,6 @@
           "location": "Knoxville, Tennessee",
           "department": "Production",
           "url": "https://aquamembranes.bamboohr.com/careers/49",
-          "posted_at": ""
-        },
-        {
-          "title": "Office Assistant",
-          "location": "Knoxville, Tennessee",
-          "department": "Administration",
-          "url": "https://aquamembranes.bamboohr.com/careers/50",
           "posted_at": ""
         }
       ],
@@ -96,18 +89,25 @@
       "description": "Installer for home and commercial water IoT, leak detection, and shutoff",
       "jobs": [
         {
+          "title": "Customer Success Coordinator/Plumbing Dispatch",
+          "location": "Phoenix, AZ",
+          "department": "",
+          "url": "https://beagle-services.breezy.hr/p/d813e0c3cedf-customer-success-coordinator-plumbing-dispatch",
+          "posted_at": "2026-11-03T17:25:02.079Z"
+        },
+        {
           "title": "Master Plumber",
           "location": "Baltimore, MD",
-          "department": null,
+          "department": "",
           "url": "https://beagle-services.breezy.hr/p/33e1b9287777-master-plumber",
-          "posted_at": "2026-05-15T18:14:07.849Z"
+          "posted_at": "2026-11-03T16:41:23.578Z"
         },
         {
           "title": "P1 Licensed Plumber",
           "location": "Bridgeport, CT",
-          "department": null,
+          "department": "",
           "url": "https://beagle-services.breezy.hr/p/abd8a1c1f9e4-p1-licensed-plumber",
-          "posted_at": "2026-10-20T17:23:29.300Z"
+          "posted_at": "2026-11-03T16:43:53.620Z"
         }
       ],
       "source_status": "ok"
@@ -160,7 +160,7 @@
           "posted_at": "2026-10-21T15:33:02.861+00:00"
         },
         {
-          "title": "Utility Research Coordinator",
+          "title": "Research Coordinator",
           "location": "Charlotte",
           "department": "Data",
           "url": "https://jobs.ashbyhq.com/civilgrid/4f2d8150-e456-4b9d-98d3-f28010b186b0",
@@ -287,6 +287,13 @@
           "department": "Account Management",
           "url": "https://daupler.bamboohr.com/careers/42",
           "posted_at": ""
+        },
+        {
+          "title": "Implementation Specialist",
+          "location": "",
+          "department": "Product",
+          "url": "https://daupler.bamboohr.com/careers/43",
+          "posted_at": ""
         }
       ],
       "source_status": "ok"
@@ -387,6 +394,13 @@
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/396728f3-246e-4eaa-af92-00f77aec098e/sewerai.com",
       "description": "AI that analyzes sewer-pipe inspection footage and detects defects",
       "jobs": [
+        {
+          "title": "Senior Staff Software Engineer",
+          "location": "Remote",
+          "department": "Engineering",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/40904de2-3b6f-4257-b26b-c025bbd322d9",
+          "posted_at": "2026-11-03T23:08:17.953+00:00"
+        },
         {
           "title": "General Application",
           "location": "Hybrid",
@@ -530,10 +544,11 @@
       "source_status": "ok"
     }
   ],
-  "fetch_errors": [],
+  "fetch_errors": [
+    "2S Water (scrape): 525 Server Error: <none> for url: https://www.2swater.com/work-with-us/"
+  ],
   "stale_companies": [],
   "unverified_companies": [
-    "2S Water",
     "Aclarity",
     "AlgaFilm",
     "Aquafortus",
@@ -554,7 +569,9 @@
     "Subeca",
     "TeamSolve"
   ],
-  "failed_companies": [],
+  "failed_companies": [
+    "2S Water"
+  ],
   "unsupported_companies": [],
   "disabled_companies": [
     "Verdi"
