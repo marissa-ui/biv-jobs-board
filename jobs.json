@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-04T14:13:24.661886+00:00",
-  "total_jobs": 32,
+  "generated_at": "2026-11-05T14:27:39.389333+00:00",
+  "total_jobs": 33,
   "companies": [
     {
       "name": "2S Water",
@@ -9,7 +9,7 @@
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/85c3a854-93da-4bfa-98b7-617258e1f387/2s_water.com",
       "description": "Hardware and software to monitor metals in mining and industrial water",
       "jobs": [],
-      "source_status": "error_no_prior"
+      "source_status": "unverified"
     },
     {
       "name": "Aclarity",
@@ -70,7 +70,7 @@
           "posted_at": ""
         }
       ],
-      "source_status": "ok"
+      "source_status": "error_stale"
     },
     {
       "name": "AquiSense",
@@ -193,6 +193,13 @@
           "department": "Product",
           "url": "https://jobs.ashbyhq.com/civilgrid/a7d6ada4-b618-4ce4-8b59-e0db79ff38ec",
           "posted_at": "2026-10-27T18:45:03.655+00:00"
+        },
+        {
+          "title": "Senior/Staff Infrastructure & Security Engineer",
+          "location": "Boston",
+          "department": "Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/6f556437-92b3-4559-9c54-ea0fac24e726",
+          "posted_at": "2026-11-04T23:21:36.504+00:00"
         }
       ],
       "source_status": "ok"
@@ -545,10 +552,13 @@
     }
   ],
   "fetch_errors": [
-    "2S Water (scrape): 525 Server Error: <none> for url: https://www.2swater.com/work-with-us/"
+    "Aquatic Labs (gusto/aquatic-labs-8d113062-708f-4c04-ba0f-e3fe1c9ef468): 403 Client Error: Forbidden for url: https://jobs.gusto.com/boards/aquatic-labs-8d113062-708f-4c04-ba0f-e3fe1c9ef468"
   ],
-  "stale_companies": [],
+  "stale_companies": [
+    "Aquatic Labs"
+  ],
   "unverified_companies": [
+    "2S Water",
     "Aclarity",
     "AlgaFilm",
     "Aquafortus",
@@ -570,7 +580,7 @@
     "TeamSolve"
   ],
   "failed_companies": [
-    "2S Water"
+    "Aquatic Labs"
   ],
   "unsupported_companies": [],
   "disabled_companies": [
