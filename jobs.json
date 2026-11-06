@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-05T14:27:39.389333+00:00",
-  "total_jobs": 33,
+  "generated_at": "2026-11-06T14:04:08.853670+00:00",
+  "total_jobs": 35,
   "companies": [
     {
       "name": "2S Water",
@@ -89,18 +89,18 @@
       "description": "Installer for home and commercial water IoT, leak detection, and shutoff",
       "jobs": [
         {
-          "title": "Customer Success Coordinator/Plumbing Dispatch",
-          "location": "Phoenix, AZ",
+          "title": "Future Opportunities - Master Plumber",
+          "location": "United States",
           "department": "",
-          "url": "https://beagle-services.breezy.hr/p/d813e0c3cedf-customer-success-coordinator-plumbing-dispatch",
-          "posted_at": "2026-11-03T17:25:02.079Z"
+          "url": "https://beagle-services.breezy.hr/p/980f93d5e0a0-future-opportunities-master-plumber",
+          "posted_at": "2026-11-05T22:19:52.919Z"
         },
         {
-          "title": "Master Plumber",
-          "location": "Baltimore, MD",
+          "title": "Future Opportunities - Residential Service Plumber",
+          "location": "United States",
           "department": "",
-          "url": "https://beagle-services.breezy.hr/p/33e1b9287777-master-plumber",
-          "posted_at": "2026-11-03T16:41:23.578Z"
+          "url": "https://beagle-services.breezy.hr/p/a35c274b1d63-future-opportunities-residential-service-plumber",
+          "posted_at": "2026-11-05T22:25:07.092Z"
         },
         {
           "title": "P1 Licensed Plumber",
@@ -108,6 +108,13 @@
           "department": "",
           "url": "https://beagle-services.breezy.hr/p/abd8a1c1f9e4-p1-licensed-plumber",
           "posted_at": "2026-11-03T16:43:53.620Z"
+        },
+        {
+          "title": "Plumber",
+          "location": "Bridgeport, CT",
+          "department": null,
+          "url": "https://beagle-services.breezy.hr/p/59d4398e084f-plumber",
+          "posted_at": "2026-11-05T17:41:35.671Z"
         }
       ],
       "source_status": "ok"
@@ -188,6 +195,13 @@
           "posted_at": "2026-10-29T02:28:20.876+00:00"
         },
         {
+          "title": "Senior/Staff Computer Vision Engineer",
+          "location": "Boston",
+          "department": "Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/abb90c78-28fa-42c3-9542-3132939e7a91",
+          "posted_at": "2026-11-05T20:05:05.579+00:00"
+        },
+        {
           "title": "Senior/Staff Product Manager",
           "location": "Boston",
           "department": "Product",
@@ -195,7 +209,7 @@
           "posted_at": "2026-10-27T18:45:03.655+00:00"
         },
         {
-          "title": "Senior/Staff Infrastructure & Security Engineer",
+          "title": "Senior/Staff Security & Infrastructure Engineer",
           "location": "Boston",
           "department": "Engineering",
           "url": "https://jobs.ashbyhq.com/civilgrid/6f556437-92b3-4559-9c54-ea0fac24e726",
@@ -242,13 +256,6 @@
           "posted_at": "2026-08-12T00:05:43.389+00:00"
         },
         {
-          "title": "Head of R&D and Lab Ops",
-          "location": "Brooklyn, NY / New Haven, CT",
-          "department": "R&D and Lab Ops",
-          "url": "https://jobs.ashbyhq.com/crewcarbon/42b2baa6-c474-4330-8ccc-8880879a9caa",
-          "posted_at": "2026-08-11T21:12:30.269+00:00"
-        },
-        {
           "title": "Head of Technical Solutions",
           "location": "Brooklyn, NY",
           "department": "Process and Engineering ",
@@ -261,6 +268,13 @@
           "department": "R&D and Lab Ops",
           "url": "https://jobs.ashbyhq.com/crewcarbon/871a856a-a355-4fa8-9660-753109531d8b",
           "posted_at": "2026-09-28T02:09:15.340+00:00"
+        },
+        {
+          "title": "Lab Operations Manager",
+          "location": "Brooklyn, NY / New Haven, CT",
+          "department": "R&D and Lab Ops",
+          "url": "https://jobs.ashbyhq.com/crewcarbon/3c18aeda-e019-4c4a-ab52-217f1bedba31",
+          "posted_at": "2026-11-05T14:52:39.232+00:00"
         }
       ],
       "source_status": "ok"
