@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T14:04:08.853670+00:00",
+  "generated_at": "2026-11-07T12:48:20.548334+00:00",
   "total_jobs": 35,
   "companies": [
     {
@@ -88,6 +88,13 @@
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/6853dbc3-6c8a-4121-9e0c-5bf7834aae7d/beagle_services.com",
       "description": "Installer for home and commercial water IoT, leak detection, and shutoff",
       "jobs": [
+        {
+          "title": "Customer Success Coordinator/Plumbing Dispatch",
+          "location": "Phoenix, AZ",
+          "department": "",
+          "url": "https://beagle-services.breezy.hr/p/d813e0c3cedf-customer-success-coordinator-plumbing-dispatch",
+          "posted_at": "2026-11-06T16:35:48.074Z"
+        },
         {
           "title": "Future Opportunities - Master Plumber",
           "location": "United States",
@@ -181,7 +188,7 @@
           "posted_at": "2026-10-26T16:58:38.715+00:00"
         },
         {
-          "title": "Business Development Representative - Government (San Diego)",
+          "title": "Business Development Representative",
           "location": "San Diego",
           "department": "Sales",
           "url": "https://jobs.ashbyhq.com/civilgrid/59c61568-a862-4765-81fd-6a7497b8a92a",
@@ -343,15 +350,7 @@
       "careers_url": "https://www.floodbase.com/careers",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/8e003798-7fd9-44db-9a0c-570278872709/floodbase.com",
       "description": "Near real-time flood tracking, powering parametric flood insurance",
-      "jobs": [
-        {
-          "title": "VP of Product",
-          "location": "New York or Boston",
-          "department": "Product",
-          "url": "https://tally.so/r/Npodkp",
-          "posted_at": ""
-        }
-      ],
+      "jobs": [],
       "source_status": "ok"
     },
     {
