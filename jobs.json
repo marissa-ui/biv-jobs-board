@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T13:08:43.565722+00:00",
+  "generated_at": "2026-11-09T15:54:30.794139+00:00",
   "total_jobs": 35,
   "companies": [
     {
@@ -44,7 +44,7 @@
           "posted_at": ""
         }
       ],
-      "source_status": "ok"
+      "source_status": "error_stale"
     },
     {
       "name": "Aquafortus",
@@ -88,13 +88,6 @@
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/6853dbc3-6c8a-4121-9e0c-5bf7834aae7d/beagle_services.com",
       "description": "Installer for home and commercial water IoT, leak detection, and shutoff",
       "jobs": [
-        {
-          "title": "Customer Success Coordinator/Plumbing Dispatch",
-          "location": "Phoenix, AZ",
-          "department": "",
-          "url": "https://beagle-services.breezy.hr/p/d813e0c3cedf-customer-success-coordinator-plumbing-dispatch",
-          "posted_at": "2026-11-06T16:35:48.074Z"
-        },
         {
           "title": "Future Opportunities - Master Plumber",
           "location": "United States",
@@ -350,7 +343,15 @@
       "careers_url": "https://www.floodbase.com/careers",
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/8e003798-7fd9-44db-9a0c-570278872709/floodbase.com",
       "description": "Near real-time flood tracking, powering parametric flood insurance",
-      "jobs": [],
+      "jobs": [
+        {
+          "title": "Machine Learning Engineer",
+          "location": "USA or Canada",
+          "department": "Engineering",
+          "url": "https://tally.so/r/NqDJNp",
+          "posted_at": ""
+        }
+      ],
       "source_status": "ok"
     },
     {
@@ -565,9 +566,11 @@
     }
   ],
   "fetch_errors": [
+    "Aqua Membranes (bamboohr/aquamembranes): HTTPSConnectionPool(host='aquamembranes.bamboohr.com', port=443): Read timed out. (read timeout=20)",
     "Aquatic Labs (gusto/aquatic-labs-8d113062-708f-4c04-ba0f-e3fe1c9ef468): 403 Client Error: Forbidden for url: https://jobs.gusto.com/boards/aquatic-labs-8d113062-708f-4c04-ba0f-e3fe1c9ef468"
   ],
   "stale_companies": [
+    "Aqua Membranes",
     "Aquatic Labs"
   ],
   "unverified_companies": [
@@ -593,6 +596,7 @@
     "TeamSolve"
   ],
   "failed_companies": [
+    "Aqua Membranes",
     "Aquatic Labs"
   ],
   "unsupported_companies": [],
