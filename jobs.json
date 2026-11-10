@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-09T15:54:30.794139+00:00",
-  "total_jobs": 35,
+  "generated_at": "2026-11-10T14:42:18.552639+00:00",
+  "total_jobs": 34,
   "companies": [
     {
       "name": "2S Water",
@@ -44,7 +44,7 @@
           "posted_at": ""
         }
       ],
-      "source_status": "error_stale"
+      "source_status": "ok"
     },
     {
       "name": "Aquafortus",
@@ -165,13 +165,6 @@
           "department": "Product",
           "url": "https://jobs.ashbyhq.com/civilgrid/932fa162-00f3-494d-98e8-d7bdcebd6c8e",
           "posted_at": "2026-10-21T15:33:02.861+00:00"
-        },
-        {
-          "title": "Research Coordinator",
-          "location": "Charlotte",
-          "department": "Data",
-          "url": "https://jobs.ashbyhq.com/civilgrid/4f2d8150-e456-4b9d-98d3-f28010b186b0",
-          "posted_at": "2026-10-19T18:24:00.721+00:00"
         },
         {
           "title": "Strategic Customer Success Manager",
@@ -416,7 +409,7 @@
       "description": "AI that analyzes sewer-pipe inspection footage and detects defects",
       "jobs": [
         {
-          "title": "Senior Staff Software Engineer",
+          "title": "Senior/Staff Software Engineer",
           "location": "Remote",
           "department": "Engineering",
           "url": "https://jobs.ashbyhq.com/sewer-ai/40904de2-3b6f-4257-b26b-c025bbd322d9",
@@ -566,11 +559,9 @@
     }
   ],
   "fetch_errors": [
-    "Aqua Membranes (bamboohr/aquamembranes): HTTPSConnectionPool(host='aquamembranes.bamboohr.com', port=443): Read timed out. (read timeout=20)",
     "Aquatic Labs (gusto/aquatic-labs-8d113062-708f-4c04-ba0f-e3fe1c9ef468): 403 Client Error: Forbidden for url: https://jobs.gusto.com/boards/aquatic-labs-8d113062-708f-4c04-ba0f-e3fe1c9ef468"
   ],
   "stale_companies": [
-    "Aqua Membranes",
     "Aquatic Labs"
   ],
   "unverified_companies": [
@@ -596,7 +587,6 @@
     "TeamSolve"
   ],
   "failed_companies": [
-    "Aqua Membranes",
     "Aquatic Labs"
   ],
   "unsupported_companies": [],
