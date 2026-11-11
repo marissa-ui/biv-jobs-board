@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-10T14:42:18.552639+00:00",
-  "total_jobs": 34,
+  "generated_at": "2026-11-11T13:57:34.738539+00:00",
+  "total_jobs": 35,
   "companies": [
     {
       "name": "2S Water",
@@ -207,6 +207,13 @@
           "department": "Engineering",
           "url": "https://jobs.ashbyhq.com/civilgrid/6f556437-92b3-4559-9c54-ea0fac24e726",
           "posted_at": "2026-11-04T23:21:36.504+00:00"
+        },
+        {
+          "title": "Project Manager - Utilities Engineering",
+          "location": "Charlotte / Kansas City",
+          "department": "Data",
+          "url": "https://jobs.ashbyhq.com/civilgrid/d1b6a608-a65c-4e4c-948e-c400ddc111f1",
+          "posted_at": "2026-11-11T00:24:32.896+00:00"
         }
       ],
       "source_status": "ok"
@@ -228,16 +235,9 @@
       "description": "Wastewater process intensification and carbon removal",
       "jobs": [
         {
-          "title": "Technical Operations Lead",
-          "location": "Brooklyn, NY",
-          "department": "Operations",
-          "url": "https://jobs.ashbyhq.com/crewcarbon/9c22a74f-70ba-40bb-ad21-4ca999b92848",
-          "posted_at": "2026-08-11T23:58:12.999+00:00"
-        },
-        {
           "title": "Wastewater Process Engineer",
           "location": "Brooklyn, NY / New Haven, CT",
-          "department": "Operations",
+          "department": "Technical Solutions",
           "url": "https://jobs.ashbyhq.com/crewcarbon/c5f8fc75-e3dc-4ff8-85f8-b16e951b4755",
           "posted_at": "2026-08-12T00:01:16.220+00:00"
         },
@@ -251,7 +251,7 @@
         {
           "title": "Head of Technical Solutions",
           "location": "Brooklyn, NY",
-          "department": "Process and Engineering ",
+          "department": "Technical Solutions",
           "url": "https://jobs.ashbyhq.com/crewcarbon/7ed9e721-37b4-40a5-bd3a-9fa80bcae407",
           "posted_at": "2026-08-11T21:17:33.115+00:00"
         },
@@ -268,6 +268,13 @@
           "department": "R&D and Lab Ops",
           "url": "https://jobs.ashbyhq.com/crewcarbon/3c18aeda-e019-4c4a-ab52-217f1bedba31",
           "posted_at": "2026-11-05T14:52:39.232+00:00"
+        },
+        {
+          "title": "Lead Engineer",
+          "location": "Brooklyn, NY",
+          "department": "Operations",
+          "url": "https://jobs.ashbyhq.com/crewcarbon/2145812a-3f97-431b-a07e-a7961d437f8c",
+          "posted_at": "2026-11-10T14:44:55.013+00:00"
         }
       ],
       "source_status": "ok"
@@ -338,7 +345,7 @@
       "description": "Near real-time flood tracking, powering parametric flood insurance",
       "jobs": [
         {
-          "title": "Machine Learning Engineer",
+          "title": "Sr. Machine Learning Engineer",
           "location": "USA or Canada",
           "department": "Engineering",
           "url": "https://tally.so/r/NqDJNp",
