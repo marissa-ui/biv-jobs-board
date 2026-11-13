@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T14:58:25.397058+00:00",
+  "generated_at": "2026-11-13T14:24:11.862166+00:00",
   "total_jobs": 35,
   "companies": [
     {
@@ -112,9 +112,16 @@
         {
           "title": "Plumber",
           "location": "Bridgeport, CT",
-          "department": null,
+          "department": "",
           "url": "https://beagle-services.breezy.hr/p/59d4398e084f-plumber",
-          "posted_at": "2026-11-05T17:41:35.671Z"
+          "posted_at": "2026-11-12T23:32:30.536Z"
+        },
+        {
+          "title": "Plumber",
+          "location": "San Diego, CA",
+          "department": "",
+          "url": "https://beagle-services.breezy.hr/p/ce1942f7cc0d-plumber",
+          "posted_at": "2026-11-12T23:41:09.941Z"
         }
       ],
       "source_status": "ok"
@@ -165,20 +172,6 @@
           "department": "Product",
           "url": "https://jobs.ashbyhq.com/civilgrid/932fa162-00f3-494d-98e8-d7bdcebd6c8e",
           "posted_at": "2026-10-21T15:33:02.861+00:00"
-        },
-        {
-          "title": "Strategic Customer Success Manager",
-          "location": "Remote",
-          "department": "Customer Success",
-          "url": "https://jobs.ashbyhq.com/civilgrid/835ddae9-f488-4e12-bcbc-4f879970da58",
-          "posted_at": "2026-10-26T16:58:38.715+00:00"
-        },
-        {
-          "title": "Business Development Representative",
-          "location": "San Diego",
-          "department": "Sales",
-          "url": "https://jobs.ashbyhq.com/civilgrid/59c61568-a862-4765-81fd-6a7497b8a92a",
-          "posted_at": "2026-10-01T16:46:20.214+00:00"
         },
         {
           "title": "Account Executive - Engineering Firms (California)",
@@ -463,6 +456,13 @@
           "department": "Engineering",
           "url": "https://jobs.ashbyhq.com/sewer-ai/c0722b4d-ec2c-4e30-bdd0-f6736fd2b8a1",
           "posted_at": "2026-11-02T22:26:44.198+00:00"
+        },
+        {
+          "title": "Senior Site Reliability Engineer, Agentic Automation",
+          "location": "Remote",
+          "department": "Engineering",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/ea11b42e-cab2-4060-b349-8a2b926356ba",
+          "posted_at": "2026-11-12T21:47:22.300+00:00"
         }
       ],
       "source_status": "ok"
