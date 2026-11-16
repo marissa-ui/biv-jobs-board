@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T13:48:11.338637+00:00",
+  "generated_at": "2026-11-16T15:29:17.715350+00:00",
   "total_jobs": 35,
   "companies": [
     {
@@ -509,7 +509,7 @@
           "posted_at": ""
         }
       ],
-      "source_status": "ok"
+      "source_status": "error_stale"
     },
     {
       "name": "TeamSolve",
@@ -566,10 +566,12 @@
     }
   ],
   "fetch_errors": [
-    "Aquatic Labs (gusto/aquatic-labs-8d113062-708f-4c04-ba0f-e3fe1c9ef468): 403 Client Error: Forbidden for url: https://jobs.gusto.com/boards/aquatic-labs-8d113062-708f-4c04-ba0f-e3fe1c9ef468"
+    "Aquatic Labs (gusto/aquatic-labs-8d113062-708f-4c04-ba0f-e3fe1c9ef468): 403 Client Error: Forbidden for url: https://jobs.gusto.com/boards/aquatic-labs-8d113062-708f-4c04-ba0f-e3fe1c9ef468",
+    "SwiftComply (rippling/swiftcomply): Rippling board for swiftcomply had no readable public job listings"
   ],
   "stale_companies": [
-    "Aquatic Labs"
+    "Aquatic Labs",
+    "SwiftComply"
   ],
   "unverified_companies": [
     "2S Water",
@@ -594,7 +596,8 @@
     "TeamSolve"
   ],
   "failed_companies": [
-    "Aquatic Labs"
+    "Aquatic Labs",
+    "SwiftComply"
   ],
   "unsupported_companies": [],
   "disabled_companies": [
