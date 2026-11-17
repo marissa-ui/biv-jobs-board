@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-16T15:29:17.715350+00:00",
-  "total_jobs": 35,
+  "generated_at": "2026-11-17T15:49:59.796401+00:00",
+  "total_jobs": 38,
   "companies": [
     {
       "name": "2S Water",
@@ -103,11 +103,11 @@
           "posted_at": "2026-11-05T22:25:07.092Z"
         },
         {
-          "title": "P1 Licensed Plumber",
-          "location": "Bridgeport, CT",
+          "title": "Master Plumber ",
+          "location": "Stratford, CT",
           "department": "",
-          "url": "https://beagle-services.breezy.hr/p/abd8a1c1f9e4-p1-licensed-plumber",
-          "posted_at": "2026-11-03T16:43:53.620Z"
+          "url": "https://beagle-services.breezy.hr/p/b572f351c050-master-plumber",
+          "posted_at": "2026-11-17T04:56:32.072Z"
         },
         {
           "title": "Plumber",
@@ -122,6 +122,20 @@
           "department": "",
           "url": "https://beagle-services.breezy.hr/p/ce1942f7cc0d-plumber",
           "posted_at": "2026-11-12T23:41:09.941Z"
+        },
+        {
+          "title": "Plumber",
+          "location": "San Jose, CA",
+          "department": "",
+          "url": "https://beagle-services.breezy.hr/p/c8051c25622b-plumber",
+          "posted_at": "2026-11-17T00:06:19.136Z"
+        },
+        {
+          "title": "Plumber",
+          "location": "Los Angeles, CA",
+          "department": null,
+          "url": "https://beagle-services.breezy.hr/p/8b6e681a0c24-plumber",
+          "posted_at": "2026-11-17T05:09:25.160Z"
         }
       ],
       "source_status": "ok"
@@ -463,6 +477,13 @@
           "department": "Engineering",
           "url": "https://jobs.ashbyhq.com/sewer-ai/ea11b42e-cab2-4060-b349-8a2b926356ba",
           "posted_at": "2026-11-12T21:47:22.300+00:00"
+        },
+        {
+          "title": "Senior Partner Manager, Engineering Firms",
+          "location": "Remote",
+          "department": "Sales & Marketing",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/9041fb62-07b4-48a5-bfa5-ce3b7892aeec",
+          "posted_at": "2026-11-16T22:39:42.310+00:00"
         }
       ],
       "source_status": "ok"
