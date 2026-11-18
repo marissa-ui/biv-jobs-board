@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-17T15:49:59.796401+00:00",
-  "total_jobs": 38,
+  "generated_at": "2026-11-18T15:28:50.576892+00:00",
+  "total_jobs": 39,
   "companies": [
     {
       "name": "2S Water",
@@ -121,21 +121,28 @@
           "location": "San Diego, CA",
           "department": "",
           "url": "https://beagle-services.breezy.hr/p/ce1942f7cc0d-plumber",
-          "posted_at": "2026-11-12T23:41:09.941Z"
+          "posted_at": "2026-11-17T20:55:31.501Z"
         },
         {
           "title": "Plumber",
           "location": "San Jose, CA",
           "department": "",
           "url": "https://beagle-services.breezy.hr/p/c8051c25622b-plumber",
-          "posted_at": "2026-11-17T00:06:19.136Z"
+          "posted_at": "2026-11-17T20:55:03.092Z"
         },
         {
           "title": "Plumber",
           "location": "Los Angeles, CA",
-          "department": null,
+          "department": "",
           "url": "https://beagle-services.breezy.hr/p/8b6e681a0c24-plumber",
-          "posted_at": "2026-11-17T05:09:25.160Z"
+          "posted_at": "2026-11-17T20:54:09.167Z"
+        },
+        {
+          "title": "Plumbing Technician",
+          "location": "Bridgeport, CT",
+          "department": null,
+          "url": "https://beagle-services.breezy.hr/p/0eb0bd644663-plumbing-technician",
+          "posted_at": "2026-11-17T17:35:26.564Z"
         }
       ],
       "source_status": "ok"
@@ -173,13 +180,6 @@
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/19a19a78-3433-4d57-96c6-c665403fd5de/civilgrid.com",
       "description": "Construction intelligence platform aggregating site data for developers and engineers",
       "jobs": [
-        {
-          "title": "IT/Office Support Technician - Boston",
-          "location": "Boston",
-          "department": "Operations",
-          "url": "https://jobs.ashbyhq.com/civilgrid/b2a8e625-a4e2-4a6c-baa5-529ab8ff1790",
-          "posted_at": "2026-10-23T15:11:13.651+00:00"
-        },
         {
           "title": "Director/Senior Director, Product Management",
           "location": "Boston",
@@ -221,6 +221,13 @@
           "department": "Data",
           "url": "https://jobs.ashbyhq.com/civilgrid/d1b6a608-a65c-4e4c-948e-c400ddc111f1",
           "posted_at": "2026-11-11T00:24:32.896+00:00"
+        },
+        {
+          "title": "Office Coordinator - Boston",
+          "location": "Boston",
+          "department": "Operations",
+          "url": "https://jobs.ashbyhq.com/civilgrid/588dc47f-b32a-4745-97d1-f3c07f06105d",
+          "posted_at": "2026-11-17T23:48:29.236+00:00"
         }
       ],
       "source_status": "ok"
