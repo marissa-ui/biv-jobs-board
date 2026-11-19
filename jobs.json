@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-18T15:28:50.576892+00:00",
-  "total_jobs": 39,
+  "generated_at": "2026-11-19T15:35:49.033463+00:00",
+  "total_jobs": 40,
   "companies": [
     {
       "name": "2S Water",
@@ -88,6 +88,13 @@
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/6853dbc3-6c8a-4121-9e0c-5bf7834aae7d/beagle_services.com",
       "description": "Installer for home and commercial water IoT, leak detection, and shutoff",
       "jobs": [
+        {
+          "title": "Customer Success Coordinator/Plumbing Dispatch",
+          "location": "Phoenix, AZ",
+          "department": "",
+          "url": "https://beagle-services.breezy.hr/p/d813e0c3cedf-customer-success-coordinator-plumbing-dispatch",
+          "posted_at": "2026-11-19T14:20:40.372Z"
+        },
         {
           "title": "Future Opportunities - Master Plumber",
           "location": "United States",
@@ -202,13 +209,6 @@
           "posted_at": "2026-11-05T20:05:05.579+00:00"
         },
         {
-          "title": "Senior/Staff Product Manager",
-          "location": "Boston",
-          "department": "Product",
-          "url": "https://jobs.ashbyhq.com/civilgrid/a7d6ada4-b618-4ce4-8b59-e0db79ff38ec",
-          "posted_at": "2026-10-27T18:45:03.655+00:00"
-        },
-        {
           "title": "Senior/Staff Security & Infrastructure Engineer",
           "location": "Boston",
           "department": "Engineering",
@@ -227,7 +227,7 @@
           "location": "Boston",
           "department": "Operations",
           "url": "https://jobs.ashbyhq.com/civilgrid/588dc47f-b32a-4745-97d1-f3c07f06105d",
-          "posted_at": "2026-11-17T23:48:29.236+00:00"
+          "posted_at": "2026-11-19T02:05:08.760+00:00"
         }
       ],
       "source_status": "ok"
@@ -491,6 +491,13 @@
           "department": "Sales & Marketing",
           "url": "https://jobs.ashbyhq.com/sewer-ai/9041fb62-07b4-48a5-bfa5-ce3b7892aeec",
           "posted_at": "2026-11-16T22:39:42.310+00:00"
+        },
+        {
+          "title": "Account Executive, Municipal",
+          "location": "Remote",
+          "department": "Sales & Marketing",
+          "url": "https://jobs.ashbyhq.com/sewer-ai/1e119e59-ed0a-44c6-960b-2d471969841f",
+          "posted_at": "2026-11-18T23:31:43.478+00:00"
         }
       ],
       "source_status": "ok"
