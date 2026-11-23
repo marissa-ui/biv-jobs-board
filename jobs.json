@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T14:25:33.636306+00:00",
+  "generated_at": "2026-11-23T17:52:03.747314+00:00",
   "total_jobs": 41,
   "companies": [
     {
@@ -79,7 +79,7 @@
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/ff5318e0-5294-4729-9f02-3862d383c6d5/download-9.png",
       "description": "UV-C LED disinfection for water, air, and surfaces",
       "jobs": [],
-      "source_status": "error_no_prior"
+      "source_status": "unverified"
     },
     {
       "name": "Beagle Services",
@@ -209,14 +209,7 @@
           "posted_at": "2026-10-29T02:28:20.876+00:00"
         },
         {
-          "title": "Senior/Staff Computer Vision Engineer",
-          "location": "Boston",
-          "department": "Engineering",
-          "url": "https://jobs.ashbyhq.com/civilgrid/abb90c78-28fa-42c3-9542-3132939e7a91",
-          "posted_at": "2026-11-05T20:05:05.579+00:00"
-        },
-        {
-          "title": "Senior/Staff Security & Infrastructure Engineer",
+          "title": "Senior/Staff Security Engineer",
           "location": "Boston",
           "department": "Engineering",
           "url": "https://jobs.ashbyhq.com/civilgrid/6f556437-92b3-4559-9c54-ea0fac24e726",
@@ -228,6 +221,13 @@
           "department": "Data",
           "url": "https://jobs.ashbyhq.com/civilgrid/d1b6a608-a65c-4e4c-948e-c400ddc111f1",
           "posted_at": "2026-11-11T00:24:32.896+00:00"
+        },
+        {
+          "title": "Senior/Staff Machine Learning Engineer",
+          "location": "Boston",
+          "department": "Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/826f6522-fc4c-4b2c-aac5-45056c9cb88b",
+          "posted_at": "2026-11-23T06:50:02.021+00:00"
         }
       ],
       "source_status": "ok"
@@ -609,7 +609,6 @@
   ],
   "fetch_errors": [
     "Aquatic Labs (gusto/aquatic-labs-8d113062-708f-4c04-ba0f-e3fe1c9ef468): 403 Client Error: Forbidden for url: https://jobs.gusto.com/boards/aquatic-labs-8d113062-708f-4c04-ba0f-e3fe1c9ef468",
-    "AquiSense (scrape): HTTPSConnectionPool(host='aquisense.com', port=443): Max retries exceeded with url: /careers/ (Caused by NameResolutionError(\"HTTPSConnection(host='aquisense.com', port=443): Failed to resolve 'aquisense.com' ([Errno -3] Temporary failure in name resolution)\"))",
     "SwiftComply (rippling/swiftcomply): Rippling board for swiftcomply had no readable public job listings"
   ],
   "stale_companies": [
@@ -621,6 +620,7 @@
     "Aclarity",
     "AlgaFilm",
     "Aquafortus",
+    "AquiSense",
     "Biota",
     "CNSRV",
     "Current Software",
@@ -639,7 +639,6 @@
   ],
   "failed_companies": [
     "Aquatic Labs",
-    "AquiSense",
     "SwiftComply"
   ],
   "unsupported_companies": [],
