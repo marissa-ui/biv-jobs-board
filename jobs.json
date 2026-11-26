@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T17:01:26.759212+00:00",
-  "total_jobs": 41,
+  "generated_at": "2026-11-26T16:43:01.022906+00:00",
+  "total_jobs": 43,
   "companies": [
     {
       "name": "2S Water",
@@ -202,6 +202,13 @@
           "posted_at": "2026-11-19T20:59:55.404+00:00"
         },
         {
+          "title": "Senior Software Engineer",
+          "location": "Boston",
+          "department": "Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/176be581-ab1f-4272-8029-8e63fcee1b88",
+          "posted_at": "2026-11-25T22:38:10.067+00:00"
+        },
+        {
           "title": "Account Executive - Engineering Firms (California)",
           "location": "Remote / San Francisco / San Diego",
           "department": "Sales",
@@ -228,6 +235,13 @@
           "department": "Engineering",
           "url": "https://jobs.ashbyhq.com/civilgrid/826f6522-fc4c-4b2c-aac5-45056c9cb88b",
           "posted_at": "2026-11-23T06:50:02.021+00:00"
+        },
+        {
+          "title": "Full Stack Engineer",
+          "location": "Boston",
+          "department": "Engineering",
+          "url": "https://jobs.ashbyhq.com/civilgrid/8fda4773-a81f-4e96-b27e-c12c1b53a969",
+          "posted_at": "2026-11-25T20:10:17.650+00:00"
         }
       ],
       "source_status": "ok"
