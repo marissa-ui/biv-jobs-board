@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T16:43:01.022906+00:00",
+  "generated_at": "2026-11-27T16:28:51.863837+00:00",
   "total_jobs": 43,
   "companies": [
     {
@@ -53,7 +53,7 @@
       "logo": "https://visible-uploads.s3.amazonaws.com/images/logos/58a0a4f6-2110-495d-bb3d-05efc939c87b/aquafortus.com",
       "description": "Materials-science brine treatment for low-cost zero-liquid-discharge desalination",
       "jobs": [],
-      "source_status": "unverified"
+      "source_status": "error_no_prior"
     },
     {
       "name": "Aquatic Labs",
@@ -622,6 +622,7 @@
     }
   ],
   "fetch_errors": [
+    "Aquafortus (scrape): 403 Client Error: Forbidden for url: https://www.aquafortus.net/",
     "Aquatic Labs (gusto/aquatic-labs-8d113062-708f-4c04-ba0f-e3fe1c9ef468): 403 Client Error: Forbidden for url: https://jobs.gusto.com/boards/aquatic-labs-8d113062-708f-4c04-ba0f-e3fe1c9ef468",
     "SwiftComply (rippling/swiftcomply): Rippling board for swiftcomply had no readable public job listings"
   ],
@@ -633,7 +634,6 @@
     "2S Water",
     "Aclarity",
     "AlgaFilm",
-    "Aquafortus",
     "AquiSense",
     "Biota",
     "CNSRV",
@@ -652,6 +652,7 @@
     "TeamSolve"
   ],
   "failed_companies": [
+    "Aquafortus",
     "Aquatic Labs",
     "SwiftComply"
   ],
